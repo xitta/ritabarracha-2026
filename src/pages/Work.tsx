@@ -132,22 +132,22 @@ const Work = () => {
         ))}
       </section>
 
-      <footer className="border-t border-border py-24">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">
-            Let's work together
-          </h2>
-          <a
-            href="mailto:hello@ritabarracha.com"
-            className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
-          >
-            Get in Touch
-          </a>
-          <p className="text-xs text-muted-foreground mt-16">
-            © 2026 Rita Barracha, Creative Strategist & Experience Designer
-          </p>
-        </div>
-      </footer>
+      <div className="border-t border-border" />
+
+      <section className="container mx-auto px-4 py-24 md:py-32 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
+          Got a project in mind?
+        </h2>
+        <a
+          href="mailto:hello@ritabarracha.com"
+          className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
+        >
+          Let's Talk
+        </a>
+        <p className="text-xs text-muted-foreground mt-16">
+          © 2026 Rita Barracha, Creative Strategist & Experience Designer
+        </p>
+      </section>
     </div>
   );
 };
