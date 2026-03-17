@@ -20,6 +20,7 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
+              onClick={() => window.scrollTo(0, 0)}
               className={`link-underline text-xs uppercase tracking-widest pb-1 ${
                 location.pathname === link.to
                   ? "after:scale-x-100 after:origin-left"
