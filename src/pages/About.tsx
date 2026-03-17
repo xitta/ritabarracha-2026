@@ -80,19 +80,38 @@ const About = () => {
         </h2>
         <div className="space-y-0">
           {[
-            { role: "Senior Experience Designer", company: "Digital Agency", period: "2021 — Present" },
-            { role: "UX Strategist", company: "Tech Startup", period: "2019 — 2021" },
-            { role: "Product Designer", company: "Innovation Lab", period: "2017 — 2019" },
-            { role: "MA Interaction Design", company: "Royal College of Art", period: "2015 — 2017" },
-            { role: "BA Communication Design", company: "University of Lisbon", period: "2011 — 2015" },
+            { role: "Creative Strategist & Experience Designer", company: "Rita Barracha da Silva", desc: "Omnichannel experiences for brands, services and products", location: "Zürich, CH", period: "2020 — Present" },
+            { role: "Co-Founder & Experience Strategist", company: "naut GmbH", link: "http://www.naut.ch/", desc: "Interactive installations that connect the physical reality with the digital world", location: "Zürich, CH", period: "2018 — 2020 / 2023 — Present" },
+            { role: "Experience Director", company: "melt GmbH", link: "http://www.melt.ch/", desc: "Narrative Experience Design", location: "Zürich, CH", period: "2017 — 2018" },
+            { role: "Creative Strategist & User Experience Lead", company: "Liip AG", link: "http://www.liip.ch/", desc: "Digital Progress", location: "Zürich, CH", period: "2013 — 2018" },
+            { role: "Multimedia Designer", company: "Process Brand Evolution AG", link: "http://process-group.com/", desc: "Branding and Design Consultancy", location: "Zürich, CH", period: "2012 — 2013" },
+            { role: "Interaction Designer & Researcher", company: "YDreams", link: "http://www.ydreams.com/", desc: "Augmented interactive installations, environmental sensing and mobile computing", location: "Lisbon, PT", period: "2011 — 2012" },
+            { role: "Visual Designer", company: "Museum of the Portuguese Presidency", location: "Lisbon, PT", period: "2008 — 2009" },
+            { role: "Films on Art Jury", company: "Temps d'Images Festival", location: "Lisbon, PT", period: "2008 — 2009" },
+            { role: "Photographer", company: "Miguel Palma Studio", location: "Lisbon, PT", period: "2008" },
+            { role: "Co-Director, Co-Producer & Graphic Designer", company: "MARTE Magazine No. 3", location: "Lisbon, PT", period: "2006 — 2008" },
           ].map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-3 py-5 border-b border-border"
+              className="grid grid-cols-[1fr_1fr_auto] gap-4 py-5 border-b border-border"
             >
-              <span className="text-sm font-medium text-foreground">{item.role}</span>
-              <span className="text-sm text-foreground/60">{item.company}</span>
-              <span className="text-sm text-foreground/40 text-right">{item.period}</span>
+              <div>
+                <span className="text-sm font-medium text-foreground">{item.role}</span>
+              </div>
+              <div>
+                {item.link ? (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-sm text-foreground/60 link-underline pb-0.5">{item.company}</a>
+                ) : (
+                  <span className="text-sm text-foreground/60">{item.company}</span>
+                )}
+                {item.desc && (
+                  <span className="text-sm text-foreground/40"> · {item.desc}</span>
+                )}
+                {item.location && (
+                  <span className="text-sm text-foreground/30"> ({item.location})</span>
+                )}
+              </div>
+              <span className="text-sm text-foreground/40 text-right whitespace-nowrap">{item.period}</span>
             </div>
           ))}
         </div>
