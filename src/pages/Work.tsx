@@ -61,6 +61,7 @@ const caseStudies = [
 ];
 
 const Work = () => {
+
   return (
     <div className="min-h-screen bg-background">
       {/* Page Header */}
