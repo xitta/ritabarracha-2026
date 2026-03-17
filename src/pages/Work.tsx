@@ -141,7 +141,7 @@ const Work = () => {
             Let's collaborate to create exceptional experiences that drive real results
           </p>
           <a
-            href="mailto:hello@example.com"
+            href="mailto:hello@ritabarracha.com"
             className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
           >
             Start a Conversation

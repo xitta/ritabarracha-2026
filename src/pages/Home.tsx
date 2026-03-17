@@ -111,7 +111,7 @@ const Home = () => {
             View Work
           </Link>
           <a
-            href="mailto:hello@example.com"
+            href="mailto:hello@ritabarracha.com"
             className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
           >
             Get in Touch
