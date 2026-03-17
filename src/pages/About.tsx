@@ -113,6 +113,44 @@ const About = () => {
             </div>
           ))}
         </div>
+
+        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12 mt-24">
+          Education
+        </h2>
+        <div className="space-y-0">
+          {[
+            { period: "2025", role: "Service Design", company: "Service Design Global Network Conference", link: "https://www.service-design-network.org/events/service-design-global-conference-2025-dallas", location: "Virtual" },
+            { period: "2022", role: "Service Design", company: "Service Design Global Network Conference", link: "https://www.service-design-network.org/", location: "Virtual" },
+            { period: "2020", role: "Omnichannel Journeys & Customer Experience", company: "Nielsen Norman Group", link: "https://www.nngroup.com/", location: "Virtual" },
+            { period: "2013", role: "Usability Course", company: "Nielsen Norman Group", link: "https://www.nngroup.com/", location: "London, UK" },
+            { period: "2010 — 2012", role: "Master New Media & Web", company: "NOVA University of Lisbon", link: "http://hdl.handle.net/10362/7089", desc: "Social and Human Sciences", location: "Lisbon, PT" },
+            { period: "2009 — 2011", role: "Master Multimedia Art", company: "University of Lisbon", link: "http://hdl.handle.net/10451/5631", desc: "Fine Arts", location: "Lisbon, PT" },
+            { period: "2005 — 2009", role: "Licentiate Multimedia Art", company: "University of Lisbon", desc: "Fine Arts", location: "Lisbon, PT" },
+            { period: "2008", role: "RED One Camera Course", company: "CineCanarias", location: "PT" },
+            { period: "2007", role: "Entertainment / Event Photography Course", company: "Kabuki Center", location: "PT" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="grid grid-cols-[100px_1fr_1fr] gap-4 py-6 border-b border-border"
+            >
+              <span className="text-sm text-foreground/40 whitespace-pre-line">{item.period}</span>
+              <span className="text-sm font-medium text-foreground">{item.role}</span>
+              <div className="text-sm">
+                {item.link ? (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-foreground/60 link-underline pb-0.5">{item.company}</a>
+                ) : (
+                  <span className="text-foreground/60">{item.company}</span>
+                )}
+                {item.desc && (
+                  <span className="text-foreground/40"> · {item.desc}</span>
+                )}
+                {item.location && (
+                  <span className="text-foreground/30"> ({item.location})</span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       <div className="border-t border-border" />
