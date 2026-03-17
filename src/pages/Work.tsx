@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import CaseStudy from "@/components/CaseStudy";
 import CaseStudy from "@/components/CaseStudy";
 
 import case1Cover from "@/assets/case1-cover.jpg";
