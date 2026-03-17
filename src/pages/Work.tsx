@@ -137,9 +137,6 @@ const Work = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
             Ready to Transform Your Project?
           </h2>
-          <p className="text-muted-foreground mb-10 max-w-xl mx-auto">
-            Let's collaborate to create exceptional experiences that drive real results
-          </p>
           <a
             href="mailto:hello@ritabarracha.com"
             className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
