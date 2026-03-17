@@ -7,10 +7,10 @@ const Home = () => {
       <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
         <div className="max-w-5xl">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-8">
-            Omnichannel experiences for brands, services and products
+            I'm your hybrid partner for this unknown future.
           </h1>
           <p className="text-base text-muted-foreground">
-            Creative Strategist & Experience Designer
+            Omnichannel experiences for brands, services and products
           </p>
         </div>
       </section>
