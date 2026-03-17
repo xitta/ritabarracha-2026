@@ -10,6 +10,12 @@ import logoLocal from "@/assets/logos/local.svg";
 import logoMigros from "@/assets/logos/migros.svg";
 import logoOpendata from "@/assets/logos/opendata.svg";
 import logoRappold from "@/assets/logos/rappold.svg";
+import logoRicardo from "@/assets/logos/ricardo.svg";
+import logoRicola from "@/assets/logos/ricola.svg";
+import logoTedx from "@/assets/logos/tedx.svg";
+import logoTutti from "@/assets/logos/tutti.svg";
+import logoTx from "@/assets/logos/tx.svg";
+import logoWecollect from "@/assets/logos/wecollect.svg";
 
 import case1Cover from "@/assets/case1-cover.jpg";
 import case1Img1 from "@/assets/case1-img1.jpg";
