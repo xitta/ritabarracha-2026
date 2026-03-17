@@ -1,0 +1,121 @@
+import { Link } from "react-router-dom";
+
+const Home = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Hero */}
+      <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
+        <div className="max-w-5xl">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-8">
+            Omnichannel experiences for brands, services and products
+          </h1>
+          <p className="text-base text-muted-foreground">
+            Creative Strategist & Experience Designer
+          </p>
+        </div>
+      </section>
+
+      <div className="border-t border-border" />
+
+      {/* Manifesto */}
+      <section className="container mx-auto px-4 py-24 md:py-32">
+        <div className="max-w-3xl">
+          <p className="text-xl md:text-2xl font-medium leading-relaxed mb-12 text-foreground/90">
+            Future isn't doomed, just a bit… wild.
+          </p>
+
+          <div className="space-y-8 text-base leading-relaxed text-foreground/70">
+            <p>
+              With every scroll, swipe, and pixel, technology reshapes the world
+              around us, creating a landscape that's at once digital and physical,
+              immersive and intangible, deeply fascinating and slightly unnerving.
+              We're moving toward a reality where our surroundings not only see and
+              hear us but also anticipate our needs, respond to our feelings, and
+              adapt to our behaviors.
+            </p>
+
+            <p>
+              Technologies like Artificial Intelligence, Augmented and Virtual
+              Realities, and multisensory design are the tools helping us build
+              experiences that are richer and more responsive, aligning with
+              people's needs in a way that feels both futuristic and beautifully
+              human. Design is more than clicks and screens; it's a dialogue
+              between minds and machines.
+            </p>
+
+            <p className="text-xl md:text-2xl font-medium text-foreground/90">
+              But let's keep it grounded.
+            </p>
+
+            <p>
+              My mission is simple: make life feel lighter, brighter, and a bit
+              more delightful. I partner with brands, services, and products ready
+              to bring creativity and strategy into alignment, crafting experiences
+              that are thoughtful, memorable, and human-focused.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="border-t border-border" />
+
+      {/* Services Grid */}
+      <section className="container mx-auto px-4 py-24 md:py-32">
+        <div className="grid md:grid-cols-3 gap-12">
+          {[
+            {
+              title: "Strategy",
+              items: ["Business Strategy", "Brand Positioning", "Campaign Development", "Research"],
+            },
+            {
+              title: "Design",
+              items: ["Content Strategy", "User Journey Mapping", "Service Design", "UX & UI"],
+            },
+            {
+              title: "Delivery",
+              items: ["Product Experience", "Prototyping & Testing", "Project Management", "Agile & Scrum"],
+            },
+          ].map((col) => (
+            <div key={col.title}>
+              <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
+                {col.title}
+              </h3>
+              <ul className="space-y-3">
+                {col.items.map((item) => (
+                  <li key={item} className="text-sm text-foreground/80">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="border-t border-border" />
+
+      {/* CTA */}
+      <section className="container mx-auto px-4 py-24 md:py-32 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
+          Let's create something meaningful
+        </h2>
+        <div className="flex gap-8 justify-center">
+          <Link
+            to="/work"
+            className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
+          >
+            View Work
+          </Link>
+          <a
+            href="mailto:hello@example.com"
+            className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
