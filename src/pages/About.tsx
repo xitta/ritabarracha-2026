@@ -81,7 +81,7 @@ const About = () => {
         <div className="space-y-0">
           {[
             { role: "Creative Strategist & Experience Designer", company: "Rita Barracha da Silva", desc: "Omnichannel experiences for brands, services and products", location: "Zürich, CH", period: "2020 — Present" },
-            { role: "Co-Founder & Experience Strategist", company: "naut GmbH", link: "http://www.naut.ch/", desc: "Interactive installations that connect the physical reality with the digital world", location: "Zürich, CH", period: "2018 — 2020 / 2023 — Present" },
+            { role: "Co-Founder & Experience Strategist", company: "naut GmbH", link: "http://www.naut.ch/", desc: "Interactive installations that connect the physical reality with the digital world", location: "Zürich, CH", period: "2018 — 2020\n2023 — Present" },
             { role: "Experience Director", company: "melt GmbH", link: "http://www.melt.ch/", desc: "Narrative Experience Design", location: "Zürich, CH", period: "2017 — 2018" },
             { role: "Creative Strategist & User Experience Lead", company: "Liip AG", link: "http://www.liip.ch/", desc: "Digital Progress", location: "Zürich, CH", period: "2013 — 2018" },
             { role: "Multimedia Designer", company: "Process Brand Evolution AG", link: "http://process-group.com/", desc: "Branding and Design Consultancy", location: "Zürich, CH", period: "2012 — 2013" },
@@ -95,7 +95,7 @@ const About = () => {
               key={index}
               className="grid grid-cols-[100px_1fr_1fr] gap-4 py-6 border-b border-border"
             >
-              <span className="text-sm text-foreground/40">{item.period}</span>
+              <span className="text-sm text-foreground/40 whitespace-pre-line">{item.period}</span>
               <span className="text-sm font-medium text-foreground">{item.role}</span>
               <div className="text-sm">
                 {item.link ? (
