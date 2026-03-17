@@ -60,10 +60,22 @@ const caseStudies = [
   },
 ];
 
-const Index = () => {
+const Work = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Hero />
+      {/* Page Header */}
+      <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
+        <div className="max-w-4xl">
+          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
+            Selected Work
+          </p>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
+            Design Excellence in Action
+          </h1>
+        </div>
+      </section>
+
+      <div className="border-t border-border" />
 
       <section id="case-studies" className="container mx-auto px-4 py-24 md:py-32">
         {caseStudies.map((study, index) => (
@@ -71,7 +83,7 @@ const Index = () => {
         ))}
       </section>
 
-      <footer id="contact" className="border-t border-border py-24">
+      <footer className="border-t border-border py-24">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
             Ready to Transform Your Project?
@@ -91,4 +103,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Work;
