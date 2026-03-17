@@ -21,7 +21,7 @@ const About = () => {
             <img
               src={ritaProfile}
               alt="Rita Barracha"
-              className="w-48 h-48 md:w-64 md:h-64 object-cover object-top"
+              className="w-56 h-56 md:w-80 md:h-80 object-cover object-center"
             />
           </div>
         </div>
