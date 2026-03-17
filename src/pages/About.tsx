@@ -8,7 +8,7 @@ const About = () => {
             About
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            Bridging the high-tech with the human touch
+            I like making sense of things
           </h1>
         </div>
       </section>
