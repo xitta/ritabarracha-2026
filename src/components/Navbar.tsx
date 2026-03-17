@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link to="/" className="text-sm font-bold uppercase tracking-widest">
           Rita Barracha
         </Link>
-        <div className="flex gap-8">
+        <div className="flex gap-4 md:gap-8">
           {links.map((link) => (
             <Link
               key={link.to}
