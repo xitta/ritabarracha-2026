@@ -88,7 +88,7 @@ const Work = () => {
             Work
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            Where strategy meets craft
+            Things I've helped build
           </h1>
         </div>
       </section>
