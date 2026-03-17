@@ -119,8 +119,9 @@
 
   .scroll-reveal {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(16px);
+    transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
   }
 
   .scroll-reveal.revealed {
@@ -128,7 +129,7 @@
     transform: translateY(0);
   }
 
-  .scroll-reveal-delay-1 { transition-delay: 0.1s; }
-  .scroll-reveal-delay-2 { transition-delay: 0.2s; }
-  .scroll-reveal-delay-3 { transition-delay: 0.3s; }
+  .scroll-reveal-delay-1 { transition-delay: 0.12s; }
+  .scroll-reveal-delay-2 { transition-delay: 0.24s; }
+  .scroll-reveal-delay-3 { transition-delay: 0.36s; }
 }
