@@ -1,4 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import ritaProfile from "@/assets/rita-profile.png";
 
 const About = () => {
   const ref = useScrollReveal();
@@ -7,13 +8,22 @@ const About = () => {
     <div className="min-h-screen bg-background" ref={ref}>
       {/* Hero */}
       <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
-        <div className="max-w-4xl scroll-reveal">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
-            About
-          </p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            I like making sense of things
-          </h1>
+        <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16">
+          <div className="max-w-4xl scroll-reveal">
+            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
+              About
+            </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
+              I like making sense of things
+            </h1>
+          </div>
+          <div className="scroll-reveal scroll-reveal-delay-1 shrink-0">
+            <img
+              src={ritaProfile}
+              alt="Rita Barracha"
+              className="w-48 h-48 md:w-64 md:h-64 object-cover object-top"
+            />
+          </div>
         </div>
       </section>
 
