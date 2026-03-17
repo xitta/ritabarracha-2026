@@ -1,5 +1,4 @@
 import CaseStudy from "@/components/CaseStudy";
-import CaseStudy from "@/components/CaseStudy";
 
 import case1Cover from "@/assets/case1-cover.jpg";
 import case1Img1 from "@/assets/case1-img1.jpg";
