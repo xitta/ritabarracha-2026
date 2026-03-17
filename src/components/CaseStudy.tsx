@@ -1,3 +1,5 @@
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
 interface CaseStudyProps {
   title: string;
   category: string;
@@ -17,10 +19,12 @@ const CaseStudy = ({
   coverImage,
   images,
 }: CaseStudyProps) => {
+  const ref = useScrollReveal();
+
   return (
-    <article className="mb-32 md:mb-44">
+    <article className="mb-32 md:mb-44" ref={ref}>
       {/* Header */}
-      <div className="mb-10">
+      <div className="mb-10 scroll-reveal">
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
           {category}
         </p>
@@ -30,7 +34,7 @@ const CaseStudy = ({
       </div>
 
       {/* Cover Image */}
-      <div className="mb-16 overflow-hidden">
+      <div className="mb-16 overflow-hidden scroll-reveal">
         <img
           src={coverImage}
           alt={`${title} cover`}
@@ -40,13 +44,13 @@ const CaseStudy = ({
 
       {/* Problem & Solution */}
       <div className="grid md:grid-cols-2 gap-16 mb-16">
-        <div>
+        <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             The Problem
           </h3>
           <p className="text-base leading-relaxed text-foreground/80">{problem}</p>
         </div>
-        <div>
+        <div className="scroll-reveal scroll-reveal-delay-1">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             The Solution
           </h3>
@@ -59,7 +63,8 @@ const CaseStudy = ({
         {images.map((image, index) => (
           <div
             key={index}
-            className="overflow-hidden"
+            className="overflow-hidden scroll-reveal"
+            style={{ transitionDelay: `${index * 0.08}s` }}
           >
             <img
               src={image}
@@ -71,7 +76,7 @@ const CaseStudy = ({
       </div>
 
       {/* Summary */}
-      <div className="border-t border-border pt-10">
+      <div className="border-t border-border pt-10 scroll-reveal">
         <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
           Project Summary
         </h3>
