@@ -116,7 +116,6 @@
   .link-underline:hover::after {
     @apply scale-x-100 origin-left;
   }
-}
 
   .scroll-reveal {
     opacity: 0;
