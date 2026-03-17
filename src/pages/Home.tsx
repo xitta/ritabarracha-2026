@@ -98,12 +98,9 @@ const Home = () => {
       {/* CTA */}
       <section className="container mx-auto px-4 py-24 md:py-32 text-center">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
-          Let's create something meaningful
+          Let's work together
         </h2>
-        <p className="text-xs text-muted-foreground mb-10">
-          Rita Barracha, Creative Strategist & Experience Designer
-        </p>
-        <div className="flex gap-8 justify-center">
+        <div className="flex gap-8 justify-center mb-16">
           <Link
             to="/work"
             className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
@@ -117,6 +114,9 @@ const Home = () => {
             Get in Touch
           </a>
         </div>
+        <p className="text-xs text-muted-foreground">
+          © 2026 Rita Barracha, Creative Strategist & Experience Designer
+        </p>
       </section>
     </div>
   );
