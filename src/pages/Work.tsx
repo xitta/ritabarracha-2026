@@ -1,5 +1,16 @@
 import CaseStudy from "@/components/CaseStudy";
 
+import logo20min from "@/assets/logos/20min.svg";
+import logoEnergie360 from "@/assets/logos/energie360.svg";
+import logoFreitag from "@/assets/logos/freitag.svg";
+import logoHwz from "@/assets/logos/hwz.svg";
+import logoKantonal from "@/assets/logos/kantonal.svg";
+import logoLiip from "@/assets/logos/liip.svg";
+import logoLocal from "@/assets/logos/local.svg";
+import logoMigros from "@/assets/logos/migros.svg";
+import logoOpendata from "@/assets/logos/opendata.svg";
+import logoRappold from "@/assets/logos/rappold.svg";
+
 import case1Cover from "@/assets/case1-cover.jpg";
 import case1Img1 from "@/assets/case1-img1.jpg";
 import case1Img2 from "@/assets/case1-img2.jpg";
@@ -73,6 +84,31 @@ const Work = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
             Design Excellence in Action
           </h1>
+        </div>
+      </section>
+
+      {/* Client Logos */}
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
+          Selected Clients
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center">
+          {[
+            { src: logoMigros, alt: "Migros" },
+            { src: logoEnergie360, alt: "Energie 360°" },
+            { src: logoKantonal, alt: "Basellandschaftliche Kantonalbank" },
+            { src: logoLocal, alt: "Local" },
+            { src: logoFreitag, alt: "Freitag" },
+            { src: logoLiip, alt: "Liip" },
+            { src: logoOpendata, alt: "Opendata.swiss" },
+            { src: logo20min, alt: "20 Minuten" },
+            { src: logoRappold, alt: "Rappold Köhli" },
+            { src: logoHwz, alt: "HWZ" },
+          ].map((logo) => (
+            <div key={logo.alt} className="flex items-center justify-center px-4 py-2 opacity-60 hover:opacity-100 transition-opacity duration-300">
+              <img src={logo.src} alt={logo.alt} className="h-10 w-auto" />
+            </div>
+          ))}
         </div>
       </section>
 
