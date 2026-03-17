@@ -8,8 +8,8 @@ const About = () => {
     <div className="min-h-screen bg-background" ref={ref}>
       {/* Hero */}
       <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
-        <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16">
-          <div className="max-w-4xl scroll-reveal">
+        <div className="grid md:grid-cols-2 gap-16 md:gap-24">
+          <div className="scroll-reveal flex flex-col justify-center">
             <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
               About
             </p>
@@ -17,11 +17,11 @@ const About = () => {
               I like making sense of things
             </h1>
           </div>
-          <div className="scroll-reveal scroll-reveal-delay-1 shrink-0">
+          <div className="scroll-reveal scroll-reveal-delay-1">
             <img
               src={ritaProfile}
               alt="Rita Barracha"
-              className="w-56 h-56 md:w-80 md:h-80 object-cover object-center"
+              className="w-full aspect-square object-cover object-center"
             />
           </div>
         </div>
