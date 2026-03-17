@@ -117,7 +117,7 @@ const Work = () => {
             { src: logoRappold, alt: "Rappold Köhli" },
             { src: logoHwz, alt: "HWZ" },
           ].map((logo) => (
-            <div key={logo.alt} className="flex items-center justify-center p-8 md:p-10 hover:opacity-40 transition-opacity duration-300">
+            <div key={logo.alt} className="flex items-center justify-center p-4 md:p-6 hover:opacity-80 transition-opacity duration-300">
               <img src={logo.src} alt={logo.alt} className="w-full h-auto" />
             </div>
           ))}
