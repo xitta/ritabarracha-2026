@@ -87,6 +87,31 @@ const Work = () => {
         </div>
       </section>
 
+      {/* Client Logos */}
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
+          Selected Clients
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center">
+          {[
+            { src: logoMigros, alt: "Migros" },
+            { src: logoEnergie360, alt: "Energie 360°" },
+            { src: logoKantonal, alt: "Basellandschaftliche Kantonalbank" },
+            { src: logoLocal, alt: "Local" },
+            { src: logoFreitag, alt: "Freitag" },
+            { src: logoLiip, alt: "Liip" },
+            { src: logoOpendata, alt: "Opendata.swiss" },
+            { src: logo20min, alt: "20 Minuten" },
+            { src: logoRappold, alt: "Rappold Köhli" },
+            { src: logoHwz, alt: "HWZ" },
+          ].map((logo) => (
+            <div key={logo.alt} className="flex items-center justify-center px-4 py-2 opacity-60 hover:opacity-100 transition-opacity duration-300">
+              <img src={logo.src} alt={logo.alt} className="h-10 w-auto" />
+            </div>
+          ))}
+        </div>
+      </section>
+
       <div className="border-t border-border" />
 
       <section id="case-studies" className="container mx-auto px-4 py-24 md:py-32">
