@@ -93,25 +93,22 @@ const About = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-[1fr_1fr_auto] gap-4 py-5 border-b border-border"
+              className="grid grid-cols-2 gap-8 py-6 border-b border-border"
             >
-              <div>
-                <span className="text-sm font-medium text-foreground">{item.role}</span>
-              </div>
-              <div>
+              <span className="text-sm font-medium text-foreground">{item.role}</span>
+              <div className="text-sm">
                 {item.link ? (
-                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-sm text-foreground/60 link-underline pb-0.5">{item.company}</a>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-foreground/60 link-underline pb-0.5">{item.company}</a>
                 ) : (
-                  <span className="text-sm text-foreground/60">{item.company}</span>
+                  <span className="text-foreground/60">{item.company}</span>
                 )}
                 {item.desc && (
-                  <span className="text-sm text-foreground/40"> · {item.desc}</span>
+                  <span className="text-foreground/40"> · {item.desc}</span>
                 )}
                 {item.location && (
-                  <span className="text-sm text-foreground/30"> ({item.location})</span>
+                  <span className="text-foreground/30"> ({item.location})</span>
                 )}
               </div>
-              <span className="text-sm text-foreground/40 text-right whitespace-nowrap">{item.period}</span>
             </div>
           ))}
         </div>
