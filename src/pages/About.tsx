@@ -80,12 +80,12 @@ const About = () => {
         </h2>
         <div className="space-y-0">
           {[
-            { role: "Creative Strategist & Experience Designer", company: "Rita Barracha da Silva", desc: "Omnichannel experiences for brands, services and products", location: "Zürich, CH", period: "2020 — Now" },
-            { role: "Co-Founder & Experience Strategist", company: "naut GmbH", link: "http://www.naut.ch/", desc: "Interactive installations that connect the physical reality with the digital world", location: "Zürich, CH", period: "2018 — 2020\n2023 — Now" },
+            { role: "Creative Strategist & Experience Designer", company: "Rita Barracha da Silva", desc: "Omnichannel Experiences", location: "Zürich, CH", period: "2020 — Now" },
+            { role: "Co-Founder & Experience Strategist", company: "naut GmbH", link: "http://www.naut.ch/", desc: "Creative & Tech Studio", location: "Zürich, CH", period: "2018 — 2020\n2023 — Now" },
             { role: "Experience Director", company: "melt GmbH", link: "http://www.melt.ch/", desc: "Narrative Experience Design", location: "Zürich, CH", period: "2017 — 2018" },
-            { role: "Creative Strategist & User Experience Lead", company: "Liip AG", link: "http://www.liip.ch/", desc: "Digital Progress", location: "Zürich, CH", period: "2013 — 2018" },
-            { role: "Multimedia Designer", company: "Process Brand Evolution AG", link: "http://process-group.com/", desc: "Branding and Design Consultancy", location: "Zürich, CH", period: "2012 — 2013" },
-            { role: "Interaction Designer & Researcher", company: "YDreams", link: "http://www.ydreams.com/", desc: "Augmented interactive installations, environmental sensing and mobile computing", location: "Lisbon, PT", period: "2011 — 2012" },
+            { role: "Creative Strategist & User Experience Lead", company: "Liip AG", link: "http://www.liip.ch/", desc: "Digital Agency", location: "Zürich, CH", period: "2013 — 2018" },
+            { role: "Multimedia Designer", company: "Process Brand Evolution AG", link: "http://process-group.com/", desc: "Branding Consultancy", location: "Zürich, CH", period: "2012 — 2013" },
+            { role: "Interaction Designer & Researcher", company: "YDreams", link: "http://www.ydreams.com/", desc: "Interactive Technology", location: "Lisbon, PT", period: "2011 — 2012" },
             { role: "Visual Designer", company: "Museum of the Portuguese Presidency", location: "Lisbon, PT", period: "2008 — 2009" },
             { role: "Films on Art Jury", company: "Temps d'Images Festival", location: "Lisbon, PT", period: "2008 — 2009" },
             { role: "Photographer", company: "Miguel Palma Studio", location: "Lisbon, PT", period: "2008" },
