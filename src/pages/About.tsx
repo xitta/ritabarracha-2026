@@ -1,4 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import ritaProfile from "@/assets/rita-profile.png";
 
 const About = () => {
   const ref = useScrollReveal();
