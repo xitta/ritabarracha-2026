@@ -196,8 +196,11 @@ const About = () => {
           href="mailto:hello@ritabarracha.com"
           className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
         >
-          Start a Conversation
+          Get in Touch
         </a>
+        <p className="text-xs text-muted-foreground mt-16">
+          © 2026 Rita Barracha, Creative Strategist & Experience Designer
+        </p>
       </section>
     </div>
   );
