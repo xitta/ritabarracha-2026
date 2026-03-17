@@ -85,10 +85,10 @@ const Work = () => {
       <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
         <div className="max-w-4xl">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
-            Selected Work
+            Case Studies
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            Selected Work
+            Work
           </h1>
         </div>
       </section>
