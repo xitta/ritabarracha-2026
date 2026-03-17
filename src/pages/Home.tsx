@@ -113,6 +113,9 @@ const Home = () => {
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
           Let's create something meaningful
         </h2>
+        <p className="text-base text-muted-foreground mb-10">
+          I'm your hybrid partner for this unknown future.
+        </p>
         <div className="flex gap-8 justify-center">
           <Link
             to="/work"
