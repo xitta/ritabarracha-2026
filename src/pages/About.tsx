@@ -73,6 +73,33 @@ const About = () => {
 
       <div className="border-t border-border" />
 
+      {/* Experience */}
+      <section className="container mx-auto px-4 py-24 md:py-32">
+        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
+          Experience & Education
+        </h2>
+        <div className="space-y-0">
+          {[
+            { role: "Senior Experience Designer", company: "Digital Agency", period: "2021 — Present" },
+            { role: "UX Strategist", company: "Tech Startup", period: "2019 — 2021" },
+            { role: "Product Designer", company: "Innovation Lab", period: "2017 — 2019" },
+            { role: "MA Interaction Design", company: "Royal College of Art", period: "2015 — 2017" },
+            { role: "BA Communication Design", company: "University of Lisbon", period: "2011 — 2015" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="grid grid-cols-3 py-5 border-b border-border"
+            >
+              <span className="text-sm font-medium text-foreground">{item.role}</span>
+              <span className="text-sm text-foreground/60">{item.company}</span>
+              <span className="text-sm text-foreground/40 text-right">{item.period}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="border-t border-border" />
+
       {/* Awards */}
       <section className="container mx-auto px-4 py-24 md:py-32">
         <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
@@ -98,33 +125,6 @@ const About = () => {
               <span className="text-sm font-medium text-foreground">{item.award}</span>
               <span className="text-sm text-foreground/60 hidden md:block">{item.detail}</span>
               <span className="text-sm text-foreground/40 text-right">{item.project}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <div className="border-t border-border" />
-
-      {/* Experience */}
-      <section className="container mx-auto px-4 py-24 md:py-32">
-        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
-          Experience & Education
-        </h2>
-        <div className="space-y-0">
-          {[
-            { role: "Senior Experience Designer", company: "Digital Agency", period: "2021 — Present" },
-            { role: "UX Strategist", company: "Tech Startup", period: "2019 — 2021" },
-            { role: "Product Designer", company: "Innovation Lab", period: "2017 — 2019" },
-            { role: "MA Interaction Design", company: "Royal College of Art", period: "2015 — 2017" },
-            { role: "BA Communication Design", company: "University of Lisbon", period: "2011 — 2015" },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="grid grid-cols-3 py-5 border-b border-border"
-            >
-              <span className="text-sm font-medium text-foreground">{item.role}</span>
-              <span className="text-sm text-foreground/60">{item.company}</span>
-              <span className="text-sm text-foreground/40 text-right">{item.period}</span>
             </div>
           ))}
         </div>
