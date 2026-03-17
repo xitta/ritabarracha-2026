@@ -1,4 +1,5 @@
 import CaseStudy from "@/components/CaseStudy";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 import logo20min from "@/assets/logos/20min.svg";
 import logoEnergie360 from "@/assets/logos/energie360.svg";
@@ -78,12 +79,13 @@ const caseStudies = [
 ];
 
 const Work = () => {
+  const ref = useScrollReveal();
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" ref={ref}>
       {/* Page Header */}
       <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl scroll-reveal">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
             Work
           </p>
@@ -95,10 +97,10 @@ const Work = () => {
 
       {/* Client Logos */}
       <section className="container mx-auto px-4 py-16 md:py-24">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
+        <p className="scroll-reveal text-xs uppercase tracking-widest text-muted-foreground mb-12">
           Selected Clients
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 items-center scroll-reveal">
           {[
             { src: logoMigros, alt: "Migros" },
             { src: logoEnergie360, alt: "Energie 360°" },
@@ -135,18 +137,20 @@ const Work = () => {
       <div className="border-t border-border" />
 
       <section className="container mx-auto px-4 py-24 md:py-32 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
-          Got a project in mind?
-        </h2>
-        <a
-          href="mailto:hello@ritabarracha.com"
-          className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
-        >
-          Let's Talk
-        </a>
-        <p className="text-xs text-muted-foreground mt-16">
-          © 2026 Rita Barracha, Creative Strategist & Experience Designer
-        </p>
+        <div className="scroll-reveal">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
+            Got a project in mind?
+          </h2>
+          <a
+            href="mailto:hello@ritabarracha.com"
+            className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
+          >
+            Let's Talk
+          </a>
+          <p className="text-xs text-muted-foreground mt-16">
+            © 2026 Rita Barracha, Creative Strategist & Experience Designer
+          </p>
+        </div>
       </section>
     </div>
   );

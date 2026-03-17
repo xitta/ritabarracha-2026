@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Home = () => {
+  const ref = useScrollReveal();
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" ref={ref}>
       {/* Hero */}
       <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
-        <div className="max-w-5xl">
+        <div className="max-w-5xl scroll-reveal">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-8">
             I'm your hybrid partner for this unknown future.
           </h1>
@@ -20,12 +23,12 @@ const Home = () => {
       {/* Manifesto */}
       <section className="container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-3xl">
-          <p className="text-xl md:text-2xl font-medium leading-relaxed mb-12 text-foreground/90">
+          <p className="scroll-reveal text-xl md:text-2xl font-medium leading-relaxed mb-12 text-foreground/90">
             Future isn't doomed, just a bit… wild.
           </p>
 
           <div className="space-y-8 text-base leading-relaxed text-foreground/70">
-            <p>
+            <p className="scroll-reveal">
               With every scroll, swipe, and pixel, technology reshapes the world
               around us, creating a landscape that's at once digital and physical,
               immersive and intangible, deeply fascinating and slightly unnerving.
@@ -34,7 +37,7 @@ const Home = () => {
               adapt to our behaviors.
             </p>
 
-            <p>
+            <p className="scroll-reveal">
               Technologies like Artificial Intelligence, Augmented and Virtual
               Realities, and multisensory design are the tools helping us build
               experiences that are richer and more responsive, aligning with
@@ -43,17 +46,16 @@ const Home = () => {
               between minds and machines.
             </p>
 
-            <p className="text-xl md:text-2xl font-medium text-foreground/90">
+            <p className="scroll-reveal text-xl md:text-2xl font-medium text-foreground/90">
               But let's keep it grounded.
             </p>
 
-            <p>
+            <p className="scroll-reveal">
               My mission is simple: make life feel lighter, brighter, and a bit
               more delightful. I partner with brands, services, and products ready
               to bring creativity and strategy into alignment, crafting experiences
               that are thoughtful, memorable, and human-focused.
             </p>
-
           </div>
         </div>
       </section>
@@ -76,8 +78,8 @@ const Home = () => {
               title: "Delivery",
               items: ["Product Experience", "Prototyping & Testing", "Project Management", "Agile & Scrum"],
             },
-          ].map((col) => (
-            <div key={col.title}>
+          ].map((col, i) => (
+            <div key={col.title} className={`scroll-reveal scroll-reveal-delay-${i + 1}`}>
               <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
                 {col.title}
               </h3>
@@ -97,26 +99,29 @@ const Home = () => {
 
       {/* CTA */}
       <section className="container mx-auto px-4 py-24 md:py-32 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
-          Let's create something meaningful
-        </h2>
-        <div className="flex gap-8 justify-center">
-          <Link
-            to="/work"
-            className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
-          >
-            View Work
-          </Link>
-          <a
-            href="mailto:hello@ritabarracha.com"
-            className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
-          >
-            Get in Touch
-          </a>
+        <div className="scroll-reveal">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
+            Let's create something meaningful
+          </h2>
+          <div className="flex gap-8 justify-center">
+            <Link
+              to="/work"
+              onClick={() => window.scrollTo(0, 0)}
+              className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
+            >
+              View Work
+            </Link>
+            <a
+              href="mailto:hello@ritabarracha.com"
+              className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
+            >
+              Get in Touch
+            </a>
+          </div>
+          <p className="text-xs text-muted-foreground mt-16">
+            © 2026 Rita Barracha, Creative Strategist & Experience Designer
+          </p>
         </div>
-        <p className="text-xs text-muted-foreground mt-16">
-          © 2026 Rita Barracha, Creative Strategist & Experience Designer
-        </p>
       </section>
     </div>
   );

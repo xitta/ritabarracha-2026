@@ -1,9 +1,13 @@
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
 const About = () => {
+  const ref = useScrollReveal();
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" ref={ref}>
       {/* Hero */}
       <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl scroll-reveal">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
             About
           </p>
@@ -18,7 +22,7 @@ const About = () => {
       {/* Bio */}
       <section className="container mx-auto px-4 py-24 md:py-32">
         <div className="grid md:grid-cols-2 gap-16 md:gap-24">
-          <div>
+          <div className="scroll-reveal">
             <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
               Background
             </h2>
@@ -43,7 +47,7 @@ const About = () => {
             </div>
           </div>
 
-          <div>
+          <div className="scroll-reveal scroll-reveal-delay-2">
             <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
               Philosophy
             </h2>
@@ -75,7 +79,7 @@ const About = () => {
 
       {/* Experience */}
       <section className="container mx-auto px-4 py-24 md:py-32">
-        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
+        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12 scroll-reveal">
           Experience & Education
         </h2>
         <div className="space-y-0">
@@ -93,7 +97,8 @@ const About = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-[100px_1fr_1fr] gap-4 py-6 border-b border-border"
+              className="grid grid-cols-[100px_1fr_1fr] gap-4 py-6 border-b border-border scroll-reveal"
+              style={{ transitionDelay: `${index * 0.05}s` }}
             >
               <span className="text-sm text-foreground/40 whitespace-pre-line">{item.period}</span>
               <span className="text-sm font-medium text-foreground">{item.role}</span>
@@ -114,7 +119,7 @@ const About = () => {
           ))}
         </div>
 
-        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12 mt-24">
+        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12 mt-24 scroll-reveal">
           Education
         </h2>
         <div className="space-y-0">
@@ -131,7 +136,8 @@ const About = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-[100px_1fr_1fr] gap-4 py-6 border-b border-border"
+              className="grid grid-cols-[100px_1fr_1fr] gap-4 py-6 border-b border-border scroll-reveal"
+              style={{ transitionDelay: `${index * 0.05}s` }}
             >
               <span className="text-sm text-foreground/40 whitespace-pre-line">{item.period}</span>
               <span className="text-sm font-medium text-foreground">{item.role}</span>
@@ -157,7 +163,7 @@ const About = () => {
 
       {/* Awards */}
       <section className="container mx-auto px-4 py-24 md:py-32">
-        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
+        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12 scroll-reveal">
           Awards & Recognition
         </h2>
         <div className="space-y-0">
@@ -174,7 +180,8 @@ const About = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-[60px_1fr_1fr] md:grid-cols-[80px_1fr_1fr_1fr] py-5 border-b border-border gap-4"
+              className="grid grid-cols-[60px_1fr_1fr] md:grid-cols-[80px_1fr_1fr_1fr] py-5 border-b border-border gap-4 scroll-reveal"
+              style={{ transitionDelay: `${index * 0.05}s` }}
             >
               <span className="text-sm text-foreground/40">{item.year}</span>
               <span className="text-sm font-medium text-foreground">{item.award}</span>
@@ -189,18 +196,20 @@ const About = () => {
 
       {/* Contact */}
       <section className="container mx-auto px-4 py-24 md:py-32 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
-          Let's work together
-        </h2>
-        <a
-          href="mailto:hello@ritabarracha.com"
-          className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
-        >
-          Get in Touch
-        </a>
-        <p className="text-xs text-muted-foreground mt-16">
-          © 2026 Rita Barracha, Creative Strategist & Experience Designer
-        </p>
+        <div className="scroll-reveal">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
+            Let's work together
+          </h2>
+          <a
+            href="mailto:hello@ritabarracha.com"
+            className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
+          >
+            Get in Touch
+          </a>
+          <p className="text-xs text-muted-foreground mt-16">
+            © 2026 Rita Barracha, Creative Strategist & Experience Designer
+          </p>
+        </div>
       </section>
     </div>
   );
