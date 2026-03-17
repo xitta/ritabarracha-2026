@@ -1,5 +1,16 @@
 import CaseStudy from "@/components/CaseStudy";
 
+import logo20min from "@/assets/logos/20min.svg";
+import logoEnergie360 from "@/assets/logos/energie360.svg";
+import logoFreitag from "@/assets/logos/freitag.svg";
+import logoHwz from "@/assets/logos/hwz.svg";
+import logoKantonal from "@/assets/logos/kantonal.svg";
+import logoLiip from "@/assets/logos/liip.svg";
+import logoLocal from "@/assets/logos/local.svg";
+import logoMigros from "@/assets/logos/migros.svg";
+import logoOpendata from "@/assets/logos/opendata.svg";
+import logoRappold from "@/assets/logos/rappold.svg";
+
 import case1Cover from "@/assets/case1-cover.jpg";
 import case1Img1 from "@/assets/case1-img1.jpg";
 import case1Img2 from "@/assets/case1-img2.jpg";
