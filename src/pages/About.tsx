@@ -93,8 +93,9 @@ const About = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-2 gap-8 py-6 border-b border-border"
+              className="grid grid-cols-[100px_1fr_1fr] gap-4 py-6 border-b border-border"
             >
+              <span className="text-sm text-foreground/40">{item.period}</span>
               <span className="text-sm font-medium text-foreground">{item.role}</span>
               <div className="text-sm">
                 {item.link ? (
