@@ -73,6 +73,38 @@ const About = () => {
 
       <div className="border-t border-border" />
 
+      {/* Awards */}
+      <section className="container mx-auto px-4 py-24 md:py-32">
+        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
+          Awards & Recognition
+        </h2>
+        <div className="space-y-0">
+          {[
+            { year: "2018", award: "German Design Award", detail: "Excellence Communications Design Web — Winner", project: "Liip AG / Freitag - Neo" },
+            { year: "2017", award: "Best of Swiss Web Award (x6)", detail: "Creation Gold · Business Silver · Mobile Web Bronze · Marketing Bronze · Master Award · Usability Shortlist", project: "Liip AG / Freitag - Neo" },
+            { year: "2017", award: "Swiss E-Commerce Award", detail: "eCommerce Spezialpreis", project: "Liip AG / Freitag - Neo" },
+            { year: "2016", award: "Best of Swiss Web Award (x3)", detail: "Innovation Silver · Public Affairs Bronze & Silver", project: "Liip AG / Open Government Data & WeCollector" },
+            { year: "2015", award: "Google / NZZ Sonderpreis", detail: "VR-Hackday", project: "Living Stories" },
+            { year: "2014", award: "Best of Swiss Web Award", detail: "Public Affairs Silver", project: "Opendata Admin Portal" },
+            { year: "2013", award: "Red Dot Award", detail: "Communication Design Award", project: "Process AG / Rappold Köhli" },
+            { year: "2012", award: "Leonardo da Vinci Scholarship", detail: "Funded internship as Multimedia Designer", project: "Process AG, Zurich" },
+            { year: "2007", award: "Alfama Digital Photography Marathon", detail: "Best PhotoSet — 2nd Prize", project: "Org APPA" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="grid grid-cols-[60px_1fr_1fr] md:grid-cols-[80px_1fr_1fr_1fr] py-5 border-b border-border gap-4"
+            >
+              <span className="text-sm text-foreground/40">{item.year}</span>
+              <span className="text-sm font-medium text-foreground">{item.award}</span>
+              <span className="text-sm text-foreground/60 hidden md:block">{item.detail}</span>
+              <span className="text-sm text-foreground/40 text-right">{item.project}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="border-t border-border" />
+
       {/* Experience */}
       <section className="container mx-auto px-4 py-24 md:py-32">
         <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
