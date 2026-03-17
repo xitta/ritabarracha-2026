@@ -54,19 +54,6 @@ const Home = () => {
               that are thoughtful, memorable, and human-focused.
             </p>
 
-            <p className="text-xl md:text-2xl font-medium text-foreground/90">
-              And here's the paradox:
-            </p>
-
-            <p>
-              Today's technology gives us unprecedented answers to human needs,
-              yet it also creates an endless loop of new challenges. It's a
-              virtuous cycle where breakthroughs lead to better solutions, which
-              spark more questions. Will there ever be a limit to this cycle?
-              Maybe not. But that's the thrill of it — there's always another
-              "what if?" and another chance to create something meaningful,
-              immersive, and, hopefully, a little bit magical!
-            </p>
           </div>
         </div>
       </section>
