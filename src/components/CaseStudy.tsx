@@ -87,9 +87,11 @@ const CaseStudy = ({
         <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
           Project Summary
         </h3>
-        <p className="text-base leading-relaxed text-foreground/80 max-w-3xl">
-          {summary}
-        </p>
+        <div className="text-base leading-relaxed text-foreground/80 max-w-3xl space-y-4">
+          {summary.split('\n\n').map((paragraph, i) => (
+            <p key={i}>{paragraph}</p>
+          ))}
+        </div>
       </div>
     </article>
   );
