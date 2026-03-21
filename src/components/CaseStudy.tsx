@@ -2,6 +2,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 interface CaseStudyProps {
   title: string;
+  tagline?: string;
   category: string;
   problem: string;
   solution: string;
@@ -12,6 +13,7 @@ interface CaseStudyProps {
 
 const CaseStudy = ({
   title,
+  tagline,
   category,
   problem,
   solution,
@@ -31,6 +33,11 @@ const CaseStudy = ({
         <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight">
           {title}
         </h2>
+        {tagline && (
+          <p className="mt-6 text-base leading-relaxed text-foreground/70 max-w-2xl whitespace-pre-line">
+            {tagline}
+          </p>
+        )}
       </div>
 
       {/* Cover Image */}
