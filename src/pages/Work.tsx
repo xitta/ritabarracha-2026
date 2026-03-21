@@ -41,14 +41,15 @@ import case3Img5 from "@/assets/case3-img5.jpg";
 
 const caseStudies = [
   {
-    title: "DataFlow Analytics Platform",
+    title: "herbling by Ricola",
+    tagline: "Naturally healthy Ricola herbling – a holistic vitalizing drink, delighting all your senses.\nMade with rich and pure Swiss Alpine herbs,\nfermented naturally to create a carefully crafted brew, enjoyed everyday.",
     category: "Product Design & UX",
     problem:
-      "Enterprise teams struggled with fragmented analytics tools, leading to inefficient decision-making and data silos across departments. Users reported spending 40% of their time switching between different platforms and manually consolidating reports.",
+      "People want to drink something special — but not alcohol anymore. Yet the alternatives disappoint: alcohol-free wines lose their flavour through artificial extraction, juices feel cheap, and water kills the moment. Health-conscious consumers, pregnant women, drivers, and the sober-curious deserve better. The market is ready. The right drink just didn't exist yet.",
     solution:
-      "We designed a unified analytics dashboard with intelligent data visualization, automated reporting workflows, and real-time collaboration features. The platform integrated seamlessly with existing tools while providing a single source of truth for all business metrics.",
+      "herbling by Ricola is a naturally sparkling herbal tea — low in sugar, alcohol-free, and crafted from Ricola's Swiss alpine herb selection with a unique ripening refinement. Light, refreshing, and premium — something worth serving at a dinner table, worth pairing with food, worth mixing with. Built on what Ricola already does best: natural ingredients, regional roots, and a trusted brand. Designed for real occasions. Made to be loved.",
     summary:
-      "Delivered a comprehensive analytics platform that reduced reporting time by 65% and increased data-driven decisions by 80%. The intuitive interface received a 4.8/5 user satisfaction score, and the platform now serves over 10,000 daily active users across 200+ companies.",
+      "herbling is an early-stage innovation project born inside Ricola, developing a premium sparkling herbal drink for health and sustainability-conscious consumers — LOHAS — in Switzerland and beyond. The team behind it: Rita the Hipster (experience designer), Luca the Hacker (food product developer), and Tatjana the Hustler, supported by mentors in herb competence, innovation, and brand building, and funded with 70k CHF across project budget and freelance investment.\n\nThe team built iteratively — taste, brand, storytelling, packaging, and sales channels all tested in short cycles with real consumers and experts. Early results were encouraging: at a Bühler field test, 16 out of 27 tasters confirmed purchase intent on the spot. Social media buzz appeared organically. A sommelier, a food innovation CTO, and a Michelin-level dining scene were already paying attention.\n\nThe addressable market across ice tea, carbonates, and non-alcoholic wine and beer in Switzerland alone is estimated at 176M CHF — with a target of 30M CHF revenue by 2024 through craft segment penetration and a direct-to-consumer model. herbling is not there yet. But it's closer than yesterday.",
     coverImage: case1Cover,
     images: [case1Img1, case1Img2, case1Img3, case1Img4, case1Img5],
   },
