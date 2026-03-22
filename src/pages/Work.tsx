@@ -55,14 +55,15 @@ const caseStudies = [
     images: [case1Img1, case1Img2, case1Img3, case1Img4, case1Img5],
   },
   {
-    title: "E-Commerce Conversion Optimization",
+    title: "Migros.ch rebranding and omnichannel integration",
     category: "Digital Transformation",
     problem:
-      "An established online retailer faced declining conversion rates and high cart abandonment (78%). Their outdated website interface confused customers, while complex checkout flows and poor mobile experience drove potential buyers away.",
+      "Migros was operating a fragmented digital landscape: multiple sub-brands, separate web presences, and no unified experience. Customers navigating migros.ch and those shopping on LeShop faced entirely different environments, yet they were interacting with Switzerland's largest retailer. The ambition was clear — one platform, one brand — but getting there required fundamental decisions about brand architecture, UX, and the sequencing of change at scale.",
     solution:
-      "We redesigned the entire customer journey with mobile-first principles, simplified navigation, optimized product discovery with AI-powered recommendations, and streamlined the checkout process to just 3 steps. Enhanced product photography and trust signals were integrated throughout.",
+      "My involvement spanned two phases: first supporting the brand transition from LeShop.ch to Migros Online, then envisioning the full merger into migros.ch. The harder challenge was designing a platform that could coherently serve two distinct shopping modes — online delivery and physical stores — under a single experience. Advisory work centred on brand architecture, information structure, and aligning cross-functional teams around a shared digital vision.",
     summary:
-      "The redesign increased conversion rates by 156%, reduced cart abandonment to 32%, and boosted mobile sales by 240%. Average order value grew by 35%, and customer satisfaction scores improved from 3.2 to 4.7 stars. The project delivered $4.2M in additional revenue within the first quarter.",
+      "This engagement represents one of the most significant digital consolidations in Swiss retail, unfolding over several years and multiple brand identities. Starting with the LeShop to Migros Online rebrand, the work progressively built toward a fuller vision: a single digital platform capable of serving both online grocery and the broader physical store experience under one coherent brand.
+Strategic design at this level is less about individual screens and more about creating the conditions for good decisions to be made consistently — across teams, over time, and at scale. The result is migros.ch as it stands today: the unified digital home of Switzerland's largest retailer, serving millions of customers across online and offline touchpoints.",
     coverImage: case2Cover,
     images: [case2Img1, case2Img2, case2Img3, case2Img4, case2Img5],
   },
