@@ -44,7 +44,7 @@ const caseStudies = [
     title: "herbling by Ricola",
     tagline:
       "Naturally healthy Ricola herbling – a holistic vitalizing drink, delighting all your senses.\nMade with rich and pure Swiss Alpine herbs,\nfermented naturally to create a carefully crafted brew, enjoyed everyday.",
-    category: "Product Design & UX",
+    category: "Product Design",
     problem:
       "People want to drink something special, but not alcohol anymore. Yet the alternatives disappoint: alcohol-free wines lose their flavour through artificial extraction, juices feel cheap, and water kills the moment. Health-conscious consumers, pregnant women, drivers, and the sober-curious deserve better. The market is ready. The right drink just didn't exist yet.",
     solution:
@@ -67,14 +67,17 @@ const caseStudies = [
     images: [case2Img1, case2Img2, case2Img3, case2Img4, case2Img5],
   },
   {
-    title: "EduTech Learning Platform",
-    category: "Educational Technology",
+    title: "FREITAG — Where Commerce Meets Character",
+    category: "Brand Experience",
     problem:
-      "Educational institutions struggled with outdated learning management systems that failed to engage students. Teachers reported low student participation, while students found the interface confusing and demotivating. Accessibility was limited for students with disabilities.",
+      "FREITAG's greatest strength was also its biggest digital challenge. Every bag, cut from used truck tarpaulins, is a one-off — which means a standard catalogue approach simply doesn't work. The existing platform couldn't bridge the gap between product and narrative, nor reconcile two radically different material philosophies: indestructible tarp bags built to last a lifetime, and the f-abric line, fully biodegradable. One storefront needed to honour both without contradiction.",
     solution:
-      "We created an interactive learning platform with gamification elements, adaptive learning paths, video content integration, and comprehensive accessibility features. Teachers gained powerful analytics dashboards while students enjoyed personalized learning experiences with progress tracking and achievement systems.",
+      "The project began with deep user research — data analysis, personas, and flow mapping — to understand not just how customers shopped, but how they connected with FREITAG as a brand. Drupal Commerce was chosen for its ability to combine a traditional web catalogue with advanced content capabilities, while custom APIs automated the import of each unique product, matching it with imagery and publishing it live — then unpublishing it the moment it sold. Authors gained true creative freedom to tell rich stories around materials and sustainability without ever losing sight of the sale.",
     summary:
-      "Student engagement increased by 215%, with course completion rates rising from 34% to 78%. Teacher workload for content management decreased by 50%, and the platform achieved WCAG 2.1 AAA accessibility standards. Now used by 500+ schools serving 150,000 students globally.",
+      "It all started with a pitch — a creative and convincing one. Getting into a room with the FREITAG brothers was an achievement in itself; collaborating with them was something else entirely.
+As part of the Liip team, I worked on one of the most complex and rewarding projects of my career. The challenge wasn't just technical — it was conceptual. How do you sell something that, by design, can only ever be sold once? How do you tell the story of a brand built on indestructibility while also championing biodegradability? And how do you give a creative, opinionated brand the digital freedom to keep pushing limits, without ever missing a sales opportunity?
+The answer lived in the architecture. Flexible page-building tools gave authors the power to expand storytelling well beyond standard product pages — weaving in material origins, sustainability philosophy, and brand narrative — while automation handled the complexity behind the scenes: hundreds of unique products flowing in from the ERP, matched to imagery, published and unpublished in real time.
+The result was a platform that felt as considered and original as the products themselves. Maintenance costs dropped by 50%, and mobile conversion rose by 25%. But beyond the numbers, FREITAG finally had a digital home worthy of the brand — and I had the privilege of helping build it.",
     coverImage: case3Cover,
     images: [case3Img1, case3Img2, case3Img3, case3Img4, case3Img5],
   },
