@@ -24,7 +24,7 @@ const CaseStudy = ({
   const ref = useScrollReveal();
 
   return (
-    <article className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border/40 first:border-t-0 first:pt-0" ref={ref}>
+    <article className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border first:border-t-0 first:pt-0" ref={ref}>
       {/* Header */}
       <div className="mb-10 scroll-reveal">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
@@ -83,7 +83,7 @@ const CaseStudy = ({
       </div>
 
       {/* Summary */}
-      <div className="border-t border-border pt-10 scroll-reveal">
+      <div className="pt-10 scroll-reveal">
         <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
           Project Summary
         </h3>
