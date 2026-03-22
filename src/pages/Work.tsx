@@ -42,7 +42,8 @@ import case3Img5 from "@/assets/case3-img5.jpg";
 const caseStudies = [
   {
     title: "herbling by Ricola",
-    tagline: "Naturally healthy Ricola herbling – a holistic vitalizing drink, delighting all your senses.\nMade with rich and pure Swiss Alpine herbs,\nfermented naturally to create a carefully crafted brew, enjoyed everyday.",
+    tagline:
+      "Naturally healthy Ricola herbling – a holistic vitalizing drink, delighting all your senses.\nMade with rich and pure Swiss Alpine herbs,\nfermented naturally to create a carefully crafted brew, enjoyed everyday.",
     category: "Product Design & UX",
     problem:
       "People want to drink something special — but not alcohol anymore. Yet the alternatives disappoint: alcohol-free wines lose their flavour through artificial extraction, juices feel cheap, and water kills the moment. Health-conscious consumers, pregnant women, drivers, and the sober-curious deserve better. The market is ready. The right drink just didn't exist yet.",
@@ -87,20 +88,16 @@ const Work = () => {
       {/* Page Header */}
       <section className="container mx-auto px-4 pt-32 pb-20 md:pt-44 md:pb-28">
         <div className="max-w-4xl scroll-reveal">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">
-            Work
-          </p>
+          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">Work</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            Bridging the high-tech with the human touch
+            Spreading empathy
           </h1>
         </div>
       </section>
 
       {/* Client Logos */}
       <section className="container mx-auto px-4 py-16 md:py-24">
-        <p className="scroll-reveal text-xs uppercase tracking-widest text-muted-foreground mb-12">
-          Selected Clients
-        </p>
+        <p className="scroll-reveal text-xs uppercase tracking-widest text-muted-foreground mb-12">Selected Clients</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 items-center scroll-reveal">
           {[
             { src: logoMigros, alt: "Migros" },
@@ -120,7 +117,10 @@ const Work = () => {
             { src: logoRappold, alt: "Rappold Köhli" },
             { src: logoHwz, alt: "HWZ" },
           ].map((logo) => (
-            <div key={logo.alt} className="flex items-center justify-center p-4 md:p-6 hover:opacity-80 transition-opacity duration-300">
+            <div
+              key={logo.alt}
+              className="flex items-center justify-center p-4 md:p-6 hover:opacity-80 transition-opacity duration-300"
+            >
               <img src={logo.src} alt={logo.alt} className="w-full h-auto" />
             </div>
           ))}
@@ -139,9 +139,7 @@ const Work = () => {
 
       <section className="container mx-auto px-4 py-24 md:py-32 text-center">
         <div className="scroll-reveal">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
-            Got a project in mind?
-          </h2>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">Got a project in mind?</h2>
           <a
             href="mailto:hello@ritabarracha.com"
             className="link-underline text-sm uppercase tracking-widest font-medium pb-1"
