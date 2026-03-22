@@ -34,7 +34,7 @@ const CaseStudy = ({
           {title}
         </h2>
         {tagline && (
-          <p className="mt-6 text-base leading-relaxed text-foreground/70 max-w-2xl whitespace-pre-line">
+          <p className="mt-6 text-xl md:text-2xl leading-snug font-medium text-foreground/90 max-w-2xl whitespace-pre-line">
             {tagline}
           </p>
         )}
