@@ -83,7 +83,7 @@ const CaseStudy = ({
       </div>
 
       {/* Summary */}
-      <div className="border-t border-border pt-10 scroll-reveal">
+      <div className="pt-10 scroll-reveal">
         <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
           Project Summary
         </h3>
