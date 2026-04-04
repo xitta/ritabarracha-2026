@@ -77,7 +77,7 @@ const caseStudies = [
     summary:
       "It all started with a pitch, a creative and convincing one. Getting into a room with the FREITAG brothers was an achievement in itself; collaborating with them was something else entirely.\n\nAs part of the Liip team, I worked on one of the most complex and rewarding projects of my career. The challenge wasn't just technical, it was conceptual. How do you sell something that, by design, can only ever be sold once? How do you tell the story of a brand built on indestructibility while also championing biodegradability? And how do you give a creative, opinionated brand the digital freedom to keep pushing limits, without ever missing a sales opportunity?\n\nThe answer lived in the architecture. Flexible page-building tools gave authors the power to expand storytelling well beyond standard product pages, weaving in material origins, sustainability philosophy, and brand narrative, while automation handled the complexity behind the scenes: hundreds of unique products flowing in from the ERP, matched to imagery, published and unpublished in real time.\n\nThe result was a platform that felt as considered and original as the products themselves. Maintenance costs dropped by 50%, and mobile conversion rose by 25%. But beyond the numbers, FREITAG finally had a digital home worthy of the brand, and I had the privilege of helping build it.",
     coverImage: case3Cover,
-    images: [case3Img1, case3Img2, case3Img3, case3Img4, case3Img5],
+    images: [case3Img1, case3Img2, case3Img3, case3Img4],
   },
 ];
 
