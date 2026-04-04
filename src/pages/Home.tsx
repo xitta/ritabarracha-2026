@@ -19,7 +19,6 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="border-t border-border" />
 
       {/* Artwork */}
       <section className="scroll-reveal">
