@@ -120,7 +120,7 @@ const Work = () => {
           ].map((logo) => (
             <div
               key={logo.alt}
-              className="flex items-center justify-center p-2 md:p-6 hover:opacity-80 transition-opacity duration-300"
+              className="w-1/3 sm:w-1/4 flex items-center justify-center p-2 md:p-6 hover:opacity-80 transition-opacity duration-300"
             >
               <img src={logo.src} alt={logo.alt} className="w-full h-auto" />
             </div>
