@@ -91,7 +91,7 @@ const Work = () => {
         <div className="max-w-4xl scroll-reveal">
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-6">Work</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            Spreading empathy at the intersection of trust and impact.
+            Spreading empathy, trust and impact.
           </h1>
         </div>
       </section>
