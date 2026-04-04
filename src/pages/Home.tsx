@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import unknownFuture from "@/assets/unknown-future.jpg";
+import unknownFutureSquare from "@/assets/unknown-future-square.jpg";
 
 const Home = () => {
   const ref = useScrollReveal();
