@@ -30,7 +30,7 @@ import case2Img1 from "@/assets/case2-img1.jpg";
 import case2Img2 from "@/assets/case2-img2.jpg";
 import case2Img3 from "@/assets/case2-img3.jpg";
 import case2Img4 from "@/assets/case2-img4.jpg";
-import case2Img5 from "@/assets/case2-img5.jpg";
+
 
 import case3Cover from "@/assets/case3-cover.jpg";
 import case3Img1 from "@/assets/case3-img1.jpg";
