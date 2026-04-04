@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import unknownFuture from "@/assets/unknown-future.jpg";
-import unknownFutureMobile from "@/assets/unknown-future-mobile.jpg";
 
 const Home = () => {
   const ref = useScrollReveal();
@@ -23,18 +22,14 @@ const Home = () => {
 
       {/* Artwork */}
       <section className="scroll-reveal">
-        <img
-          src={unknownFutureMobile}
-          alt="Abstract black and white artwork representing an unknown future"
-          loading="lazy"
-          className="w-full h-auto md:hidden"
-        />
-        <img
-          src={unknownFuture}
-          alt="Abstract black and white artwork representing an unknown future"
-          loading="lazy"
-          className="w-full h-auto hidden md:block"
-        />
+        <div className="md:aspect-auto aspect-square overflow-hidden">
+          <img
+            src={unknownFuture}
+            alt="Abstract black and white artwork representing an unknown future"
+            loading="lazy"
+            className="w-full h-full object-cover object-[40%_center] md:object-center md:h-auto md:object-contain"
+          />
+        </div>
       </section>
 
       {/* Manifesto */}
