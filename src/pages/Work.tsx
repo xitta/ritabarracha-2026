@@ -23,21 +23,21 @@ import case1Img1 from "@/assets/case1-img1.jpg";
 import case1Img2 from "@/assets/case1-img2.jpg";
 import case1Img3 from "@/assets/case1-img3.jpg";
 import case1Img4 from "@/assets/case1-img4.jpg";
-import case1Img5 from "@/assets/case1-img5.jpg";
+
 
 import case2Cover from "@/assets/images/migros-cover.jpg";
 import case2Img1 from "@/assets/case2-img1.jpg";
 import case2Img2 from "@/assets/case2-img2.jpg";
 import case2Img3 from "@/assets/case2-img3.jpg";
 import case2Img4 from "@/assets/case2-img4.jpg";
-import case2Img5 from "@/assets/case2-img5.jpg";
+
 
 import case3Cover from "@/assets/case3-cover.jpg";
 import case3Img1 from "@/assets/case3-img1.jpg";
 import case3Img2 from "@/assets/case3-img2.jpg";
 import case3Img3 from "@/assets/case3-img3.jpg";
 import case3Img4 from "@/assets/case3-img4.jpg";
-import case3Img5 from "@/assets/case3-img5.jpg";
+
 
 const caseStudies = [
   {
@@ -51,7 +51,7 @@ const caseStudies = [
     summary:
       "herbling was an early-stage innovation trial project born inside Ricola, developing a premium sparkling herbal drink for health and sustainability-conscious consumers (LOHAS), in Switzerland and beyond. The team behind it: Rita (experience designer), Luca (food product developer), and Tatjana (innovation manager), supported by mentors in business, herb competence, innovation, and brand building, and funded across project budget and crowdfunding campaign.\n\nThe team built iteratively — taste, brand, storytelling, packaging, and sales channels all tested in short cycles with real consumers and experts. Early results were encouraging: at field tests, tasters confirmed purchase intent on the spot, and over 1'000 bottles were crowdfunded via our promotional pre-sale page. Social media buzz appeared organically. A sommelier, a food innovation CTO, and a Michelin-level dining scene were already paying attention.\n\nThe addressable market across ice tea, carbonates, and non-alcoholic wine and beer in Switzerland alone was estimated at 176M CHF — with a target of 30M CHF revenue by 2024 through craft segment penetration and a direct-to-consumer model. herbling was not there yet. The trial project ended, but herbling was closer than before.",
     coverImage: case1Cover,
-    images: [case1Img1, case1Img2, case1Img3, case1Img4, case1Img5],
+    images: [case1Img1, case1Img2, case1Img3, case1Img4],
   },
   {
     title: "Migros.ch",
@@ -64,7 +64,7 @@ const caseStudies = [
     summary:
       "One of the most significant digital consolidations in Swiss retail, this project unfolded over several years and multiple brand identities. LeShop.ch had been Switzerland's leading online supermarket since 1997 but operated as a largely independent entity within the Migros Group. The rebrand to Migros Online was the first step, bringing the platform into closer alignment with the parent brand and laying the groundwork for a deeper integration.\n\nThe more complex challenge came next: envisioning how Migros Online would dissolve into migros.ch, not just as an e-commerce platform, but as the unified digital presence of Switzerland's largest retailer. That meant reconciling two very different shopping contexts: the convenience-led world of online grocery, and the broader, discovery-oriented experience of physical Migros stores.\n\nMy role sat at the intersection of advisory and hands-on UX design, collaborating with stakeholders while shaping the experience where it mattered most. A key part of that vision was moving beyond a transactional shop toward a brand world: a digital space with its own storytelling, personality, and depth. Within that scope, the Homepage was my primary design focus: the first point of engagement where the ambition of the entire merger had to be made tangible for every visitor.\n\nThe result is migros.ch as it stands today: the unified digital home of Switzerland's most trusted retailer, built to serve millions of customers across online and offline touchpoints.",
     coverImage: case2Cover,
-    images: [case2Img1, case2Img2, case2Img3, case2Img4, case2Img5],
+    images: [case2Img1, case2Img2, case2Img3, case2Img4],
   },
   {
     title: "FREITAG",
@@ -77,7 +77,7 @@ const caseStudies = [
     summary:
       "It all started with a pitch, a creative and convincing one. Getting into a room with the FREITAG brothers was an achievement in itself; collaborating with them was something else entirely.\n\nAs part of the Liip team, I worked on one of the most complex and rewarding projects of my career. The challenge wasn't just technical, it was conceptual. How do you sell something that, by design, can only ever be sold once? How do you tell the story of a brand built on indestructibility while also championing biodegradability? And how do you give a creative, opinionated brand the digital freedom to keep pushing limits, without ever missing a sales opportunity?\n\nThe answer lived in the architecture. Flexible page-building tools gave authors the power to expand storytelling well beyond standard product pages, weaving in material origins, sustainability philosophy, and brand narrative, while automation handled the complexity behind the scenes: hundreds of unique products flowing in from the ERP, matched to imagery, published and unpublished in real time.\n\nThe result was a platform that felt as considered and original as the products themselves. Maintenance costs dropped by 50%, and mobile conversion rose by 25%. But beyond the numbers, FREITAG finally had a digital home worthy of the brand, and I had the privilege of helping build it.",
     coverImage: case3Cover,
-    images: [case3Img1, case3Img2, case3Img3, case3Img4, case3Img5],
+    images: [case3Img1, case3Img2, case3Img3, case3Img4],
   },
 ];
 
