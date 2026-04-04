@@ -76,7 +76,7 @@ const CaseStudy = ({
             <img
               src={image}
               alt={`${title} detail ${index + 1}`}
-              className="w-full h-full object-cover aspect-square grayscale hover:grayscale-0 transition-all duration-500"
+              className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
             />
           </div>
         ))}
