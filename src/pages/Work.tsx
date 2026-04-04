@@ -99,7 +99,7 @@ const Work = () => {
       {/* Client Logos */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <p className="scroll-reveal text-xs uppercase tracking-widest text-muted-foreground mb-12">Selected Clients</p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 items-center scroll-reveal">
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-0 items-center scroll-reveal">
           {[
             { src: logoMigros, alt: "Migros" },
             { src: logoEnergie360, alt: "Energie 360°" },
@@ -120,7 +120,7 @@ const Work = () => {
           ].map((logo) => (
             <div
               key={logo.alt}
-              className="flex items-center justify-center p-4 md:p-6 hover:opacity-80 transition-opacity duration-300"
+              className="flex items-center justify-center p-2 md:p-6 hover:opacity-80 transition-opacity duration-300"
             >
               <img src={logo.src} alt={logo.alt} className="w-full h-auto" />
             </div>
