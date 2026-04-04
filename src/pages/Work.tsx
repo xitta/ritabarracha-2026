@@ -99,7 +99,7 @@ const Work = () => {
       {/* Client Logos */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <p className="scroll-reveal text-xs uppercase tracking-widest text-muted-foreground mb-12">Selected Clients</p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-0 items-center scroll-reveal">
+        <div className="flex flex-wrap justify-center items-center scroll-reveal">
           {[
             { src: logoMigros, alt: "Migros" },
             { src: logoEnergie360, alt: "Energie 360°" },
