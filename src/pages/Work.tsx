@@ -64,7 +64,7 @@ const caseStudies = [
     summary:
       "One of the most significant digital consolidations in Swiss retail, this project unfolded over several years and multiple brand identities. LeShop.ch had been Switzerland's leading online supermarket since 1997 but operated as a largely independent entity within the Migros Group. The rebrand to Migros Online was the first step, bringing the platform into closer alignment with the parent brand and laying the groundwork for a deeper integration.\n\nThe more complex challenge came next: envisioning how Migros Online would dissolve into migros.ch, not just as an e-commerce platform, but as the unified digital presence of Switzerland's largest retailer. That meant reconciling two very different shopping contexts: the convenience-led world of online grocery, and the broader, discovery-oriented experience of physical Migros stores.\n\nMy role sat at the intersection of advisory and hands-on UX design, collaborating with stakeholders while shaping the experience where it mattered most. A key part of that vision was moving beyond a transactional shop toward a brand world: a digital space with its own storytelling, personality, and depth. Within that scope, the Homepage was my primary design focus: the first point of engagement where the ambition of the entire merger had to be made tangible for every visitor.\n\nThe result is migros.ch as it stands today: the unified digital home of Switzerland's most trusted retailer, built to serve millions of customers across online and offline touchpoints.",
     coverImage: case2Cover,
-    images: [case2Img1, case2Img2, case2Img3],
+    images: [case2Img1, case2Img2, case2Img3, case2Img4],
   },
   {
     title: "FREITAG",
