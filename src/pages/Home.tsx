@@ -23,14 +23,18 @@ const Home = () => {
 
       {/* Artwork */}
       <section className="scroll-reveal">
-        <div className="md:aspect-auto aspect-square overflow-hidden">
-          <img
-            src={unknownFuture}
-            alt="Abstract black and white artwork representing an unknown future"
-            loading="lazy"
-            className="w-full h-full object-cover object-[40%_center] md:object-center md:h-auto md:object-contain"
-          />
-        </div>
+        <img
+          src={unknownFutureMobile}
+          alt="Abstract black and white artwork representing an unknown future"
+          loading="lazy"
+          className="w-full h-auto md:hidden"
+        />
+        <img
+          src={unknownFuture}
+          alt="Abstract black and white artwork representing an unknown future"
+          loading="lazy"
+          className="w-full h-auto hidden md:block"
+        />
       </section>
 
       {/* Manifesto */}
