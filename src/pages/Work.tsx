@@ -37,7 +37,7 @@ import case3Img1 from "@/assets/case3-img1.jpg";
 import case3Img2 from "@/assets/case3-img2.jpg";
 import case3Img3 from "@/assets/case3-img3.jpg";
 import case3Img4 from "@/assets/case3-img4.jpg";
-import case3Img5 from "@/assets/case3-img5.jpg";
+
 
 const caseStudies = [
   {
