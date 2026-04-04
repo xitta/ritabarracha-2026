@@ -51,7 +51,7 @@ const caseStudies = [
     summary:
       "herbling was an early-stage innovation trial project born inside Ricola, developing a premium sparkling herbal drink for health and sustainability-conscious consumers (LOHAS), in Switzerland and beyond. The team behind it: Rita (experience designer), Luca (food product developer), and Tatjana (innovation manager), supported by mentors in business, herb competence, innovation, and brand building, and funded across project budget and crowdfunding campaign.\n\nThe team built iteratively — taste, brand, storytelling, packaging, and sales channels all tested in short cycles with real consumers and experts. Early results were encouraging: at field tests, tasters confirmed purchase intent on the spot, and over 1'000 bottles were crowdfunded via our promotional pre-sale page. Social media buzz appeared organically. A sommelier, a food innovation CTO, and a Michelin-level dining scene were already paying attention.\n\nThe addressable market across ice tea, carbonates, and non-alcoholic wine and beer in Switzerland alone was estimated at 176M CHF — with a target of 30M CHF revenue by 2024 through craft segment penetration and a direct-to-consumer model. herbling was not there yet. The trial project ended, but herbling was closer than before.",
     coverImage: case1Cover,
-    images: [case1Img1, case1Img2, case1Img3, case1Img4, case1Img5],
+    images: [case1Img1, case1Img2, case1Img3, case1Img4],
   },
   {
     title: "Migros.ch",
