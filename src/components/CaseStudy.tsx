@@ -66,11 +66,11 @@ const CaseStudy = ({
       </div>
 
       {/* Image Gallery */}
-      <div className="grid grid-cols-3 gap-4 mb-16">
+      <div className="grid grid-cols-3 gap-4 mb-16 items-center">
         {images.map((image, index) => (
           <div
             key={index}
-            className="overflow-hidden scroll-reveal"
+            className="overflow-hidden scroll-reveal flex items-center"
             style={{ transitionDelay: `${index * 0.08}s` }}
           >
             <img
