@@ -27,7 +27,7 @@ const Home = () => {
             src={unknownFuture}
             alt="Abstract black and white artwork representing an unknown future"
             loading="lazy"
-            className="w-full h-full object-cover md:h-auto md:object-contain"
+            className="w-full h-full object-cover object-[40%_center] md:object-center md:h-auto md:object-contain"
           />
         </div>
       </section>
