@@ -66,7 +66,7 @@ const CaseStudy = ({
       </div>
 
       {/* Image Gallery */}
-      <div className="grid grid-cols-3 gap-4 mb-16 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 items-center">
         {images.map((image, index) => (
           <div
             key={index}
