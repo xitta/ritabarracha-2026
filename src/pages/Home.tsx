@@ -21,6 +21,18 @@ const Home = () => {
 
       <div className="border-t border-border" />
 
+      {/* Artwork */}
+      <section className="scroll-reveal">
+        <img
+          src={unknownFuture}
+          alt="Abstract black and white artwork representing an unknown future"
+          width={1920}
+          height={1080}
+          loading="lazy"
+          className="w-full h-auto"
+        />
+      </section>
+
       {/* Manifesto */}
       <section className="container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-3xl">
