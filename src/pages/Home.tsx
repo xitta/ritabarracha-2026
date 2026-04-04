@@ -23,14 +23,15 @@ const Home = () => {
 
       {/* Artwork */}
       <section className="scroll-reveal">
-        <img
-          src={unknownFuture}
-          alt="Abstract black and white artwork representing an unknown future"
-          width={1920}
-          height={1080}
-          loading="lazy"
-          className="w-full h-auto"
-        />
+        <picture>
+          <source media="(min-width: 768px)" srcSet={unknownFuture} />
+          <img
+            src={unknownFutureSquare}
+            alt="Abstract black and white artwork representing an unknown future"
+            loading="lazy"
+            className="w-full h-auto"
+          />
+        </picture>
       </section>
 
       {/* Manifesto */}
