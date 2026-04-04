@@ -25,7 +25,7 @@ import case1Img3 from "@/assets/case1-img3.jpg";
 import case1Img4 from "@/assets/case1-img4.jpg";
 import case1Img5 from "@/assets/case1-img5.jpg";
 
-import case2Cover from "@/assets/case2-cover.jpg";
+import case2Cover from "@/assets/images/migros-cover.jpg";
 import case2Img1 from "@/assets/case2-img1.jpg";
 import case2Img2 from "@/assets/case2-img2.jpg";
 import case2Img3 from "@/assets/case2-img3.jpg";
