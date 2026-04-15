@@ -41,33 +41,17 @@ const Home = () => {
 
           <div className="space-y-8 text-base leading-relaxed text-foreground/70">
             <p className="scroll-reveal">
-              With every scroll, swipe, and pixel, technology reshapes the world
-              around us, creating a landscape that's at once digital and physical,
-              immersive and intangible, deeply fascinating and slightly unnerving.
-              We're moving toward a reality where our surroundings not only see and
-              hear us but also anticipate our needs, respond to our feelings, and
-              adapt to our behaviors.
-            </p>
-
-            <p className="scroll-reveal">
-              Technologies like Artificial Intelligence, Augmented and Virtual
-              Realities, and multisensory design are the tools helping us build
-              experiences that are richer and more responsive, aligning with
-              people's needs in a way that feels both futuristic and beautifully
-              human. Design is more than clicks and screens; it's a dialogue
-              between minds and machines.
+              With every scroll, swipe, and pixel, technology is reshaping how we live,
+              feel, and interact. The line between digital and physical keeps fading,
+              and the systems around us are becoming more responsive, immersive, and human-aware.
+              Artificial Intelligence, Augmented/Virtual Realities, and multisensory design are
+              not just new tools, they are changing how experiences are imagined and built.
             </p>
 
             <p className="scroll-reveal text-xl md:text-2xl font-medium text-foreground/90">
-              But let's keep it grounded.
+              Let's keep it grounded.
             </p>
-
-            <p className="scroll-reveal">
-              My mission is simple: make life feel lighter, brighter, and a bit
-              more delightful. I partner with brands, services, and products ready
-              to bring creativity and strategy into alignment, crafting experiences
-              that are thoughtful, memorable, and human-focused.
-            </p>
+            
           </div>
         </div>
       </section>
