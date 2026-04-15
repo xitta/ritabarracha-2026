@@ -47,7 +47,8 @@ const About = () => {
                 It helps me move between the "why" and the "how", in a holistic perspective.
               </p>
               <p>
-                I like keeping a finger on the latest media and technology, not just to solve problems but to envision new emphatic possibilities.
+                I like keeping a finger on the latest media and technology,
+                not just to solve problems but to envision new meaningful possibilities.
               </p>
             </div>
           </div>
