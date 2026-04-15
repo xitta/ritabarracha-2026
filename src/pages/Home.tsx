@@ -47,10 +47,6 @@ const Home = () => {
               Artificial Intelligence, Augmented/Virtual Realities, and multisensory design are
               not just new tools, they are changing how experiences are imagined and built.
             </p>
-
-            <p className="scroll-reveal text-xl md:text-2xl font-medium text-foreground/90">
-              Let's keep it grounded.
-            </p>
             
           </div>
         </div>
@@ -97,7 +93,7 @@ const Home = () => {
       <section className="container mx-auto px-4 py-24 md:py-32 text-center">
         <div className="scroll-reveal">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
-            Let's create something meaningful
+            Let's keep it grounded
           </h2>
           <div className="flex gap-8 justify-center">
             <Link
