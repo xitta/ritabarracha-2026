@@ -38,21 +38,16 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-base leading-relaxed text-foreground/70">
               <p>
-                I'm a Creative Strategist and Experience Designer with a passion
-                for building digital products and services that connect people
-                with technology in meaningful ways.
+                I'm a Creative Strategist and Experience Designer.
+                I work on products and services, and I enjoy starting from a human need
+                to figure out the rest from there.
               </p>
               <p>
-                With a background spanning brand strategy, UX research, service
-                design, and product development, I bring a holistic perspective
-                to every project — always starting with the human need and
-                working outward to the technical solution.
+                My background covers research, strategy, design, and development.
+                It helps me move between the "why" and the "how", keeping a holistic perspective.
               </p>
               <p>
-                I thrive on finding the sweet spot where innovation and empathy
-                intersect. For me, this means keeping a finger on the pulse of
-                the latest media and technology, leveraging new tools not just
-                to solve problems but to envision new possibilities.
+                I like keeping a finger on the latest media and technology, not just to solve problems but to envision new emphatic possibilities.
               </p>
             </div>
           </div>
@@ -63,22 +58,15 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-base leading-relaxed text-foreground/70">
               <p>
-                Today's technology gives us unprecedented answers to human
-                needs, yet it also creates an endless loop of new challenges.
-                It's a virtuous cycle where breakthroughs lead to better
-                solutions, which spark more questions.
+                Technology keeps creating new problems as fast as it solves old ones.
+                I find that genuinely interesting rather than frustrating.
+                There's always another question worth asking, another thing worth building.
               </p>
               <p>
-                Will there ever be a limit to this cycle? Maybe not. But that's
-                the thrill of it — there's always another "what if?" and another
-                chance to create something meaningful, immersive, and, hopefully,
+                Will there ever be a limit to this cycle? Maybe not. But that's the thrill of it.
+                I try to stay curious and design for such unknown future.
+                It's a chance to create something meaningful, and, hopefully,
                 a little bit magical.
-              </p>
-              <p>
-                By continually exploring emerging tech and the evolving human
-                experience, I design with the future in mind. Whether it's
-                mapping user journeys or engineering product experiences, my
-                approach bridges creativity and strategy into alignment.
               </p>
             </div>
           </div>
