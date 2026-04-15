@@ -44,7 +44,7 @@ const About = () => {
               </p>
               <p>
                 My background covers research, strategy, design, and development.
-                It helps me move between the "why" and the "how", keeping a holistic perspective.
+                It helps me move between the "why" and the "how", in a holistic perspective.
               </p>
               <p>
                 I like keeping a finger on the latest media and technology, not just to solve problems but to envision new emphatic possibilities.
