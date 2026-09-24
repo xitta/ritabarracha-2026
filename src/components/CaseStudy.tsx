@@ -88,7 +88,7 @@ const CaseStudy = ({
           My Bit
         </h3>
         <div className="text-base leading-relaxed text-foreground/80 max-w-3xl space-y-4">
-          {summary.split('\n\n').map((paragraph, i) => (
+          {mybit.split('\n\n').map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
         </div>
