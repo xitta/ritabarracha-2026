@@ -60,15 +60,15 @@ const Home = () => {
           {[
             {
               title: "Strategy",
-              items: ["Business Strategy", "Brand Positioning", "Campaign Development", "Research"],
+              items: ["Business Strategy", "Brand Positioning", "Content Strategy", "Stakeholder Management"],
             },
             {
-              title: "Design",
-              items: ["Content Strategy", "User Journey Mapping", "Service Design", "UX & UI"],
+              title: "Research & Design",
+              items: ["UX Research", "Service Design, UX & UI", "Product Experience", "Prototyping & Testing"],
             },
             {
               title: "Delivery",
-              items: ["Product Experience", "Prototyping & Testing", "Project Management", "Agile & Scrum"],
+              items: ["Agile Project Management", "Process Improvement", "AI Workflows", "Workshop Facilitation"],
             },
           ].map((col, i) => (
             <div key={col.title} className={`scroll-reveal scroll-reveal-delay-${i + 1}`}>
