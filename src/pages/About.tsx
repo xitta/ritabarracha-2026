@@ -48,7 +48,7 @@ const About = () => {
               </p>
               <p>
                 I like keeping a finger on the latest media and technology,
-                not just to solve problems but to envision new meaningful possibilities.
+                not just to solve problems but to envision new possibilities.
               </p>
             </div>
           </div>
@@ -59,15 +59,14 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-base leading-relaxed text-foreground/70">
               <p>
-                Technology keeps creating new problems as fast as it solves old ones.
+                New tools solve old problems but create new ones.
                 I find that genuinely interesting rather than frustrating.
                 There's always another question worth asking, another thing worth building.
               </p>
               <p>
-                Will there ever be a limit to this cycle? Maybe not. But that's the thrill of it.
+                Will there ever be a limit to this cycle?
+                Maybe not. But that's the thrill of it.
                 I try to stay curious and design for such unknown future.
-                It's a chance to create something meaningful, and, hopefully,
-                a little bit magical.
               </p>
             </div>
           </div>
