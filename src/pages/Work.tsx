@@ -80,6 +80,19 @@ const caseStudies = [
     coverImage: case3Cover,
     images: [case3Img1, case3Img2, case3Img3],
   },
+  {
+    title: "-naut & BRDGE",
+    tagline: "Making Custom Work Scalable",
+    category: "Operations & Growth Systems",
+    gap:
+      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
+    fix:
+      "We built BRDGE, a catalogue of 50+ tested interactive modules, games, mediaguides, interactive floors, that turns a brief into a working idea in days. Every proposal now leads with custom, then offers BRDGE as the anchor: Signature (full custom build), Tailored (a module with new mechanics or content) and Ready (a module reskinned to a client's branding). Underneath, one shared language ties it together: a state-machine model of trigger, experience, feedback and data, so design and engineering reuse the same building blocks instead of starting over each time. Around the product, we built the growth system: a partner ecosystem of referrers, resellers and tech partners, a go-to-market segmented by agency type, and workflows, including where AI clearly helps, so partners can move from brief to pitch faster.",
+    mybit:
+      "Co-founding it, I a bit of everything. Lately, I focus on the business model and logic, the product structure behind BRDGE, the go-to-market and partner strategy, plus the actual research, UX and content. Notion holds the thinking, Figma the design, Claude is basically a fourth teammate for workflows, drafts and structuring ideas fast.",
+    coverImage: case4Cover,
+    images: [case4Img1, case4Img2, case4Img3],
+  },
 ];
 
 const Work = () => {
