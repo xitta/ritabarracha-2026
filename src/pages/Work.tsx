@@ -45,12 +45,12 @@ const caseStudies = [
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
     category: "Product Design",
-    problem:
-      "People want to drink something special, but not alcohol anymore. Yet the alternatives disappoint: alcohol-free wines lose their flavour through artificial extraction, juices feel cheap, and water kills the moment. Health-conscious consumers, pregnant women, drivers, and the sober-curious deserve better. The market is ready. The right drink just didn't exist yet.",
-    solution:
-      "herbling by Ricola is a naturally sparkling herbal tea. Low in sugar, alcohol-free, and crafted from Ricola's Swiss alpine herb selection with a unique ripening refinement. Light, refreshing, and premium; something worth serving at a dinner table, worth pairing with food, worth mixing with. Built on what Ricola already does best: natural ingredients, regional roots, and a trusted brand. Designed for real occasions. Made to be loved.",
-    summary:
-      "herbling was an early-stage innovation trial project born inside Ricola, developing a premium sparkling herbal drink for health and sustainability-conscious consumers (LOHAS), in Switzerland and beyond. The team behind it: Rita (experience designer), Luca (food product developer), and Tatjana (innovation manager), supported by mentors in business, herb competence, innovation, and brand building, and funded across project budget and crowdfunding campaign.\n\nThe team built iteratively — taste, brand, storytelling, packaging, and sales channels all tested in short cycles with real consumers and experts. Early results were encouraging: at field tests, tasters confirmed purchase intent on the spot, and over 1'000 bottles were crowdfunded via our promotional pre-sale page. Social media buzz appeared organically. A sommelier, a food innovation CTO, and a Michelin-level dining scene were already paying attention.\n\nThe addressable market across ice tea, carbonates, and non-alcoholic wine and beer in Switzerland alone was estimated at 176M CHF — with a target of 30M CHF revenue by 2024 through craft segment penetration and a direct-to-consumer model. herbling was not there yet. The trial project ended, but herbling was closer than before.",
+    gap:
+      "People want to drink something special without the alcohol. The options let them down: alcohol-free wines lose their flavour, juices feel cheap, water kills the moment. Health-conscious consumers, pregnant women, drivers and the sober-curious had nothing worth pouring at a dinner table.",
+    fix:
+      "herbling is a naturally sparkling herbal tea: low in sugar, alcohol-free, made from Ricola's Swiss alpine herbs with a unique ripening refinement. Light, premium, made for food and mixing. We built it in short cycles, testing taste, brand, packaging and sales channels with real consumers and experts. At field tests, tasters confirmed purchase intent on the spot, and over 1'000 bottles were crowdfunded in the pre-sale. The trial project ended, but herbling was closer than before.",
+    mybit:
+      "Turning an idea inside a 130-year-old brand into something people would actually buy, with a small team (Luca, food product developer, and Tatjana, innovation manager), a tight budget and mentors to convince.",
     coverImage: case1Cover,
     images: [case1Img1, case1Img2, case1Img3],
   },
@@ -58,12 +58,12 @@ const caseStudies = [
     title: "Migros.ch",
     tagline: "Rebranding & omnichannel integration",
     category: "Digital Transformation",
-    problem:
-      "Migros was operating a fragmented digital landscape: multiple sub-brands, separate web presences, and no unified experience. Customers navigating migros.ch and those shopping on LeShop faced entirely different environments, yet they were interacting with Switzerland's largest retailer. The ambition was clear: one platform, one brand; but getting there required fundamental decisions about brand architecture, UX, and the sequencing of change at scale.",
-    solution:
-      "My involvement spanned two phases: first supporting the brand transition from LeShop.ch to Migros Online, then envisioning the full merger into migros.ch. The harder challenge was designing a platform that could coherently serve two distinct shopping modes (online delivery and physical stores) under a single experience. Advisory work centred on brand architecture, information structure, and aligning cross-functional teams around a shared digital vision.",
-    summary:
-      "One of the most significant digital consolidations in Swiss retail, this project unfolded over several years and multiple brand identities. LeShop.ch had been Switzerland's leading online supermarket since 1997 but operated as a largely independent entity within the Migros Group. The rebrand to Migros Online was the first step, bringing the platform into closer alignment with the parent brand and laying the groundwork for a deeper integration.\n\nThe more complex challenge came next: envisioning how Migros Online would dissolve into migros.ch, not just as an e-commerce platform, but as the unified digital presence of Switzerland's largest retailer. That meant reconciling two very different shopping contexts: the convenience-led world of online grocery, and the broader, discovery-oriented experience of physical Migros stores.\n\nMy role sat at the intersection of advisory and hands-on UX design, collaborating with stakeholders while shaping the experience where it mattered most. A key part of that vision was moving beyond a transactional shop toward a brand world: a digital space with its own storytelling, personality, and depth. Within that scope, the Homepage was my primary design focus: the first point of engagement where the ambition of the entire merger had to be made tangible for every visitor.\n\nThe result is migros.ch as it stands today: the unified digital home of Switzerland's most trusted retailer, built to serve millions of customers across online and offline touchpoints.",
+    gap:
+      "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a store.",
+    fix:
+      "First the brand transition from LeShop.ch to Migros Online, then the full merger into migros.ch. The platform had to serve two shopping modes, delivery and physical stores, and go beyond a shop into a brand world with its own storytelling and personality. Over several years and multiple identities, it became the unified digital home of Switzerland's most trusted retailer, serving millions of customers online and offline.",
+    mybit:
+      "Making the ambition of the whole merger tangible on one page: the homepage, my main design focus. Around it, advising on brand architecture and aligning cross-functional teams that saw the platform differently.",
     coverImage: case2Cover,
     images: [case2Img1, case2Img2, case2Img3],
   },
@@ -71,12 +71,12 @@ const caseStudies = [
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
     category: "Brand Experience",
-    problem:
-      "FREITAG's greatest strength was also its biggest digital challenge. Every bag, cut from used truck tarpaulins, is a one-off, which means a standard catalogue approach simply doesn't work. The existing platform couldn't bridge the gap between product and narrative, nor reconcile two radically different material philosophies: indestructible tarp bags built to last a lifetime, and the f-abric line, fully biodegradable. One storefront needed to honour both without contradiction.",
-    solution:
-      "The project began with deep user research: data analysis, personas, and flow mapping, to understand not just how customers shopped, but how they connected with FREITAG as a brand. Drupal Commerce was chosen for its ability to combine a traditional web catalogue with advanced content capabilities, while custom APIs automated the import of each unique product, matching it with imagery and publishing it live, then unpublishing it the moment it sold. Authors gained true creative freedom to tell rich stories around materials and sustainability without ever losing sight of the sale.",
-    summary:
-      "It all started with a pitch, a creative and convincing one. Getting into a room with the FREITAG brothers was an achievement in itself; collaborating with them was something else entirely.\n\nAs part of the Liip team, I worked on one of the most complex and rewarding projects of my career. The challenge wasn't just technical, it was conceptual. How do you sell something that, by design, can only ever be sold once? How do you tell the story of a brand built on indestructibility while also championing biodegradability? And how do you give a creative, opinionated brand the digital freedom to keep pushing limits, without ever missing a sales opportunity?\n\nThe answer lived in the architecture. Flexible page-building tools gave authors the power to expand storytelling well beyond standard product pages, weaving in material origins, sustainability philosophy, and brand narrative, while automation handled the complexity behind the scenes: hundreds of unique products flowing in from the ERP, matched to imagery, published and unpublished in real time.\n\nThe result was a platform that felt as considered and original as the products themselves. Maintenance costs dropped by 50%, and mobile conversion rose by 25%. But beyond the numbers, FREITAG finally had a digital home worthy of the brand, and I had the privilege of helping build it.",
+    gap:
+      "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform couldn't connect product and story, nor hold two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
+    fix:
+      "We started with user research (data analysis, personas, flow mapping), then built on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and unpublished it the moment it sold, while flexible page tools let authors tell stories about materials and sustainability without losing the sale. Maintenance costs dropped by 50% and mobile conversion rose by 25%.",
+    mybit:
+      "How do you sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex projects of my career, as part of the Liip team.",
     coverImage: case3Cover,
     images: [case3Img1, case3Img2, case3Img3],
   },
