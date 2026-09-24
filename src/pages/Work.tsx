@@ -40,6 +40,13 @@ import case3Img3 from "@/assets/case3-img3.jpg";
 import case3Img4 from "@/assets/case3-img4.jpg";
 
 
+import case4Cover from "@/assets/case4-cover.jpg";
+import case4Img1 from "@/assets/case4-img1.jpg";
+import case4Img2 from "@/assets/case4-img2.jpg";
+import case4Img3 from "@/assets/case4-img3.jpg";
+import case4Img4 from "@/assets/case4-img4.jpg";
+
+
 const caseStudies = [
   {
     title: "herbling by Ricola",
