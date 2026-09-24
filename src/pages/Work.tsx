@@ -1,6 +1,7 @@
 import CaseStudy from "@/components/CaseStudy";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
+import logoNaut from "@/assets/logos/naut.svg";
 import logo20min from "@/assets/logos/20min.svg";
 import logoEnergie360 from "@/assets/logos/energie360.svg";
 import logoFreitag from "@/assets/logos/freitag.svg";
@@ -101,21 +102,21 @@ const Work = () => {
         <p className="scroll-reveal text-xs uppercase tracking-widest text-muted-foreground mb-12">Selected Clients</p>
         <div className="flex flex-wrap justify-center items-center scroll-reveal">
           {[
+            { src: logoNaut, alt: "naut" },
             { src: logoMigros, alt: "Migros" },
+            { src: logoRicola, alt: "Ricola" },
+            { src: logoTx, alt: "TX Group" },
+            { src: logoRicardo, alt: "Ricardo" },
+            { src: logoTutti, alt: "Tutti" },
+            { src: logoFreitag, alt: "Freitag" },
+            { src: logoOpendata, alt: "Opendata.swiss" },
+            { src: logoLiip, alt: "Liip" },
             { src: logoEnergie360, alt: "Energie 360°" },
             { src: logoKantonal, alt: "Basellandschaftliche Kantonalbank" },
             { src: logoLocal, alt: "Local" },
-            { src: logoRicola, alt: "Ricola" },
-            { src: logoRicardo, alt: "Ricardo" },
-            { src: logoOpendata, alt: "Opendata.swiss" },
             { src: logoTedx, alt: "TEDx" },
-            { src: logoFreitag, alt: "Freitag" },
-            { src: logoTutti, alt: "Tutti" },
             { src: logoWecollect, alt: "WeCollect" },
-            { src: logoLiip, alt: "Liip" },
-            { src: logoTx, alt: "TX Group" },
             { src: logo20min, alt: "20 Minuten" },
-            { src: logoRappold, alt: "Rappold Köhli" },
             { src: logoHwz, alt: "HWZ" },
           ].map((logo) => (
             <div
