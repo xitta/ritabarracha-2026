@@ -4,9 +4,9 @@ interface CaseStudyProps {
   title: string;
   tagline?: string;
   category: string;
-  problem: string;
-  solution: string;
-  summary: string;
+  gap: string;
+  fix: string;
+  mybit: string;
   coverImage: string;
   images: string[];
 }
@@ -15,9 +15,9 @@ const CaseStudy = ({
   title,
   tagline,
   category,
-  problem,
-  solution,
-  summary,
+  gap,
+  fix,
+  mybit,
   coverImage,
   images,
 }: CaseStudyProps) => {
@@ -49,19 +49,19 @@ const CaseStudy = ({
         />
       </div>
 
-      {/* Problem & Solution */}
+      {/* The Gap & The Fix */}
       <div className="grid md:grid-cols-2 gap-16 mb-16">
         <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-            The Problem
+            The Gap
           </h3>
-          <p className="text-base leading-relaxed text-foreground/80">{problem}</p>
+          <p className="text-base leading-relaxed text-foreground/80">{gap}</p>
         </div>
         <div className="scroll-reveal scroll-reveal-delay-1">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-            The Solution
+            The Fix
           </h3>
-          <p className="text-base leading-relaxed text-foreground/80">{solution}</p>
+          <p className="text-base leading-relaxed text-foreground/80">{fix}</p>
         </div>
       </div>
 
@@ -82,10 +82,10 @@ const CaseStudy = ({
         ))}
       </div>
 
-      {/* Summary */}
+      {/* My Bit */}
       <div className="pt-10 scroll-reveal">
         <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-          Project Summary
+          My Bit
         </h3>
         <div className="text-base leading-relaxed text-foreground/80 max-w-3xl space-y-4">
           {summary.split('\n\n').map((paragraph, i) => (
