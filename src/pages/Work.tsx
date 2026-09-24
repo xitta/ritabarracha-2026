@@ -19,32 +19,29 @@ import logoTutti from "@/assets/logos/tutti.svg";
 import logoTx from "@/assets/logos/tx.svg";
 import logoWecollect from "@/assets/logos/wecollect.svg";
 
+
 import case1Cover from "@/assets/case1-cover.jpg";
 import case1Img1 from "@/assets/case1-img1.jpg";
 import case1Img2 from "@/assets/case1-img2.jpg";
 import case1Img3 from "@/assets/case1-img3.jpg";
-import case1Img4 from "@/assets/case1-img4.jpg";
 
 
 import case2Cover from "@/assets/case2-cover.jpg";
 import case2Img1 from "@/assets/case2-img1.jpg";
 import case2Img2 from "@/assets/case2-img2.jpg";
 import case2Img3 from "@/assets/case2-img3.jpg";
-import case2Img4 from "@/assets/case2-img4.jpg";
 
 
 import case3Cover from "@/assets/case3-cover.jpg";
 import case3Img1 from "@/assets/case3-img1.jpg";
 import case3Img2 from "@/assets/case3-img2.jpg";
 import case3Img3 from "@/assets/case3-img3.jpg";
-import case3Img4 from "@/assets/case3-img4.jpg";
 
 
 import case4Cover from "@/assets/case4-cover.jpg";
 import case4Img1 from "@/assets/case4-img1.jpg";
 import case4Img2 from "@/assets/case4-img2.jpg";
 import case4Img3 from "@/assets/case4-img3.jpg";
-import case4Img4 from "@/assets/case4-img4.jpg";
 
 
 const caseStudies = [
