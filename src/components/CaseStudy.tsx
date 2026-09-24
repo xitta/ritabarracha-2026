@@ -49,8 +49,8 @@ const CaseStudy = ({
         />
       </div>
 
-      {/* The Gap & The Fix */}
-      <div className="grid md:grid-cols-2 gap-16 mb-16">
+      {/* The Gap, The Fix, My Bit */}
+      <div className="grid md:grid-cols-3 gap-16 mb-16">
         <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             The Gap
@@ -63,19 +63,18 @@ const CaseStudy = ({
           </h3>
           <p className="text-base leading-relaxed text-foreground/80">{fix}</p>
         </div>
-      </div>
-
-      {/* My Bit */}
-      <div className="mb-16 scroll-reveal scroll-reveal-delay-2">
-        <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-          My Bit
-        </h3>
-        <div className="text-base leading-relaxed text-foreground/80 max-w-3xl space-y-4">
-          {mybit.split('\n\n').map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
+        <div className="mb-16 scroll-reveal scroll-reveal-delay-2">
+          <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
+            My Bit
+          </h3>
+          <div className="text-base leading-relaxed text-foreground/80 max-w-3xl space-y-4">
+            {mybit.split('\n\n').map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
         </div>
       </div>
+
 
       {/* Image Gallery */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 items-center">
