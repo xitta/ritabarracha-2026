@@ -6,7 +6,7 @@ interface CaseStudyProps {
   category: string;
   gap: string;
   fix: string;
-  mybit: string;
+  favorite: string;
   coverImage: string;
   images: string[];
 }
@@ -17,7 +17,7 @@ const CaseStudy = ({
   category,
   gap,
   fix,
-  mybit,
+  favorite,
   coverImage,
   images,
 }: CaseStudyProps) => {
@@ -65,10 +65,10 @@ const CaseStudy = ({
         </div>
         <div className="mb-16 scroll-reveal scroll-reveal-delay-2">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-            My Bit
+            My Favorite
           </h3>
           <div className="text-base leading-relaxed text-foreground/80 max-w-3xl space-y-4">
-            {mybit.split('\n\n').map((paragraph, i) => (
+            {favorite.split('\n\n').map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
           </div>
