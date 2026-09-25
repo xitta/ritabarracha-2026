@@ -91,9 +91,9 @@ const caseStudies = [
     gap:
       "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
-      "We built BRDGE, a catalogue of 50+ tested interactive activations, games, mediaguides, phygital experiences, that turns an idea into a working prototype in days. From a fully custom build, to a module with new mechanics, to one just reskinned for the brand. Nothing starts from zero. Around the product, we built the growth system too: a partner ecosystem of referrers, resellers and tech partners, a go-to-market segmented by agency type, and workflows, including where AI clearly helps, so partners can move from briefing to pitch faster.",
+      "We built BRDGE, a catalogue of 50+ tested interactive activations, games, mediaguides, phygital experiences, that turns an idea into a working prototype in days. From a fully custom, to a module with new mechanics, to one just reskinned for the brand. Nothing starts from zero. Around the product, we built the operations growth system too: a partner ecosystem of referrers, resellers and tech partners, go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
     favorite:
-      "We didn't just build a catalog, we built a system efficient enough to make everyone in the chain, us, partners, their clients, have efficient, profitable and unique outcomes.",
+      "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
     coverImage: case4Cover,
     images: [case4Img1, case4Img2, case4Img3],
   },
