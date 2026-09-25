@@ -80,7 +80,7 @@ const caseStudies = [
     fix:
       "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools let gave freedom to authors who tell stories without ever losing the sale opportunity. Maintenance costs dropped by 50%, and mobile conversion rose by 25%.",
     favorite:
-      "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex "storyselling" projects of my career, while part of Liip AG.",
+      "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex storyselling projects of my career, while part of Liip AG.",
     coverImage: case3Cover,
     images: [case3Img1, case3Img2, case3Img3],
   },
