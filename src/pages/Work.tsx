@@ -67,7 +67,7 @@ const caseStudies = [
     fix:
       "First the brand transition from LeShop.ch to Migros Online, then the full merger into migros.ch. We mapped the journey how people moved between both shopping modes, and designed the service so migros.ch felt like one coherent brand. Over several years and multiple iterations, it became the unified digital home of Switzerland's most trusted retailer, serving millions of customers online and offline.",
     favorite:
-      "Sitting between Migros Online's squads and Corporate's research team, and making ONE out three. The best part was collaborating on a journey blueprint that clicked for all.",
+      "Sitting between Migros Online's squads and Corporate's research team, and making ONE out of three. The best part was collaborating on a journey blueprint that clicked for all.",
     coverImage: case2Cover,
     images: [case2Img1, case2Img2, case2Img3],
   },
@@ -78,7 +78,7 @@ const caseStudies = [
     gap:
       "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
     fix:
-      "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools let gave freedom to authors who tell stories without ever losing the sale opportunity. Maintenance costs dropped by 50%, and mobile conversion rose by 25%.",
+      "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools gave freedom to authors who tell stories without ever losing the sale opportunity. Maintenance costs dropped by 50%, and mobile conversion rose by 25%.",
     favorite:
       "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex storyselling projects of my career, while part of Liip AG.",
     coverImage: case3Cover,
