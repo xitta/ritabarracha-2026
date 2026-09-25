@@ -52,9 +52,9 @@ const caseStudies = [
     gap:
       "People want to drink something special without the alcohol. The options let them down: alcohol-free wines lose their flavour, juices feel cheap, water kills the moment. Health-conscious consumers, pregnant women, drivers and the sober-curious had nothing worth pouring at a dinner table.",
     fix:
-      "herbling is a naturally sparkling herbal tea: low in sugar, alcohol-free, made from Ricola's Swiss alpine herbs with a unique ripening refinement. We tested everything in weekly iterations: bottle shape and colour, branding, the recipe itself, four flavour versions, and blind tastings to see what people actually preferred. Tatjana led stakeholder relations and recruited tasters through a school and industry experts; my end was strategy, marketing campaign, design, content and the pitch decks that got us seeding. At field tests, tasters confirmed purchase intent on the spot, and over 1'000 bottles were crowdfunded through our own pre-sale page. The trial project ended, but herbling was closer than before.",
+      "herbling is a naturally sparkling herbal tea: low in sugar, alcohol-free, made from Ricola's Swiss alpine herbs with a unique ripening refinement. We tested everything in weekly iterations: bottle, branding, recipes, and content, to see what people actually liked. My end was creative strategy, marketing campaign, design, content and the pitch decks that got us internal seeding.Over 1'000 bottles were crowdfunded through our own pre-sale page. The trial experiment ended, but herbling was closer to reach you than before.",
     favorite:
-      "Turning an idea inside a 130-year-old brand into something people would actually buy, with a small team, a tight budget and mentors to convince. Watching a stranger taste our idea and wanting to buy on the spot: that's the moment you know if a product is real.",
+      "Turning an idea inside a 130-year-old brand into something people would actually buy, with a 5 people team, a tight budget and mentors to convince. Watching a stranger taste our idea and wanting to buy on the spot: that's the moment you know if a product can become real.",
     coverImage: case1Cover,
     images: [case1Img1, case1Img2, case1Img3],
   },
@@ -63,11 +63,11 @@ const caseStudies = [
     tagline: "Rebranding & omnichannel integration",
     category: "Digital Transformation",
     gap:
-      "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a store.",
+      "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a physical store.",
     fix:
-      "First the brand transition from LeShop.ch to Migros Online, then the full merger into migros.ch. The platform had to serve two shopping modes, delivery and physical stores, and go beyond a shop into a brand world with its own storytelling and personality. Over several years and multiple identities, it became the unified digital home of Switzerland's most trusted retailer, serving millions of customers online and offline.",
+      "First the brand transition from LeShop.ch to Migros Online, then the full merger into migros.ch. We mapped the journey how people moved between both shopping modes, and designed the service so migros.ch felt like one coherent brand. Over several years and multiple iterations, it became the unified digital home of Switzerland's most trusted retailer, serving millions of customers online and offline.",
     favorite:
-      "Sitting between Migros Online's squads and Corporate's research team, and making one brand feel coherent across a website that used to be three. Two years in, the best part was still the small stuff: a journey blueprint that clicked for all.",
+      "Sitting between Migros Online's squads and Corporate's research team, and making ONE out three. The best part was collaborating on a journey blueprint that clicked for all.",
     coverImage: case2Cover,
     images: [case2Img1, case2Img2, case2Img3],
   },
@@ -76,11 +76,11 @@ const caseStudies = [
     tagline: "Where Commerce Meets Character",
     category: "Brand Experience",
     gap:
-      "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform couldn't connect product and story, nor hold two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
+      "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
     fix:
-      "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each one-off product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools let authors tell the material and sustainability story without ever losing the sale. Maintenance costs dropped by 50%, and mobile conversion rose by 25%.",
+      "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools let gave freedom to authors who tell stories without ever losing the sale opportunity. Maintenance costs dropped by 50%, and mobile conversion rose by 25%.",
     favorite:
-      "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex projects of my career, while part of Liip AG.",
+      "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex "storyselling" projects of my career, while part of Liip AG.",
     coverImage: case3Cover,
     images: [case3Img1, case3Img2, case3Img3],
   },
