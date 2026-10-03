@@ -211,7 +211,7 @@ const CaseStudy = ({
         )}
       </div>
 
-      {/* The Gap, The Fix, My Favorite */}
+      {/* The Gap, The Fix, My Fav */}
       <div className="grid md:grid-cols-3 gap-16">
         <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
@@ -227,7 +227,7 @@ const CaseStudy = ({
         </div>
         <div className="scroll-reveal scroll-reveal-delay-2">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-            My Favorite
+            My Fav
           </h3>
           <div className="text-base leading-relaxed text-foreground/80 max-w-3xl space-y-4">
             {favorite.split("\n\n").map((paragraph, i) => (
