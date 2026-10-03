@@ -4,6 +4,8 @@ interface CaseStudyProps {
   title: string;
   tagline?: string;
   category: string;
+  context?: string;
+  period?: string;
   gap: string;
   fix: string;
   favorite: string;
@@ -15,6 +17,8 @@ const CaseStudy = ({
   title,
   tagline,
   category,
+  context,
+  period,
   gap,
   fix,
   favorite,
@@ -28,7 +32,7 @@ const CaseStudy = ({
       {/* Header */}
       <div className="mb-10 scroll-reveal">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-          {category}
+          {[category, context, period].filter(Boolean).join(" · ")}
         </p>
         <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight">
           {title}
