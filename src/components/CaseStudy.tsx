@@ -7,8 +7,8 @@ interface CaseStudyProps {
   gap: string;
   fix: string;
   favorite: string;
-  coverImage: string;
-  images: string[];
+  coverImage?: string;
+  images?: string[];
 }
 
 const CaseStudy = ({
@@ -19,7 +19,7 @@ const CaseStudy = ({
   fix,
   favorite,
   coverImage,
-  images,
+  images = [],
 }: CaseStudyProps) => {
   const ref = useScrollReveal();
 
@@ -41,13 +41,15 @@ const CaseStudy = ({
       </div>
 
       {/* Cover Image */}
-      <div className="mb-16 overflow-hidden scroll-reveal">
-        <img
-          src={coverImage}
-          alt={`${title} cover`}
-          className="w-full h-auto object-cover"
-        />
-      </div>
+      {coverImage && (
+        <div className="mb-16 overflow-hidden scroll-reveal">
+          <img
+            src={coverImage}
+            alt={`${title} cover`}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )}
 
       {/* The Gap, The Fix, My Bit */}
       <div className="grid md:grid-cols-3 gap-16 mb-16">
@@ -77,6 +79,7 @@ const CaseStudy = ({
 
 
       {/* Image Gallery */}
+      {images.length > 0 && (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 items-center">
         {images.map((image, index) => (
           <div
@@ -92,6 +95,7 @@ const CaseStudy = ({
           </div>
         ))}
       </div>
+      )}
 
     </article>
   );
