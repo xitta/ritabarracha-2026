@@ -54,7 +54,7 @@ const caseStudies = [
     gap:
       "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
-      "We built BRDGE, a catalogue of 50+ tested interactive activations, games, mediaguides, phygital experiences, that turns an idea into a working prototype in days. From a fully custom, to a module with new mechanics, to one just reskinned for the brand. Nothing starts from zero. Around the product, we built the operations growth system too: a partner ecosystem of referrers, resellers and tech partners, go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
+      "We built BRDGE, a catalogue of 50+ tested interactive modules (games, mediaguides, photo and video stations) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
     favorite:
       "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
     coverImage: case4Cover,
@@ -78,6 +78,7 @@ const caseStudies = [
     tagline: "The Value Is in How They Connect",
     category: "Experience Strategy · UX / UI Design",
     context: "at -naut",
+    period: "2023–26",
     gap:
       "Getting people to attend an event is just the start. Activations at fairs, museums and brand events were often isolated moments: a photo station here, a game there, nothing connecting them, and nothing left once the doors closed. Clients struggled to show what the experience was actually worth.",
     fix:
@@ -140,6 +141,19 @@ const caseStudies = [
       "Sitting between Migros Online's squads and Corporate's research team, and making ONE out of three. The best part was collaborating on a journey blueprint that clicked for all.",
     coverImage: case2Cover,
     images: [case2Img1, case2Img2, case2Img3],
+  },
+  {
+    title: "Ricola B2B & We Care",
+    tagline: "Selling the Moment, Not Just the Drops",
+    category: "Service Design · B2B Digitalisation",
+    context: "at -naut, then Einzelfirma",
+    period: "2019–21",
+    gap:
+      "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
+    fix:
+      "I led the UX conception through a series of workshops with Ricola's business, brand, IT and sales teams: stakeholder map, pre-mortem, personas, and service blueprints of the current and future process, from customer journey to backstage. We prioritised an MVP (Must, Should, Nice to have), restructured content and information architecture, and designed a B2B landing page for lead generation, gift box designs and wish messages, alongside research on gifting markets in Canada, France, China and Singapore. When the pandemic hit in 2020, we turned the same thinking into We Care: a care package for families, friends, employees and customers, to share care while staying home.",
+    favorite:
+      "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops, we were selling a moment of care.",
   },
   {
     title: "herbling by Ricola",
