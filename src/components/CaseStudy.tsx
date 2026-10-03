@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import {
   Carousel,
@@ -5,6 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
 interface CaseStudyProps {
@@ -19,6 +21,8 @@ interface CaseStudyProps {
   coverImage?: string;
   images?: string[];
 }
+
+const GAP = 16;
 
 const CaseStudy = ({
   title,
@@ -35,30 +39,79 @@ const CaseStudy = ({
   const ref = useScrollReveal();
   const slides = [coverImage, ...images].filter(Boolean) as string[];
 
+  // Measure the page body so the slider can bleed full-width while the
+  // cover starts aligned with the body and takes 80% of its width.
+  const bodyRef = useRef<HTMLDivElement>(null);
+  const [box, setBox] = useState({ left: 0, width: 0, vw: 0 });
+  const [coverRatio, setCoverRatio] = useState(0);
+
+  useEffect(() => {
+    const measure = () => {
+      const el = bodyRef.current;
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      setBox({ left: r.left, width: r.width, vw: document.documentElement.clientWidth });
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
+
+  const ready = box.vw > 0;
+  const coverW = Math.round(box.width * 0.8);
+  const slideH = coverRatio && coverW ? Math.round(coverW * coverRatio) : undefined;
+
+  // Embla compares options by value, so the snap offset is read from a ref
+  // and the carousel is re-initialised whenever the measurements change.
+  const leftRef = useRef(0);
+  leftRef.current = box.left;
+  const [api, setApi] = useState<CarouselApi>();
+  const opts = useMemo(() => ({ loop: true, align: () => leftRef.current }), []);
+
+  useEffect(() => {
+    api?.reInit();
+  }, [api, box.left, box.width, slideH]);
+
   return (
     <article className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border first:border-t-0 first:pt-0" ref={ref}>
-      {/* Images: cover first, others slide in from the right */}
+      <div ref={bodyRef} className="w-full h-0" aria-hidden="true" />
+
+      {/* Images: full-bleed looping slider, cover aligned with the body */}
       {slides.length > 0 && (
-        <div className="mb-12 md:mb-16 scroll-reveal">
-          <Carousel opts={{ align: "start" }} className="relative">
-            <CarouselContent>
+        <div
+          className="mb-12 md:mb-16 scroll-reveal relative"
+          style={ready ? { width: box.vw, marginLeft: -box.left } : undefined}
+        >
+          <Carousel opts={opts} setApi={setApi}>
+            <CarouselContent className="ml-0">
               {slides.map((image, index) => (
-                <CarouselItem key={index} className="basis-auto">
-                  <div className="h-[200px] sm:h-[300px] md:h-[460px]">
+                <CarouselItem key={index} className="basis-auto pl-0" style={{ paddingRight: GAP }}>
+                  {index === 0 ? (
                     <img
                       src={image}
-                      alt={index === 0 ? `${title} cover` : `${title} detail ${index}`}
-                      className="h-full w-auto max-w-none"
-                      loading={index === 0 ? "eager" : "lazy"}
+                      alt={`${title} cover`}
+                      style={ready ? { width: coverW } : undefined}
+                      className="h-auto max-w-none block"
+                      onLoad={(e) => {
+                        const i = e.currentTarget;
+                        if (i.naturalWidth) setCoverRatio(i.naturalHeight / i.naturalWidth);
+                      }}
                     />
-                  </div>
+                  ) : (
+                    <img
+                      src={image}
+                      alt={`${title} detail ${index}`}
+                      style={slideH ? { height: slideH } : undefined}
+                      className="w-auto max-w-none block h-[200px] md:h-[460px]"
+                    />
+                  )}
                 </CarouselItem>
               ))}
             </CarouselContent>
             {slides.length > 1 && (
               <>
-                <CarouselPrevious className="left-4 h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background disabled:opacity-0" />
-                <CarouselNext className="right-4 h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background disabled:opacity-0" />
+                <CarouselPrevious className="left-4 md:left-6 h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background" />
+                <CarouselNext className="right-4 md:right-6 h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background" />
               </>
             )}
           </Carousel>
@@ -99,7 +152,7 @@ const CaseStudy = ({
             My Favorite
           </h3>
           <div className="text-base leading-relaxed text-foreground/80 max-w-3xl space-y-4">
-            {favorite.split('\n\n').map((paragraph, i) => (
+            {favorite.split("\n\n").map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
           </div>
