@@ -72,6 +72,17 @@ const caseStudies = [
     images: [case3Img1, case3Img2, case3Img3],
   },
   {
+    title: "Victorinox GLM",
+    tagline: "Auditing an Experience from the Inside",
+    category: "UX Research & Evaluation",
+    gap:
+      "Victorinox brought its global teams together in Zurich for a day of product stations, shows and workshops. Our interactive installations were cancelled last minute, which left an open question: how could experiences like these work better for the people inside them?",
+    fix:
+      "I offered a free one-day Experience Audit instead. I observed 9 stations, ran quick feedback interviews during breaks, and mapped what engaged people and what made them drift off: sound bleeding between groups, screens too large to stand near, light that made everyone look tired. The report turned findings into recommendations: hands-on, expert-led storytelling over sales pitches, experience blueprints for staff and visitors, success metrics defined upfront, and ways to bring the brand's heritage into shops and future events.",
+    favorite:
+      "A cancelled project turned into the most honest research I've done. And the clearest finding: a passionate expert showing a fondue fork beats any slide deck.",
+  },
+  {
     title: "Migros.ch",
     tagline: "Rebranding & omnichannel integration",
     category: "Digital Transformation",
