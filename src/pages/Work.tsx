@@ -46,21 +46,6 @@ import case4Img3 from "@/assets/case4-img3.jpg";
 
 const caseStudies = [
   {
-    title: "-naut & BRDGE",
-    tagline: "Making Custom Work Scalable",
-    category: "Operations & Growth Systems",
-    context: "at -naut",
-    period: "2023–26",
-    gap:
-      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
-    fix:
-      "We built BRDGE, a catalogue of 50+ tested interactive modules (games, mediaguides, photo and video stations) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
-    favorite:
-      "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
-    coverImage: case4Cover,
-    images: [case4Img1, case4Img2, case4Img3],
-  },
-  {
     title: "MIND:HACK",
     tagline: "Making Radicalization Visible, Safely",
     category: "Interaction Design · Public Prevention",
@@ -87,58 +72,19 @@ const caseStudies = [
       "Drawing the journey as a circle, not a line. When the post-event moment feeds the next invitation, visitors become regulars and clients become partners.",
   },
   {
-    title: "opendata.swiss",
-    tagline: "Open Data, Open to Everyone",
-    category: "Public Sector · Branding & UX / UI",
-    context: "with Liip AG",
-    period: "2013–16",
-    gap:
-      "Switzerland's public data was scattered across federal offices, cantons and communes, often in formats only specialists could find or use. The Confederation wanted one central, multilingual place where anyone, from developers and journalists to researchers and curious citizens, could discover and reuse official data for free.",
-    fix:
-      "From the 2013 pilot portal opendata.admin.ch to opendata.swiss, the national portal launched in 2016, I created the branding, UX and UI. The challenge was to make a data catalogue built on strict metadata standards feel approachable: clear search and filtering across datasets from many different publishers, a visual identity neutral enough for a federal platform but with a character of its own, and an interface in German, French, Italian and English. Behind it, CKAN ran the data catalogue and WordPress the content. The portal received Best of Swiss Web awards in Public Affairs.",
-    favorite:
-      "Designing for the federal administration without making it feel like one. Open data only works if people actually open it.",
-  },
-  {
-    title: "FREITAG",
-    tagline: "Where Commerce Meets Character",
-    category: "Brand Experience",
-    context: "with Liip AG",
-    period: "2016–17",
-    gap:
-      "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
-    fix:
-      "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools gave freedom to authors who tell stories without ever losing the sale opportunity. Maintenance costs dropped by 50%, and mobile conversion rose by 25%.",
-    favorite:
-      "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex storyselling projects of my career, while part of Liip AG.",
-    coverImage: case3Cover,
-    images: [case3Img1, case3Img2, case3Img3],
-  },
-  {
-    title: "Zentrum für Reisemedizin",
-    tagline: "More Than Vaccinations",
-    category: "Service Design · Public Health",
-    context: "with melt.",
-    period: "2017–18",
-    gap:
-      "Opened in 1988, the University of Zurich's travel medicine centre no longer matched what travellers or staff needed: walk-in queues and long waits, paper-heavy processes, and a clinic look that hid how much expertise was inside. With its 30th anniversary ahead, the centre asked for a fresh approach across pre-travel, travel and post-travel care.",
-    fix:
-      "Working in an interdisciplinary team with architects and IT partners, we started with research: an earlier customer survey and on-site interviews with staff. We built a service blueprint with the customer and staff journeys side by side, mapping steps, touchpoints, emotions and processes. In workshops with doctors, nurses and management, we collected requirements and prioritised them against the vision into Must, Should and Minor. Three focus areas came out of it: shorter waiting times through booking and e-registration, better working conditions through planning and staff development, and a clearer visitor flow, space and story for the centre.",
-    favorite:
-      "Seeing the customer and staff journeys hanging side by side on one wall. Suddenly everyone in the room could point at the same moment, the same pain point, and start talking about the same future.",
-  },
-  {
-    title: "Victorinox GLM",
-    tagline: "Auditing an Experience from the Inside",
-    category: "UX Research & Evaluation",
+    title: "-naut & BRDGE",
+    tagline: "Making Custom Work Scalable",
+    category: "Operations & Growth Systems",
     context: "at -naut",
-    period: "2019",
+    period: "2023–26",
     gap:
-      "Victorinox brought its global teams together in Zurich for a day of product stations, shows and workshops. Our interactive installations were cancelled last minute, which left an open question: how could experiences like these work better for the people inside them?",
+      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
-      "I offered a free one-day Experience Audit instead. I observed 9 stations, ran quick feedback interviews during breaks, and mapped what engaged people and what made them drift off: sound bleeding between groups, screens too large to stand near, light that made everyone look tired. The report turned findings into recommendations: hands-on, expert-led storytelling over sales pitches, experience blueprints for staff and visitors, success metrics defined upfront, and ways to bring the brand's heritage into shops and future events.",
+      "We built BRDGE, a catalogue of 50+ tested interactive modules (games, mediaguides, photo and video stations) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
     favorite:
-      "A cancelled project turned into the most honest research I've done. And the clearest finding: a passionate expert showing a fondue fork beats any slide deck.",
+      "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
+    coverImage: case4Cover,
+    images: [case4Img1, case4Img2, case4Img3],
   },
   {
     title: "Migros.ch",
@@ -156,19 +102,6 @@ const caseStudies = [
     images: [case2Img1, case2Img2, case2Img3],
   },
   {
-    title: "Ricola B2B & We Care",
-    tagline: "Selling the Moment, Not Just the Drops",
-    category: "Service Design · B2B Digitalisation",
-    context: "at -naut & Einzelfirma",
-    period: "2019–21",
-    gap:
-      "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
-    fix:
-      "I led the UX conception through a series of workshops with Ricola's business, brand, IT and sales teams: stakeholder map, pre-mortem, personas, and service blueprints of the current and future process, from customer journey to backstage. We prioritised an MVP (Must, Should, Nice to have), restructured content and information architecture, and designed a B2B landing page for lead generation, gift box designs and wish messages, alongside research on gifting markets in Canada, France, China and Singapore. We also built a pattern generator that turns any image into kaleidoscope-like designs: fed with 100 brand logos, it created branded covers for the mini packs, used for sponsoring and corporate gifts. When the pandemic hit in 2020, we turned the same thinking into We Care, a care package for families, friends, employees and customers, with its own ordering site, to share care while staying home.",
-    favorite:
-      "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops, we were selling a moment of care.",
-  },
-  {
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
     category: "Product Design",
@@ -182,6 +115,73 @@ const caseStudies = [
       "Turning an idea inside a 130-year-old brand into something people would actually buy, with a 5 people team, a tight budget and mentors to convince. Watching a stranger taste our idea and wanting to buy on the spot: that's the moment you know if a product can become real.",
     coverImage: case1Cover,
     images: [case1Img1, case1Img2, case1Img3],
+  },
+  {
+    title: "Ricola B2B & We Care",
+    tagline: "Selling the Moment, Not Just the Drops",
+    category: "Service Design · B2B Digitalisation",
+    context: "at -naut & Einzelfirma",
+    period: "2019–21",
+    gap:
+      "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
+    fix:
+      "I led the UX conception through a series of workshops with Ricola's business, brand, IT and sales teams: stakeholder map, pre-mortem, personas, and service blueprints of the current and future process, from customer journey to backstage. We prioritised an MVP (Must, Should, Nice to have), restructured content and information architecture, and designed a B2B landing page for lead generation, gift box designs and wish messages, alongside research on gifting markets in Canada, France, China and Singapore. We also built a pattern generator that turns any image into kaleidoscope-like designs: fed with 100 brand logos, it created branded covers for the mini packs, used for sponsoring and corporate gifts. When the pandemic hit in 2020, we turned the same thinking into We Care, a care package for families, friends, employees and customers, with its own ordering site, to share care while staying home.",
+    favorite:
+      "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops, we were selling a moment of care.",
+  },
+  {
+    title: "Victorinox GLM",
+    tagline: "Auditing an Experience from the Inside",
+    category: "UX Research & Evaluation",
+    context: "at -naut",
+    period: "2019",
+    gap:
+      "Victorinox brought its global teams together in Zurich for a day of product stations, shows and workshops. Our interactive installations were cancelled last minute, which left an open question: how could experiences like these work better for the people inside them?",
+    fix:
+      "I offered a free one-day Experience Audit instead. I observed 9 stations, ran quick feedback interviews during breaks, and mapped what engaged people and what made them drift off: sound bleeding between groups, screens too large to stand near, light that made everyone look tired. The report turned findings into recommendations: hands-on, expert-led storytelling over sales pitches, experience blueprints for staff and visitors, success metrics defined upfront, and ways to bring the brand's heritage into shops and future events.",
+    favorite:
+      "A cancelled project turned into the most honest research I've done. And the clearest finding: a passionate expert showing a fondue fork beats any slide deck.",
+  },
+  {
+    title: "Zentrum für Reisemedizin",
+    tagline: "More Than Vaccinations",
+    category: "Service Design · Public Health",
+    context: "with melt.",
+    period: "2017–18",
+    gap:
+      "Opened in 1988, the University of Zurich's travel medicine centre no longer matched what travellers or staff needed: walk-in queues and long waits, paper-heavy processes, and a clinic look that hid how much expertise was inside. With its 30th anniversary ahead, the centre asked for a fresh approach across pre-travel, travel and post-travel care.",
+    fix:
+      "Working in an interdisciplinary team with architects and IT partners, we started with research: an earlier customer survey and on-site interviews with staff. We built a service blueprint with the customer and staff journeys side by side, mapping steps, touchpoints, emotions and processes. In workshops with doctors, nurses and management, we collected requirements and prioritised them against the vision into Must, Should and Minor. Three focus areas came out of it: shorter waiting times through booking and e-registration, better working conditions through planning and staff development, and a clearer visitor flow, space and story for the centre.",
+    favorite:
+      "Seeing the customer and staff journeys hanging side by side on one wall. Suddenly everyone in the room could point at the same moment, the same pain point, and start talking about the same future.",
+  },
+  {
+    title: "opendata.swiss",
+    tagline: "Open Data, Open to Everyone",
+    category: "Public Sector · Branding & UX / UI",
+    context: "with Liip AG",
+    period: "2015–18",
+    gap:
+      "Switzerland's public data was scattered across federal offices, cantons and communes, often in formats only specialists could find or use. The Confederation wanted one central, multilingual place where anyone, from developers and journalists to researchers and curious citizens, could discover and reuse official data for free.",
+    fix:
+      "opendata.swiss replaced the 2013 pilot portal and launched as the national open government data portal in 2016. I created its minimal brand identity, the experience concept, UX and UI. The challenge was to make a data catalogue built on strict metadata standards feel approachable: clear search and filtering across datasets from many different publishers, a visual identity neutral enough for a federal platform but with a character of its own, and an interface in German, French, Italian and English. Behind it, CKAN ran the data catalogue and WordPress the content. At Best of Swiss Web 2016, the portal won Innovation Silver and Public Affairs Bronze.",
+    favorite:
+      "Designing for the federal administration without making it feel like one. Open data only works if people actually open it.",
+  },
+  {
+    title: "FREITAG",
+    tagline: "Where Commerce Meets Character",
+    category: "Brand Experience",
+    context: "with Liip AG",
+    period: "2014–19",
+    gap:
+      "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
+    fix:
+      "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools gave freedom to authors who tell stories without ever losing the sale opportunity. Maintenance costs dropped by 50%, and mobile conversion rose by 25%. Neo won six Best of Swiss Web awards in 2017 (including Creation Gold and the Master Award), the Swiss E-Commerce Award and the German Design Award 2018.",
+    favorite:
+      "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex storyselling projects of my career, while part of Liip AG.",
+    coverImage: case3Cover,
+    images: [case3Img1, case3Img2, case3Img3],
   },
 ];
 
