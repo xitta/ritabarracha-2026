@@ -46,30 +46,17 @@ import case4Img3 from "@/assets/case4-img3.jpg";
 
 const caseStudies = [
   {
-    title: "herbling by Ricola",
-    tagline: "From Alpine Herbs to Premium Drink",
-    category: "Product Design",
+    title: "-naut & BRDGE",
+    tagline: "Making Custom Work Scalable",
+    category: "Operations & Growth Systems",
     gap:
-      "People want to drink something special without the alcohol. The options let them down: alcohol-free wines lose their flavour, juices feel cheap, water kills the moment. Health-conscious consumers, pregnant women, drivers and the sober-curious had nothing worth pouring at a dinner table.",
+      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
-      "herbling is a naturally sparkling herbal tea: low in sugar, alcohol-free, made from Ricola's Swiss alpine herbs with a unique ripening refinement. We tested everything in weekly iterations: bottle, branding, recipes, and content, to see what people actually liked. My end was creative strategy, marketing campaign, design, content and the pitch decks that got us internal seeding.Over 1'000 bottles were crowdfunded through our own pre-sale page. The trial experiment ended, but herbling was closer to reach you than before.",
+      "We built BRDGE, a catalogue of 50+ tested interactive activations, games, mediaguides, phygital experiences, that turns an idea into a working prototype in days. From a fully custom, to a module with new mechanics, to one just reskinned for the brand. Nothing starts from zero. Around the product, we built the operations growth system too: a partner ecosystem of referrers, resellers and tech partners, go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
     favorite:
-      "Turning an idea inside a 130-year-old brand into something people would actually buy, with a 5 people team, a tight budget and mentors to convince. Watching a stranger taste our idea and wanting to buy on the spot: that's the moment you know if a product can become real.",
-    coverImage: case1Cover,
-    images: [case1Img1, case1Img2, case1Img3],
-  },
-  {
-    title: "Migros.ch",
-    tagline: "Rebranding & omnichannel integration",
-    category: "Digital Transformation",
-    gap:
-      "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a physical store.",
-    fix:
-      "First the brand transition from LeShop.ch to Migros Online, then the full merger into migros.ch. We mapped the journey how people moved between both shopping modes, and designed the service so migros.ch felt like one coherent brand. Over several years and multiple iterations, it became the unified digital home of Switzerland's most trusted retailer, serving millions of customers online and offline.",
-    favorite:
-      "Sitting between Migros Online's squads and Corporate's research team, and making ONE out of three. The best part was collaborating on a journey blueprint that clicked for all.",
-    coverImage: case2Cover,
-    images: [case2Img1, case2Img2, case2Img3],
+      "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
+    coverImage: case4Cover,
+    images: [case4Img1, case4Img2, case4Img3],
   },
   {
     title: "FREITAG",
@@ -85,17 +72,30 @@ const caseStudies = [
     images: [case3Img1, case3Img2, case3Img3],
   },
   {
-    title: "-naut & BRDGE",
-    tagline: "Making Custom Work Scalable",
-    category: "Operations & Growth Systems",
+    title: "Migros.ch",
+    tagline: "Rebranding & omnichannel integration",
+    category: "Digital Transformation",
     gap:
-      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
+      "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a physical store.",
     fix:
-      "We built BRDGE, a catalogue of 50+ tested interactive activations, games, mediaguides, phygital experiences, that turns an idea into a working prototype in days. From a fully custom, to a module with new mechanics, to one just reskinned for the brand. Nothing starts from zero. Around the product, we built the operations growth system too: a partner ecosystem of referrers, resellers and tech partners, go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
+      "First the brand transition from LeShop.ch to Migros Online, then the full merger into migros.ch. We mapped the journey how people moved between both shopping modes, and designed the service so migros.ch felt like one coherent brand. Over several years and multiple iterations, it became the unified digital home of Switzerland's most trusted retailer, serving millions of customers online and offline.",
     favorite:
-      "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
-    coverImage: case4Cover,
-    images: [case4Img1, case4Img2, case4Img3],
+      "Sitting between Migros Online's squads and Corporate's research team, and making ONE out of three. The best part was collaborating on a journey blueprint that clicked for all.",
+    coverImage: case2Cover,
+    images: [case2Img1, case2Img2, case2Img3],
+  },
+  {
+    title: "herbling by Ricola",
+    tagline: "From Alpine Herbs to Premium Drink",
+    category: "Product Design",
+    gap:
+      "People want to drink something special without the alcohol. The options let them down: alcohol-free wines lose their flavour, juices feel cheap, water kills the moment. Health-conscious consumers, pregnant women, drivers and the sober-curious had nothing worth pouring at a dinner table.",
+    fix:
+      "herbling is a naturally sparkling herbal tea: low in sugar, alcohol-free, made from Ricola's Swiss alpine herbs with a unique ripening refinement. We tested everything in weekly iterations: bottle, branding, recipes, and content, to see what people actually liked. My end was creative strategy, marketing campaign, design, content and the pitch decks that got us internal seeding.Over 1'000 bottles were crowdfunded through our own pre-sale page. The trial experiment ended, but herbling was closer to reach you than before.",
+    favorite:
+      "Turning an idea inside a 130-year-old brand into something people would actually buy, with a 5 people team, a tight budget and mentors to convince. Watching a stranger taste our idea and wanting to buy on the spot: that's the moment you know if a product can become real.",
+    coverImage: case1Cover,
+    images: [case1Img1, case1Img2, case1Img3],
   },
 ];
 
