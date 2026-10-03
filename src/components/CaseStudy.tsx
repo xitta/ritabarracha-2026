@@ -30,7 +30,7 @@ const CaseStudy = ({
   return (
     <article className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border first:border-t-0 first:pt-0" ref={ref}>
       {/* Header */}
-      <div className="mb-10 scroll-reveal">
+      <div className="mb-12 scroll-reveal">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
           {[category, context, period].filter(Boolean).join(" · ")}
         </p>
@@ -44,19 +44,8 @@ const CaseStudy = ({
         )}
       </div>
 
-      {/* Cover Image */}
-      {coverImage && (
-        <div className="mb-16 overflow-hidden scroll-reveal">
-          <img
-            src={coverImage}
-            alt={`${title} cover`}
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      )}
-
       {/* The Gap, The Fix, My Bit */}
-      <div className="grid md:grid-cols-3 gap-16 mb-16">
+      <div className="grid md:grid-cols-3 gap-16 mb-16 md:mb-20">
         <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             The Gap
@@ -69,7 +58,7 @@ const CaseStudy = ({
           </h3>
           <p className="text-base leading-relaxed text-foreground/80">{fix}</p>
         </div>
-        <div className="mb-16 scroll-reveal scroll-reveal-delay-2">
+        <div className="scroll-reveal scroll-reveal-delay-2">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             My Favorite
           </h3>
@@ -81,10 +70,20 @@ const CaseStudy = ({
         </div>
       </div>
 
+      {/* Cover Image */}
+      {coverImage && (
+        <div className="mb-4 overflow-hidden scroll-reveal">
+          <img
+            src={coverImage}
+            alt={`${title} cover`}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )}
 
       {/* Image Gallery */}
       {images.length > 0 && (
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         {images.map((image, index) => (
           <div
             key={index}
