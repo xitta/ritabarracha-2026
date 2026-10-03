@@ -1,4 +1,11 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface CaseStudyProps {
   title: string;
@@ -26,9 +33,38 @@ const CaseStudy = ({
   images = [],
 }: CaseStudyProps) => {
   const ref = useScrollReveal();
+  const slides = [coverImage, ...images].filter(Boolean) as string[];
 
   return (
     <article className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border first:border-t-0 first:pt-0" ref={ref}>
+      {/* Images: cover first, others slide in from the right */}
+      {slides.length > 0 && (
+        <div className="mb-12 md:mb-16 scroll-reveal">
+          <Carousel opts={{ align: "start" }} className="relative">
+            <CarouselContent>
+              {slides.map((image, index) => (
+                <CarouselItem key={index} className="basis-auto">
+                  <div className="h-[200px] sm:h-[300px] md:h-[460px]">
+                    <img
+                      src={image}
+                      alt={index === 0 ? `${title} cover` : `${title} detail ${index}`}
+                      className="h-full w-auto max-w-none"
+                      loading={index === 0 ? "eager" : "lazy"}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            {slides.length > 1 && (
+              <>
+                <CarouselPrevious className="left-4 h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background disabled:opacity-0" />
+                <CarouselNext className="right-4 h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background disabled:opacity-0" />
+              </>
+            )}
+          </Carousel>
+        </div>
+      )}
+
       {/* Header */}
       <div className="mb-12 scroll-reveal">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
@@ -44,8 +80,8 @@ const CaseStudy = ({
         )}
       </div>
 
-      {/* The Gap, The Fix, My Bit */}
-      <div className="grid md:grid-cols-3 gap-16 mb-16 md:mb-20">
+      {/* The Gap, The Fix, My Favorite */}
+      <div className="grid md:grid-cols-3 gap-16">
         <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             The Gap
@@ -69,37 +105,6 @@ const CaseStudy = ({
           </div>
         </div>
       </div>
-
-      {/* Cover Image */}
-      {coverImage && (
-        <div className="mb-4 overflow-hidden scroll-reveal">
-          <img
-            src={coverImage}
-            alt={`${title} cover`}
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      )}
-
-      {/* Image Gallery */}
-      {images.length > 0 && (
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="overflow-hidden scroll-reveal flex items-center"
-            style={{ transitionDelay: `${index * 0.08}s` }}
-          >
-            <img
-              src={image}
-              alt={`${title} detail ${index + 1}`}
-              className="w-full h-auto object-contain md:grayscale md:hover:grayscale-0 transition-all duration-500"
-            />
-          </div>
-        ))}
-      </div>
-      )}
-
     </article>
   );
 };
