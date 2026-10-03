@@ -22,7 +22,7 @@ interface CaseStudyProps {
   images?: string[];
 }
 
-const GAP = 16;
+const GAP = 70;
 
 const CaseStudy = ({
   title,
@@ -71,6 +71,90 @@ const CaseStudy = ({
   useEffect(() => {
     api?.reInit();
   }, [api, box.left, box.width, slideH]);
+
+  // Marquee: a slow continuous drift. It pauses while hovering, dragging or
+  // using the arrows, and resumes shortly after. Respects reduced motion.
+  useEffect(() => {
+    if (!api || slides.length < 2) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const SPEED = 0.6; // px per frame
+    let running = false;
+    let resumeTimer: number | undefined;
+    let defaultBody: ReturnType<CarouselApi["internalEngine"]>["scrollBody"];
+
+    const start = () => {
+      const engine = api.internalEngine();
+      if (running) return;
+      defaultBody = engine.scrollBody;
+      const self = {
+        direction: () => -1,
+        duration: () => -1,
+        velocity: () => -SPEED,
+        settled: () => false,
+        seek: () => {
+          engine.previousLocation.set(engine.location);
+          engine.location.add(-SPEED);
+          engine.target.set(engine.location);
+          return self;
+        },
+        useBaseFriction: () => self,
+        useBaseDuration: () => self,
+        useFriction: () => self,
+        useDuration: () => self,
+      };
+      engine.scrollBody = self as unknown as typeof defaultBody;
+      engine.animation.start();
+      running = true;
+    };
+
+    const stop = () => {
+      window.clearTimeout(resumeTimer);
+      if (!running) return;
+      const engine = api.internalEngine();
+      engine.scrollBody = defaultBody;
+      engine.target.set(engine.location);
+      running = false;
+    };
+
+    const resumeLater = (ms = 2000) => {
+      window.clearTimeout(resumeTimer);
+      resumeTimer = window.setTimeout(start, ms);
+    };
+
+    const root = api.rootNode().parentElement ?? api.rootNode();
+    const onEnter = () => stop();
+    const onLeave = () => resumeLater(800);
+    const onPointerDown = () => stop();
+    const onSettle = () => {
+      if (!running && !root.matches(":hover")) resumeLater();
+    };
+    const onReInit = () => {
+      running = false;
+      resumeLater(1500);
+    };
+    const onArrowClick = (e: Event) => {
+      if ((e.target as HTMLElement).closest("button")) stop();
+    };
+
+    root.addEventListener("mouseenter", onEnter);
+    root.addEventListener("mouseleave", onLeave);
+    root.addEventListener("click", onArrowClick, true);
+    api.on("pointerDown", onPointerDown);
+    api.on("settle", onSettle);
+    api.on("reInit", onReInit);
+    resumeLater(1500);
+
+    return () => {
+      stop();
+      root.removeEventListener("mouseenter", onEnter);
+      root.removeEventListener("mouseleave", onLeave);
+      root.removeEventListener("click", onArrowClick, true);
+      api.off("pointerDown", onPointerDown);
+      api.off("settle", onSettle);
+      api.off("reInit", onReInit);
+    };
+  }, [api, slides.length]);
 
   return (
     <article className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border first:border-t-0 first:pt-0" ref={ref}>
