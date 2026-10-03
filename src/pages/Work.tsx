@@ -87,6 +87,19 @@ const caseStudies = [
       "Drawing the journey as a circle, not a line. When the post-event moment feeds the next invitation, visitors become regulars and clients become partners.",
   },
   {
+    title: "opendata.swiss",
+    tagline: "Open Data, Open to Everyone",
+    category: "Public Sector · Branding & UX / UI",
+    context: "with Liip AG",
+    period: "2013–16",
+    gap:
+      "Switzerland's public data was scattered across federal offices, cantons and communes, often in formats only specialists could find or use. The Confederation wanted one central, multilingual place where anyone, from developers and journalists to researchers and curious citizens, could discover and reuse official data for free.",
+    fix:
+      "From the 2013 pilot portal opendata.admin.ch to opendata.swiss, the national portal launched in 2016, I created the branding, UX and UI. The challenge was to make a data catalogue built on strict metadata standards feel approachable: clear search and filtering across datasets from many different publishers, a visual identity neutral enough for a federal platform but with a character of its own, and an interface in German, French, Italian and English. Behind it, CKAN ran the data catalogue and WordPress the content. The portal received Best of Swiss Web awards in Public Affairs.",
+    favorite:
+      "Designing for the federal administration without making it feel like one. Open data only works if people actually open it.",
+  },
+  {
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
     category: "Brand Experience",
