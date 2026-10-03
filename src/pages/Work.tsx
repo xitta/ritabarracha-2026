@@ -61,6 +61,19 @@ const caseStudies = [
     images: [case4Img1, case4Img2, case4Img3],
   },
   {
+    title: "MIND:HACK",
+    tagline: "Making Radicalization Visible, Safely",
+    category: "Interaction Design · Public Prevention",
+    context: "at -naut",
+    period: "2026",
+    gap:
+      "Radicalization rarely starts with violence. It starts with group pressure, camps forming and opinions tipping. The Kantonspolizei Thurgau and its violence prevention commission wanted young people (12–18) to recognise these dynamics from the inside, in the classroom, without reproducing them in a harmful way.",
+    fix:
+      "Together with a concept partner, we designed a timer-driven, role-based group chat game. Each student scans a QR code for a secret role (Polarizer, Pusher, Neutral) and receives tasks that drive behaviour rather than arguments: write in caps, demand a yes or no, exploit a muted player. The game follows a scientific escalation model and stops before it turns dangerous. A Red Button lets the group mute a player for No-Go messages, a teacher dashboard allows intervention at any time, and anonymous polls track how opinions shift, feeding a guided class debrief. After moderated classroom tests, we iterated on role-specific questionnaires, flexible survey placement and a visual report of how the discussion evolved. Built on BRDGE, the topic is a variable: the system stays the same. Launch is planned for the end of 2026.",
+    favorite:
+      "Designing rules that make a group self-regulate. The most important mechanic isn't the escalation, it's the Red Button: young people deciding together where the line is.",
+  },
+  {
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
     category: "Brand Experience",
