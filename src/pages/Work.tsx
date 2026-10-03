@@ -130,6 +130,19 @@ const caseStudies = [
       "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops, we were selling a moment of care.",
   },
   {
+    title: "TEX by Tamedia",
+    tagline: "Finding the Signal in Five Million Documents",
+    category: "Product Design · AI Newsroom Tools",
+    context: "at Tamedia",
+    period: "2019",
+    gap:
+      "Tamedia's journalists relied on Tadam, an externally managed 'black box' that sourced news from around 3,100 websites, RSS feeds, Twitter accounts and mail sources. Its successor, TEX, would add AI-powered topic suggestions, trends, weak signals and credibility rankings, and source an average of 5 million documents a month. The real question: how can a journalist on deadline actually work with that much data?",
+    fix:
+      "As UX designer in Tamedia's product and UX team, I worked through the business requirements, wishlists from editorial desks like sports, and the old system to understand how journalists really search. We identified two modes: Live, for breaking news under time pressure, and Explore, for investigative work without the clock. For the proof of concept we focused on three screens: a dashboard overview, a live news feed, and an explore view with smart search operators, taxonomy filters (topics, people, organisations, locations), related trends and suggestions. I designed the user flows and the UI across several iterations. At Tamedia, I also worked on products for Ricardo, tutti.ch and 20 Minuten.",
+    favorite:
+      "Designing for two very different clocks: the sports journalist who needs to know now, and the investigative one who needs to know everything. Same data, two completely different journeys.",
+  },
+  {
     title: "Victorinox GLM",
     tagline: "Auditing an Experience from the Inside",
     category: "UX Research & Evaluation",
