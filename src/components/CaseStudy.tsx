@@ -72,8 +72,8 @@ const CaseStudy = ({
     api?.reInit();
   }, [api, box.left, box.width, slideH]);
 
-  // Marquee: a slow continuous drift. It pauses while hovering, dragging or
-  // using the arrows, and resumes shortly after. Respects reduced motion.
+  // Marquee: a slow continuous drift, like a mood strip. It only pauses while
+  // dragging or using the arrows, and resumes shortly after. Respects reduced motion.
   useEffect(() => {
     if (!api || slides.length < 2) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -123,11 +123,9 @@ const CaseStudy = ({
     };
 
     const root = api.rootNode().parentElement ?? api.rootNode();
-    const onEnter = () => stop();
-    const onLeave = () => resumeLater(800);
     const onPointerDown = () => stop();
     const onSettle = () => {
-      if (!running && !root.matches(":hover")) resumeLater();
+      if (!running) resumeLater();
     };
     const onReInit = () => {
       running = false;
@@ -137,8 +135,6 @@ const CaseStudy = ({
       if ((e.target as HTMLElement).closest("button")) stop();
     };
 
-    root.addEventListener("mouseenter", onEnter);
-    root.addEventListener("mouseleave", onLeave);
     root.addEventListener("click", onArrowClick, true);
     api.on("pointerDown", onPointerDown);
     api.on("settle", onSettle);
@@ -147,8 +143,6 @@ const CaseStudy = ({
 
     return () => {
       stop();
-      root.removeEventListener("mouseenter", onEnter);
-      root.removeEventListener("mouseleave", onLeave);
       root.removeEventListener("click", onArrowClick, true);
       api.off("pointerDown", onPointerDown);
       api.off("settle", onSettle);
