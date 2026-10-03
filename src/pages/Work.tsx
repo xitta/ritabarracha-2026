@@ -50,6 +50,7 @@ const caseStudies = [
     tagline: "Making Custom Work Scalable",
     category: "Operations & Growth Systems",
     context: "at -naut",
+    period: "2023–26",
     gap:
       "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
@@ -64,6 +65,7 @@ const caseStudies = [
     tagline: "Where Commerce Meets Character",
     category: "Brand Experience",
     context: "with Liip AG",
+    period: "2016–17",
     gap:
       "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
     fix:
@@ -103,7 +105,8 @@ const caseStudies = [
     title: "Migros.ch",
     tagline: "Rebranding & omnichannel integration",
     category: "Digital Transformation",
-    context: "Independent",
+    context: "Einzelfirma",
+    period: "2020–25",
     gap:
       "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a physical store.",
     fix:
@@ -117,7 +120,8 @@ const caseStudies = [
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
     category: "Product Design",
-    context: "Independent",
+    context: "Einzelfirma",
+    period: "2021",
     gap:
       "People want to drink something special without the alcohol. The options let them down: alcohol-free wines lose their flavour, juices feel cheap, water kills the moment. Health-conscious consumers, pregnant women, drivers and the sober-curious had nothing worth pouring at a dinner table.",
     fix:
