@@ -72,6 +72,17 @@ const caseStudies = [
     images: [case3Img1, case3Img2, case3Img3],
   },
   {
+    title: "Zentrum für Reisemedizin",
+    tagline: "More Than Vaccinations",
+    category: "Service Design · Public Health",
+    gap:
+      "Opened in 1988, the University of Zurich's travel medicine centre no longer matched what travellers or staff needed: walk-in queues and long waits, paper-heavy processes, and a clinic look that hid how much expertise was inside. With its 30th anniversary ahead, the centre asked for a fresh approach across pre-travel, travel and post-travel care.",
+    fix:
+      "Working in an interdisciplinary team with architects and IT partners, we started with research: an earlier customer survey and on-site interviews with staff. We built a service blueprint with the customer and staff journeys side by side, mapping steps, touchpoints, emotions and processes. In workshops with doctors, nurses and management, we collected requirements and prioritised them against the vision into Must, Should and Minor. Three focus areas came out of it: shorter waiting times through booking and e-registration, better working conditions through planning and staff development, and a clearer visitor flow, space and story for the centre.",
+    favorite:
+      "Seeing the customer and staff journeys hanging side by side on one wall. Suddenly everyone in the room could point at the same moment, the same pain point, and start talking about the same future.",
+  },
+  {
     title: "Victorinox GLM",
     tagline: "Auditing an Experience from the Inside",
     category: "UX Research & Evaluation",
