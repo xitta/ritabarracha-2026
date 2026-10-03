@@ -64,7 +64,7 @@ const Home = () => {
             },
             {
               title: "Research & Design",
-              items: ["UX Research", "Service Design, UX & UI", "Product Experience", "Prototyping & Testing"],
+              items: ["UX Research", "Spatial / Phygital Design", "Service Design, UX & UI", "Product Experience", "Prototyping & Testing"],
             },
             {
               title: "Delivery",
