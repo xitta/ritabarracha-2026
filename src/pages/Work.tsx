@@ -49,6 +49,7 @@ const caseStudies = [
     title: "-naut & BRDGE",
     tagline: "Making Custom Work Scalable",
     category: "Operations & Growth Systems",
+    context: "at -naut",
     gap:
       "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
@@ -62,6 +63,7 @@ const caseStudies = [
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
     category: "Brand Experience",
+    context: "with Liip AG",
     gap:
       "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
     fix:
@@ -75,6 +77,8 @@ const caseStudies = [
     title: "Zentrum für Reisemedizin",
     tagline: "More Than Vaccinations",
     category: "Service Design · Public Health",
+    context: "with melt.",
+    period: "2017–18",
     gap:
       "Opened in 1988, the University of Zurich's travel medicine centre no longer matched what travellers or staff needed: walk-in queues and long waits, paper-heavy processes, and a clinic look that hid how much expertise was inside. With its 30th anniversary ahead, the centre asked for a fresh approach across pre-travel, travel and post-travel care.",
     fix:
@@ -86,6 +90,8 @@ const caseStudies = [
     title: "Victorinox GLM",
     tagline: "Auditing an Experience from the Inside",
     category: "UX Research & Evaluation",
+    context: "at -naut",
+    period: "2019",
     gap:
       "Victorinox brought its global teams together in Zurich for a day of product stations, shows and workshops. Our interactive installations were cancelled last minute, which left an open question: how could experiences like these work better for the people inside them?",
     fix:
@@ -97,6 +103,7 @@ const caseStudies = [
     title: "Migros.ch",
     tagline: "Rebranding & omnichannel integration",
     category: "Digital Transformation",
+    context: "Independent",
     gap:
       "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a physical store.",
     fix:
@@ -110,6 +117,7 @@ const caseStudies = [
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
     category: "Product Design",
+    context: "Independent",
     gap:
       "People want to drink something special without the alcohol. The options let them down: alcohol-free wines lose their flavour, juices feel cheap, water kills the moment. Health-conscious consumers, pregnant women, drivers and the sober-curious had nothing worth pouring at a dinner table.",
     fix:
