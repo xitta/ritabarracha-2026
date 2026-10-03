@@ -146,7 +146,7 @@ const caseStudies = [
     title: "Ricola B2B & We Care",
     tagline: "Selling the Moment, Not Just the Drops",
     category: "Service Design · B2B Digitalisation",
-    context: "at -naut, then Einzelfirma",
+    context: "at -naut & Einzelfirma",
     period: "2019–21",
     gap:
       "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
