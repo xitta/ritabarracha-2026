@@ -78,6 +78,18 @@ import case9Img4 from "@/assets/case9-img4.webp";
 import case9Img5 from "@/assets/case9-img5.webp";
 import case9Img6 from "@/assets/case9-img6.webp";
 import case9Img7 from "@/assets/case9-img7.webp";
+import case10Cover from "@/assets/case10-cover.webp";
+import case10Img1 from "@/assets/case10-img1.webp";
+import case10Img2 from "@/assets/case10-img2.webp";
+import case10Img3 from "@/assets/case10-img3.webp";
+import case10Img4 from "@/assets/case10-img4.webp";
+import case10Img5 from "@/assets/case10-img5.webp";
+import case10Img6 from "@/assets/case10-img6.webp";
+import case10Img7 from "@/assets/case10-img7.webp";
+import case10Img8 from "@/assets/case10-img8.webp";
+import case10Img9 from "@/assets/case10-img9.webp";
+import case10Img10 from "@/assets/case10-img10.webp";
+import case10Img11 from "@/assets/case10-img11.webp";
 
 
 const caseStudies = [
@@ -167,6 +179,8 @@ const caseStudies = [
       "I led the UX conception through a series of workshops with Ricola's business, brand, IT and sales teams: stakeholder map, pre-mortem, personas, and service blueprints of the current and future process, from customer journey to backstage. We prioritised an MVP (Must, Should, Nice to have), restructured content and information architecture, and designed a B2B landing page for lead generation, gift box designs and wish messages, alongside research on gifting markets in Canada, France, China and Singapore. We also built a pattern generator that turns any image into kaleidoscope-like designs: fed with 100 brand logos, it created branded covers for the mini packs, used for sponsoring and corporate gifts. When the pandemic hit in 2020, we turned the same thinking into We Care, a care package for families, friends, employees and customers, with its own ordering site, to share care while staying home.",
     favorite:
       "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops, we were selling a moment of care.",
+    coverImage: case10Cover,
+    images: [case10Img1, case10Img2, case10Img3, case10Img4, case10Img5, case10Img6, case10Img7, case10Img8, case10Img9, case10Img10, case10Img11],
   },
   {
     title: "TEX by Tamedia",
