@@ -217,7 +217,7 @@ const CaseStudy = ({
             {tagList.map((tag) => (
               <li
                 key={tag}
-                className="text-xs tracking-wide text-muted-foreground border border-border rounded-full px-3 py-1"
+                className="text-xs tracking-wide text-foreground border border-foreground rounded-full px-3 py-1"
               >
                 {tag}
               </li>
