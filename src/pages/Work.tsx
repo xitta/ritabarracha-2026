@@ -46,17 +46,19 @@ import case4Img3 from "@/assets/case4-img3.jpg";
 
 const caseStudies = [
   {
-    title: "MIND:HACK",
-    tagline: "Making Radicalization Visible, Safely",
-    tags: ["Interaction Design", "Serious Game Design", "UX Strategy", "Project Lead", "Public Prevention"],
+    title: "-naut & BRDGE",
+    tagline: "Making Custom Work Scalable",
+    tags: ["Business Development", "Platform Strategy", "Operations", "Growth Systems", "Partner Ecosystem", "Marketing & Sales Strategy", "AI Workflows", "UX / UI Design"],
     context: "-naut",
-    period: "2026",
+    period: "2023–26",
     gap:
-      "Radicalization rarely starts with violence. It starts with group pressure, camps forming and opinions tipping. The Kantonspolizei Thurgau and its violence prevention commission wanted young people (12–18) to recognise these dynamics from the inside, in the classroom, without reproducing them in a harmful way.",
+      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
-      "Together with concept partner SPACECURATION.CH, we designed a timer-driven, role-based group chat game. Each student scans a QR code for a secret role (Polarizer, Pusher, Neutral) and receives tasks that drive behaviour rather than arguments: write in caps, demand a yes or no, exploit a muted player. The game follows a scientific escalation model and stops before it turns dangerous. A Red Button lets the group mute a player for No-Go messages, a teacher dashboard allows intervention at any time, and anonymous polls track how opinions shift, feeding a guided class debrief. After moderated classroom tests, we iterated on role-specific questionnaires, flexible survey placement and a visual report of how the discussion evolved. Built on BRDGE, the topic is a variable: the system stays the same. I led the project on the naut side, from UX strategy to interaction design, working hand in hand with the developers. Launch is planned for the end of 2026.",
+      "We built BRDGE, a catalogue of 50+ tested interactive modules (games, mediaguides, photo and video stations) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
     favorite:
-      "Designing rules that make a group self-regulate. The most important mechanic isn't the escalation, it's the Red Button: young people deciding together where the line is.",
+      "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
+    coverImage: case4Cover,
+    images: [case4Img1, case4Img2, case4Img3],
   },
   {
     title: "BRDGE Journey",
@@ -72,19 +74,17 @@ const caseStudies = [
       "Drawing the journey as a circle, not a line. When the post-event moment feeds the next invitation, visitors become regulars and clients become partners.",
   },
   {
-    title: "-naut & BRDGE",
-    tagline: "Making Custom Work Scalable",
-    tags: ["Business Development", "Platform Strategy", "Operations", "Growth Systems", "Partner Ecosystem", "Marketing & Sales Strategy", "AI Workflows", "UX / UI Design"],
+    title: "MIND:HACK",
+    tagline: "Making Radicalization Visible, Safely",
+    tags: ["Interaction Design", "Serious Game Design", "UX Strategy", "Project Lead", "Public Prevention"],
     context: "-naut",
-    period: "2023–26",
+    period: "2026",
     gap:
-      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
+      "Radicalization rarely starts with violence. It starts with group pressure, camps forming and opinions tipping. The Kantonspolizei Thurgau and its violence prevention commission wanted young people (12–18) to recognise these dynamics from the inside, in the classroom, without reproducing them in a harmful way.",
     fix:
-      "We built BRDGE, a catalogue of 50+ tested interactive modules (games, mediaguides, photo and video stations) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
+      "Together with concept partner SPACECURATION.CH, we designed a timer-driven, role-based group chat game. Each student scans a QR code for a secret role (Polarizer, Pusher, Neutral) and receives tasks that drive behaviour rather than arguments: write in caps, demand a yes or no, exploit a muted player. The game follows a scientific escalation model and stops before it turns dangerous. A Red Button lets the group mute a player for No-Go messages, a teacher dashboard allows intervention at any time, and anonymous polls track how opinions shift, feeding a guided class debrief. After moderated classroom tests, we iterated on role-specific questionnaires, flexible survey placement and a visual report of how the discussion evolved. Built on BRDGE, the topic is a variable: the system stays the same. I led the project on the naut side, from UX strategy to interaction design, working hand in hand with the developers. Launch is planned for the end of 2026.",
     favorite:
-      "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
-    coverImage: case4Cover,
-    images: [case4Img1, case4Img2, case4Img3],
+      "Designing rules that make a group self-regulate. The most important mechanic isn't the escalation, it's the Red Button: young people deciding together where the line is.",
   },
   {
     title: "Migros.ch",
