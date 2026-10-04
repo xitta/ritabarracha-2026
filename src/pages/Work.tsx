@@ -25,6 +25,7 @@ import case1Cover from "@/assets/case1-cover.jpg";
 import case1Img1 from "@/assets/case1-img1.jpg";
 import case1Img2 from "@/assets/case1-img2.jpg";
 import case1Img3 from "@/assets/case1-img3.jpg";
+import case1Img4 from "@/assets/case1-img4.jpeg";
 
 
 import case2Cover from "@/assets/case2-cover.jpg";
@@ -174,7 +175,7 @@ const caseStudies = [
     favorite:
       "Turning an idea inside a 130-year-old brand into something people would actually buy, with a 5 people team, a tight budget and mentors to convince. Watching a stranger taste our idea and wanting to buy on the spot: that's the moment you know if a product can become real.",
     coverImage: case1Cover,
-    images: [case1Img1, case1Img2, case1Img3],
+    images: [case1Img1, case1Img2, case1Img3, case1Img4],
   },
   {
     title: "Ricola B2B & We Care",
