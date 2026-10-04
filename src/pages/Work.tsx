@@ -48,7 +48,7 @@ const caseStudies = [
   {
     title: "MIND:HACK",
     tagline: "Making Radicalization Visible, Safely",
-    category: "Interaction Design · Public Prevention",
+    tags: ["Interaction Design", "Public Prevention", "Game Design", "UX Strategy", "Project Lead"],
     context: "at -naut",
     period: "2026",
     gap:
@@ -61,7 +61,7 @@ const caseStudies = [
   {
     title: "BRDGE Journey",
     tagline: "The Value Is in How They Connect",
-    category: "Experience Strategy · UX / UI Design",
+    tags: ["Experience Strategy", "UX / UI Design", "Visual Identity", "Phygital"],
     context: "at -naut",
     period: "2023–26",
     gap:
@@ -74,7 +74,7 @@ const caseStudies = [
   {
     title: "-naut & BRDGE",
     tagline: "Making Custom Work Scalable",
-    category: "Operations & Growth Systems",
+    tags: ["Operations", "Growth Systems", "Platform Strategy", "Partner Ecosystem", "AI Workflows"],
     context: "at -naut",
     period: "2023–26",
     gap:
@@ -89,7 +89,7 @@ const caseStudies = [
   {
     title: "Migros.ch",
     tagline: "Rebranding & omnichannel integration",
-    category: "Digital Transformation",
+    tags: ["Digital Transformation", "Omnichannel", "Rebranding", "Journey Mapping", "User Research"],
     context: "Einzelfirma",
     period: "2020–25",
     gap:
@@ -104,7 +104,7 @@ const caseStudies = [
   {
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
-    category: "Product Design",
+    tags: ["Product Design", "Creative Strategy", "Branding", "Crowdfunding"],
     context: "Einzelfirma",
     period: "2021",
     gap:
@@ -119,7 +119,7 @@ const caseStudies = [
   {
     title: "Ricola B2B & We Care",
     tagline: "Selling the Moment, Not Just the Drops",
-    category: "Service Design · B2B Digitalisation",
+    tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshops", "Generative Design"],
     context: "at -naut & Einzelfirma",
     period: "2019–21",
     gap:
@@ -132,7 +132,7 @@ const caseStudies = [
   {
     title: "TEX by Tamedia",
     tagline: "Finding the Signal in Five Million Documents",
-    category: "Product Design · AI Newsroom Tools",
+    tags: ["Product Design", "AI Newsroom Tools", "User Flows", "UI Design"],
     context: "Mandate for Tamedia",
     period: "2019",
     gap:
@@ -145,7 +145,7 @@ const caseStudies = [
   {
     title: "Victorinox GLM",
     tagline: "Auditing an Experience from the Inside",
-    category: "UX Research & Evaluation",
+    tags: ["UX Research", "Experience Audit", "Evaluation", "Events"],
     context: "at -naut",
     period: "2019",
     gap:
@@ -158,7 +158,7 @@ const caseStudies = [
   {
     title: "Zentrum für Reisemedizin",
     tagline: "More Than Vaccinations",
-    category: "Service Design · Public Health",
+    tags: ["Service Design", "Public Health", "Service Blueprint", "Workshops", "Spatial Experience"],
     context: "with melt.",
     period: "2017–18",
     gap:
@@ -171,7 +171,7 @@ const caseStudies = [
   {
     title: "opendata.swiss",
     tagline: "Open Data, Open to Everyone",
-    category: "Public Sector · Branding & UX / UI",
+    tags: ["Public Sector", "Open Data", "Branding", "UX / UI Design", "Multilingual"],
     context: "with Liip AG",
     period: "2015–18",
     gap:
@@ -184,7 +184,7 @@ const caseStudies = [
   {
     title: "WeCollect",
     tagline: "Democracy, Designed in a Day",
-    category: "Civic Tech · UX / UI Design",
+    tags: ["Civic Tech", "UX / UI Design", "Strategic Workshop", "Rapid Prototyping"],
     context: "with Liip AG",
     period: "2015",
     gap:
@@ -197,7 +197,7 @@ const caseStudies = [
   {
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
-    category: "Brand Experience",
+    tags: ["Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Award-winning"],
     context: "with Liip AG",
     period: "2014–19",
     gap:
