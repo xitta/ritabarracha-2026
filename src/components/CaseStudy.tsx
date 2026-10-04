@@ -24,7 +24,7 @@ interface CaseStudyProps {
 }
 
 const GAP = 70;
-const MAX_H = 500; // gallery banner height cap
+const MAX_H = 400; // gallery banner height cap
 
 const CaseStudy = ({
   title,
@@ -186,7 +186,7 @@ const CaseStudy = ({
                       src={image}
                       alt={`${title} detail ${index}`}
                       style={slideH ? { height: slideH } : undefined}
-                      className="w-auto max-w-none block h-[200px] md:h-[500px]"
+                      className="w-auto max-w-none block h-[200px] md:h-[400px]"
                     />
                   )}
                 </CarouselItem>
