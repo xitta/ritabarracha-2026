@@ -48,7 +48,7 @@ const caseStudies = [
   {
     title: "MIND:HACK",
     tagline: "Making Radicalization Visible, Safely",
-    tags: ["Public Prevention", "Project Lead", "UX Strategy", "Game UX/UI Design"],
+    tags: ["Serious Game Design", "Public Prevention", "UX Strategy", "Project Lead"],
     context: "-naut",
     period: "2026",
     gap:
@@ -74,7 +74,7 @@ const caseStudies = [
   {
     title: "-naut & BRDGE",
     tagline: "Making Custom Work Scalable",
-    tags: ["Operations", "Growth Systems", "Platform Strategy", "Partner Ecosystem", "AI Workflows", "Marketing & Sales Strategy", "UX / UI Design"],
+    tags: ["Platform Strategy", "Operations", "Growth Systems", "Partner Ecosystem", "Marketing & Sales Strategy", "AI Workflows", "UX / UI Design"],
     context: "-naut",
     period: "2023–26",
     gap:
@@ -89,7 +89,7 @@ const caseStudies = [
   {
     title: "Migros.ch",
     tagline: "Rebranding & omnichannel integration",
-    tags: ["Digital Transformation", "Omnichannel", "Rebranding", "Journey Mapping", "User Research", "UX / UI"],
+    tags: ["Omnichannel Experience", "Digital Transformation", "Rebranding", "Journey Mapping", "User Research", "UX / UI Design"],
     context: "Einzelfirma",
     period: "2020–25",
     gap:
@@ -104,7 +104,7 @@ const caseStudies = [
   {
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
-    tags: ["Product Design", "Creative Direction", "Branding", "Campaign Design", "Crowdfunding"],
+    tags: ["Product Innovation", "Creative Direction", "Branding", "Campaign Design", "Crowdfunding"],
     context: "Einzelfirma",
     period: "2021",
     gap:
@@ -119,7 +119,7 @@ const caseStudies = [
   {
     title: "Ricola B2B & We Care",
     tagline: "Selling the Moment, Not Just the Drops",
-    tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshop facilitation", "Generative Design"],
+    tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshop Facilitation", "Generative Design"],
     context: "-naut & Einzelfirma",
     period: "2019–21",
     gap:
@@ -132,7 +132,7 @@ const caseStudies = [
   {
     title: "TEX by Tamedia",
     tagline: "Finding the Signal in Five Million Documents",
-    tags: ["Product Design", "AI Newsroom Tools", "User Flows", "UI Design"],
+    tags: ["AI Product Design", "Newsroom Tools", "User Flows", "UI Design"],
     context: "Mandate for Tamedia",
     period: "2019",
     gap:
@@ -171,7 +171,7 @@ const caseStudies = [
   {
     title: "opendata.swiss",
     tagline: "Data, Open to Everyone",
-    tags: ["Public Sector", "Open Data", "Branding", "UX / UI Design", "Award-winning"],
+    tags: ["Open Government Data", "Public Sector", "Branding", "UX / UI Design", "Award-winning"],
     context: "Liip AG",
     period: "2015–18",
     gap:
@@ -184,7 +184,7 @@ const caseStudies = [
   {
     title: "WeCollect",
     tagline: "Democracy, Designed in a Day",
-    tags: ["Civic Tech", "UX / UI Design", "Strategic Workshop", "Rapid Prototyping"],
+    tags: ["Civic Tech", "Rapid Prototyping", "Strategic Workshop", "UX / UI Design"],
     context: "Liip AG",
     period: "2015",
     gap:
