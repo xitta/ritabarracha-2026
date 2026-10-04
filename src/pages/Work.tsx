@@ -21,29 +21,29 @@ import logoTx from "@/assets/logos/tx.svg";
 import logoWecollect from "@/assets/logos/wecollect.svg";
 
 
-import case1Cover from "@/assets/case1-cover.jpg";
-import case1Img1 from "@/assets/case1-img1.jpg";
-import case1Img2 from "@/assets/case1-img2.jpg";
-import case1Img3 from "@/assets/case1-img3.jpg";
-import case1Img4 from "@/assets/case1-img4.jpeg";
+import case1Cover from "@/assets/case1-cover.webp";
+import case1Img1 from "@/assets/case1-img1.webp";
+import case1Img2 from "@/assets/case1-img2.webp";
+import case1Img3 from "@/assets/case1-img3.webp";
+import case1Img4 from "@/assets/case1-img4.webp";
 
 
-import case2Cover from "@/assets/case2-cover.jpg";
-import case2Img1 from "@/assets/case2-img1.jpg";
-import case2Img2 from "@/assets/case2-img2.jpg";
-import case2Img3 from "@/assets/case2-img3.jpg";
+import case2Cover from "@/assets/case2-cover.webp";
+import case2Img1 from "@/assets/case2-img1.webp";
+import case2Img2 from "@/assets/case2-img2.webp";
+import case2Img3 from "@/assets/case2-img3.webp";
 
 
-import case3Cover from "@/assets/case3-cover.jpg";
-import case3Img1 from "@/assets/case3-img1.jpg";
-import case3Img2 from "@/assets/case3-img2.jpg";
-import case3Img3 from "@/assets/case3-img3.jpg";
+import case3Cover from "@/assets/case3-cover.webp";
+import case3Img1 from "@/assets/case3-img1.webp";
+import case3Img2 from "@/assets/case3-img2.webp";
+import case3Img3 from "@/assets/case3-img3.webp";
 
 
-import case4Cover from "@/assets/case4-cover.jpg";
-import case4Img1 from "@/assets/case4-img1.jpg";
-import case4Img2 from "@/assets/case4-img2.jpg";
-import case4Img3 from "@/assets/case4-img3.jpg";
+import case4Cover from "@/assets/case4-cover.webp";
+import case4Img1 from "@/assets/case4-img1.webp";
+import case4Img2 from "@/assets/case4-img2.webp";
+import case4Img3 from "@/assets/case4-img3.webp";
 
 import case5Cover from "@/assets/case5-cover.webp";
 import case5Img1 from "@/assets/case5-img1.webp";
@@ -106,7 +106,7 @@ const caseStudies = [
   {
     title: "-naut & BRDGE",
     tagline: "Making Custom Work Scalable",
-    tags: ["Business Development", "Platform Strategy", "Operations", "Growth Systems", "Partner Ecosystem", "Marketing & Sales Strategy", "AI Workflows", "UX / UI Design"],
+    tags: ["Business Development", "Platform Strategy", "Partner Ecosystem", "Growth Systems", "Marketing & Sales Strategy", "AI Workflows"],
     context: "-naut",
     period: "2023–26",
     gap:
@@ -136,7 +136,7 @@ const caseStudies = [
   {
     title: "MIND:HACK",
     tagline: "Making Radicalization Visible, Safely",
-    tags: ["Interaction Design", "Serious Game Design", "UX Strategy", "Project Lead", "Public Prevention"],
+    tags: ["Interaction Design", "Serious Game Design", "UX Strategy", "Project Lead", "User Testing", "Public Prevention"],
     context: "-naut",
     period: "2026",
     gap:
@@ -149,8 +149,8 @@ const caseStudies = [
   },
   {
     title: "Migros.ch",
-    tagline: "Rebranding & omnichannel integration",
-    tags: ["Service Design", "Omnichannel Experience", "Digital Transformation", "Rebranding", "Journey Mapping", "User Research", "UX / UI Design"],
+    tagline: "Rebranding & Omnichannel Integration",
+    tags: ["Service Design", "Omnichannel Experience", "Rebranding", "Journey Mapping", "User Research", "UX / UI Design"],
     context: "Einzelfirma",
     period: "2020–25",
     gap:
@@ -165,7 +165,7 @@ const caseStudies = [
   {
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
-    tags: ["Creative Direction", "Product Innovation", "Branding", "Campaign Design", "Crowdfunding"],
+    tags: ["Creative Direction", "Product Innovation", "Branding", "Marketing Strategy", "Campaign Design", "Crowdfunding"],
     context: "Einzelfirma",
     period: "2021",
     gap:
@@ -180,7 +180,7 @@ const caseStudies = [
   {
     title: "Ricola B2B & We Care",
     tagline: "Selling the Moment, Not Just the Drops",
-    tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshop Facilitation", "Generative Design"],
+    tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshop Facilitation", "Market Research", "Generative Design"],
     context: "-naut & Einzelfirma",
     period: "2019–21",
     gap:
@@ -195,7 +195,7 @@ const caseStudies = [
   {
     title: "Victorinox GLM",
     tagline: "Auditing an Experience from the Inside",
-    tags: ["UX Research", "Experience Audit", "Evaluation", "Corporate Event"],
+    tags: ["UX Research", "Experience Audit", "Field Observation", "User Interviews", "Evaluation", "Corporate Event"],
     context: "-naut",
     period: "2019",
     gap:
@@ -219,13 +219,13 @@ const caseStudies = [
       "Working in an interdisciplinary team with architects and IT partners, we started with research: an earlier customer survey and on-site interviews with staff. We built a service blueprint with the customer and staff journeys side by side, mapping steps, touchpoints, emotions and processes. In workshops with doctors, nurses and management, we collected requirements and prioritised them against the vision into an MVP. Three focus areas came out of it: shorter waiting times through booking and e-registration, better working conditions through planning and staff development, and a clearer visitor flow, space and story for the centre.",
     favorite:
       "Seeing the customer and staff journeys hanging side by side on one wall. Suddenly everyone in the room could point at the same moment, the same pain point, and start talking about the same future.",
-    coverImage: case8Img1,
-    images: [case8Img2, case8Img3, case8Img4, case8Img5, case8Img6],
+    coverImage: case8Img3,
+    images: [case8Img1, case8Img2, case8Img4, case8Img5, case8Img6],
   },
   {
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
-    tags: ["Experience Direction", "Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
+    tags: ["Experience Direction", "Brand Experience", "E-Commerce", "User Research", "UX / UI Design", "Award-winning"],
     context: "Liip AG",
     period: "2014–19",
     gap:
@@ -240,7 +240,7 @@ const caseStudies = [
   {
     title: "opendata.swiss",
     tagline: "Data, Open to Everyone",
-    tags: ["UX / UI Design", "Branding", "Open Government Data", "Public Sector", "Award-winning"],
+    tags: ["UX / UI Design", "Branding", "Ecosystem Mapping", "Open Government Data", "Public Sector", "Award-winning"],
     context: "Liip AG",
     period: "2015–18",
     gap:
@@ -255,13 +255,13 @@ const caseStudies = [
   {
     title: "TEX by Tamedia",
     tagline: "Finding the Signal in Five Million Documents",
-    tags: ["UX / UI Design", "AI Product", "Newsroom Tools", "User Flows"],
+    tags: ["UX / UI Design", "AI Product", "Newsroom Tools", "Requirements Analysis", "Search UX", "User Flows"],
     context: "Mandate for Tamedia",
     period: "2019",
     gap:
       "Tamedia's journalists relied on Tadam, an externally managed 'black box' that sourced news from around 3,100 websites, RSS feeds, Twitter accounts, and mail sources. Its successor, TEX, would add AI-powered topic suggestions, trends, weak signals, and credibility rankings, and source an average of 5 million documents a month. The real question: how can a journalist on deadline actually work with that much data?",
     fix:
-      "On a mandate as a UX designer, embedded in Tamedia's product and UX team, I worked through the business requirements, wishlists from editorial desks like sports, and the old system to understand how journalists really search. We identified two modes: Live, for breaking news under time pressure, and Explore, for investigative work without the clock. For the proof of concept, we focused on three screens: a dashboard overview, a live news feed, and an explore view with smart search operators, taxonomy filters (topics, people, organisations, locations), related trends and suggestions. I designed the user flows and the UI across several iterations. For Tamedia, I also worked on Ricardo, tutti.ch and 20 Minuten.",
+      "As a UX designer on mandate, embedded in Tamedia's product and UX team, I analysed the business requirements, editorial wishlists and the old system to understand how journalists really search. We defined two modes: Live, for breaking news under time pressure, and Explore, for investigative work. The proof of concept focused on three screens: a dashboard, a live feed, and an explore view with smart search, taxonomy filters and related trends. I designed the user flows and UI across several iterations. For Tamedia, I also worked on Ricardo, tutti.ch and 20 Minuten.",
     favorite:
       "Designing for two very different clocks: the sports journalist who needs to know now, and the investigative one who needs to know everything. Same data, two completely different journeys.",
     coverImage: case9Img1,
