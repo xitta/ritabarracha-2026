@@ -24,6 +24,7 @@ interface CaseStudyProps {
 }
 
 const GAP = 70;
+const MAX_H = 500; // gallery banner height cap
 
 const CaseStudy = ({
   title,
@@ -62,7 +63,9 @@ const CaseStudy = ({
 
   const ready = box.vw > 0;
   const coverW = Math.round(box.width * 0.8);
-  const slideH = coverRatio && coverW ? Math.round(coverW * coverRatio) : undefined;
+  const slideH =
+    coverRatio && coverW ? Math.round(Math.min(MAX_H, coverW * coverRatio)) : undefined;
+  const coverDisplayW = slideH && coverRatio ? Math.round(slideH / coverRatio) : coverW;
 
   // Embla compares options by value, so the snap offset is read from a ref
   // and the carousel is re-initialised whenever the measurements change.
@@ -171,7 +174,7 @@ const CaseStudy = ({
                     <img
                       src={image}
                       alt={`${title} cover`}
-                      style={ready ? { width: coverW } : undefined}
+                      style={ready ? { width: coverDisplayW } : undefined}
                       className="h-auto max-w-none block"
                       onLoad={(e) => {
                         const i = e.currentTarget;
@@ -183,7 +186,7 @@ const CaseStudy = ({
                       src={image}
                       alt={`${title} detail ${index}`}
                       style={slideH ? { height: slideH } : undefined}
-                      className="w-auto max-w-none block h-[200px] md:h-[460px]"
+                      className="w-auto max-w-none block h-[200px] md:h-[500px]"
                     />
                   )}
                 </CarouselItem>
