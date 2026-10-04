@@ -71,6 +71,13 @@ import case8Img3 from "@/assets/case8-img3.webp";
 import case8Img4 from "@/assets/case8-img4.webp";
 import case8Img5 from "@/assets/case8-img5.webp";
 import case8Img6 from "@/assets/case8-img6.webp";
+import case9Img1 from "@/assets/case9-img1.webp";
+import case9Img2 from "@/assets/case9-img2.webp";
+import case9Img3 from "@/assets/case9-img3.webp";
+import case9Img4 from "@/assets/case9-img4.webp";
+import case9Img5 from "@/assets/case9-img5.webp";
+import case9Img6 from "@/assets/case9-img6.webp";
+import case9Img7 from "@/assets/case9-img7.webp";
 
 
 const caseStudies = [
@@ -173,6 +180,8 @@ const caseStudies = [
       "On a mandate as UX designer, embedded in Tamedia's product and UX team, I worked through the business requirements, wishlists from editorial desks like sports, and the old system to understand how journalists really search. We identified two modes: Live, for breaking news under time pressure, and Explore, for investigative work without the clock. For the proof of concept we focused on three screens: a dashboard overview, a live news feed, and an explore view with smart search operators, taxonomy filters (topics, people, organisations, locations), related trends and suggestions. I designed the user flows and the UI across several iterations. For Tamedia, I also worked on Ricardo, tutti.ch and 20 Minuten.",
     favorite:
       "Designing for two very different clocks: the sports journalist who needs to know now, and the investigative one who needs to know everything. Same data, two completely different journeys.",
+    coverImage: case9Img1,
+    images: [case9Img2, case9Img3, case9Img4, case9Img5, case9Img6, case9Img7],
   },
   {
     title: "Victorinox GLM",
