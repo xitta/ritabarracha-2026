@@ -50,7 +50,7 @@ const CaseNav = ({ sectionId, titles }: CaseNavProps) => {
   return (
     <nav
       aria-label="Case studies"
-      className={`hidden md:flex fixed right-6 lg:right-10 top-1/2 -translate-y-1/2 z-40 flex-col items-center gap-3 transition-opacity duration-500 ${
+      className={`hidden md:flex fixed left-6 lg:left-10 top-1/2 -translate-y-1/2 z-40 flex-col items-center gap-3 transition-opacity duration-500 ${
         visible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
@@ -62,7 +62,7 @@ const CaseNav = ({ sectionId, titles }: CaseNavProps) => {
           aria-label={title}
           aria-current={i === active ? "true" : undefined}
           title={title}
-          className={`block w-3 rounded-full border-2 border-foreground transition-all duration-500 ease-out motion-reduce:transition-none ${
+          className={`block w-3 rounded-full border border-foreground transition-all duration-500 ease-out motion-reduce:transition-none ${
             i === active ? "h-8 bg-foreground" : "h-3 bg-background hover:bg-foreground/30"
           }`}
         />
