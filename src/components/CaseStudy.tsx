@@ -12,7 +12,8 @@ import {
 interface CaseStudyProps {
   title: string;
   tagline?: string;
-  category: string;
+  category?: string;
+  tags?: string[];
   context?: string;
   period?: string;
   gap: string;
@@ -28,6 +29,7 @@ const CaseStudy = ({
   title,
   tagline,
   category,
+  tags,
   context,
   period,
   gap,
@@ -38,6 +40,7 @@ const CaseStudy = ({
 }: CaseStudyProps) => {
   const ref = useScrollReveal();
   const slides = [coverImage, ...images].filter(Boolean) as string[];
+  const tagList = tags ?? (category ? category.split(" · ") : []);
 
   // Measure the page body so the slider can bleed full-width while the
   // cover starts aligned with the body and takes 80% of its width.
@@ -199,7 +202,7 @@ const CaseStudy = ({
       {/* Header */}
       <div className="mb-12 scroll-reveal">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-          {[category, context, period].filter(Boolean).join(" · ")}
+          {[context, period].filter(Boolean).join(" · ")}
         </p>
         <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight">
           {title}
@@ -208,6 +211,18 @@ const CaseStudy = ({
           <p className="mt-6 text-2xl md:text-3xl leading-snug font-semibold text-foreground max-w-3xl whitespace-pre-line">
             {tagline}
           </p>
+        )}
+        {tagList.length > 0 && (
+          <ul className="mt-6 flex flex-wrap gap-2" aria-label="Tags">
+            {tagList.map((tag) => (
+              <li
+                key={tag}
+                className="text-xs tracking-wide text-muted-foreground border border-border rounded-full px-3 py-1"
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
         )}
       </div>
 
