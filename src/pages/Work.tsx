@@ -241,19 +241,6 @@ const caseStudies = [
       "Designing for the federal administration without making it feel like one. Open data only works if people actually open it.",
   },
   {
-    title: "WeCollect",
-    tagline: "Democracy, Designed in a Day",
-    tags: ["UX / UI Design", "Rapid Prototyping", "Strategic Workshop", "Civic Tech"],
-    context: "Liip AG",
-    period: "2015",
-    gap:
-      "In Switzerland, a popular initiative needs 100,000 handwritten signatures (a referendum 50,000), collected within strict deadlines, mostly on the street. Civic groups without big campaign budgets struggled to reach enough people. Daniel Graf wanted to bring signature collection online, while respecting the legal requirement of a physical signature.",
-    fix:
-      "We started with a strategic workshop with Daniel Graf: fast, focused and full of energy, ending with wireframes already on the table. UX and UI design followed straight away, and the whole first version was designed in a single day. The flow was simple: choose a cause, enter your details, receive a pre-filled, postage-paid form, print it, sign it and drop it in the mailbox. The first version, then called E-Collector, gathered over 30,000 signatures for two popular initiatives and a referendum, and won Best of Swiss Web Silver in Public Affairs. It later grew into WeCollect.",
-    favorite:
-      "My fastest project ever: one day from workshop to design. When the purpose is clear and the room is full of energy, good design doesn't need months.",
-  },
-  {
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
     tags: ["Experience Direction", "Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
