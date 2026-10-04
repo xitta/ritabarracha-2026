@@ -44,6 +44,10 @@ const CaseStudy = ({
 }: CaseStudyProps) => {
   const ref = useScrollReveal();
   const slides = [coverImage, ...images].filter(Boolean) as string[];
+  // Embla only loops when the strip is clearly wider than the viewport, so
+  // short galleries are repeated (2x, or 3x for very few images).
+  const reps = slides.length < 2 ? 1 : slides.length < 4 ? 3 : 2;
+  const loopSlides = Array.from({ length: reps }, () => slides).flat();
   const tagList = tags ?? (category ? category.split(" · ") : []);
 
   // Measure the page body so the slider can bleed full-width while the
@@ -209,10 +213,14 @@ const CaseStudy = ({
         >
           <Carousel opts={opts} setApi={setApi}>
             <CarouselContent className="ml-0">
-              {slides.map((image, index) => (
+              {loopSlides.map((image, i) => {
+                const index = i % slides.length;
+                const isCopy = i >= slides.length;
+                return (
                 <CarouselItem
-                  key={index}
+                  key={i}
                   className="basis-auto pl-0"
+                  aria-hidden={isCopy || undefined}
                   style={{ paddingRight: slideGap }}
                   onClick={() => {
                     if (!isMobile) return; // Embla already swallows the click after a drag
@@ -222,7 +230,7 @@ const CaseStudy = ({
                   {index === 0 ? (
                     <img
                       src={image}
-                      alt={`${title} cover`}
+                      alt={isCopy ? "" : `${title} cover`}
                       style={ready ? { width: coverDisplayW } : undefined}
                       className="h-auto max-w-none block"
                       onLoad={(e) => {
@@ -234,13 +242,14 @@ const CaseStudy = ({
                   ) : (
                     <img
                       src={image}
-                      alt={`${title} detail ${index}`}
+                      alt={isCopy ? "" : `${title} detail ${index}`}
                       style={slideH ? { height: slideH } : undefined}
                       className="w-auto max-w-none block h-[200px] md:h-[400px]"
                     />
                   )}
                 </CarouselItem>
-              ))}
+                );
+              })}
             </CarouselContent>
             {slides.length > 1 && (
               <>
