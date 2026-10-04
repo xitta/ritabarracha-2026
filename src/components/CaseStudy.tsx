@@ -194,7 +194,7 @@ const CaseStudy = ({
             </CarouselContent>
             {slides.length > 1 && (
               <>
-                <CarouselPrevious className="left-4 md:left-6 h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background" />
+                <CarouselPrevious className="left-auto right-[68px] md:right-[76px] h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background" />
                 <CarouselNext className="right-4 md:right-6 h-11 w-11 border-0 bg-foreground text-background hover:bg-foreground/80 hover:text-background" />
               </>
             )}
