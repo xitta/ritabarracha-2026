@@ -49,7 +49,7 @@ const caseStudies = [
     title: "MIND:HACK",
     tagline: "Making Radicalization Visible, Safely",
     tags: ["Interaction Design", "Public Prevention", "Game Design", "UX Strategy", "Project Lead"],
-    context: "at -naut",
+    context: "-naut",
     period: "2026",
     gap:
       "Radicalization rarely starts with violence. It starts with group pressure, camps forming and opinions tipping. The Kantonspolizei Thurgau and its violence prevention commission wanted young people (12–18) to recognise these dynamics from the inside, in the classroom, without reproducing them in a harmful way.",
@@ -62,7 +62,7 @@ const caseStudies = [
     title: "BRDGE Journey",
     tagline: "The Value Is in How They Connect",
     tags: ["Experience Strategy", "UX / UI Design", "Visual Identity", "Phygital"],
-    context: "at -naut",
+    context: "-naut",
     period: "2023–26",
     gap:
       "Getting people to attend an event is just the start. Activations at fairs, museums and brand events were often isolated moments: a photo station here, a game there, nothing connecting them, and nothing left once the doors closed. Clients struggled to show what the experience was actually worth.",
@@ -75,7 +75,7 @@ const caseStudies = [
     title: "-naut & BRDGE",
     tagline: "Making Custom Work Scalable",
     tags: ["Operations", "Growth Systems", "Platform Strategy", "Partner Ecosystem", "AI Workflows"],
-    context: "at -naut",
+    context: "-naut",
     period: "2023–26",
     gap:
       "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
@@ -120,7 +120,7 @@ const caseStudies = [
     title: "Ricola B2B & We Care",
     tagline: "Selling the Moment, Not Just the Drops",
     tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshops", "Generative Design"],
-    context: "at -naut & Einzelfirma",
+    context: "-naut & Einzelfirma",
     period: "2019–21",
     gap:
       "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
@@ -146,7 +146,7 @@ const caseStudies = [
     title: "Victorinox GLM",
     tagline: "Auditing an Experience from the Inside",
     tags: ["UX Research", "Experience Audit", "Evaluation", "Events"],
-    context: "at -naut",
+    context: "-naut",
     period: "2019",
     gap:
       "Victorinox brought its global teams together in Zurich for a day of product stations, shows and workshops. Our interactive installations were cancelled last minute, which left an open question: how could experiences like these work better for the people inside them?",
@@ -159,7 +159,7 @@ const caseStudies = [
     title: "Zentrum für Reisemedizin",
     tagline: "More Than Vaccinations",
     tags: ["Service Design", "Public Health", "Service Blueprint", "Workshops", "Spatial Experience"],
-    context: "with melt.",
+    context: "melt.",
     period: "2017–18",
     gap:
       "Opened in 1988, the University of Zurich's travel medicine centre no longer matched what travellers or staff needed: walk-in queues and long waits, paper-heavy processes, and a clinic look that hid how much expertise was inside. With its 30th anniversary ahead, the centre asked for a fresh approach across pre-travel, travel and post-travel care.",
@@ -172,7 +172,7 @@ const caseStudies = [
     title: "opendata.swiss",
     tagline: "Open Data, Open to Everyone",
     tags: ["Public Sector", "Open Data", "Branding", "UX / UI Design", "Multilingual"],
-    context: "with Liip AG",
+    context: "Liip AG",
     period: "2015–18",
     gap:
       "Switzerland's public data was scattered across federal offices, cantons and communes, often in formats only specialists could find or use. The Confederation wanted one central, multilingual place where anyone, from developers and journalists to researchers and curious citizens, could discover and reuse official data for free.",
@@ -185,7 +185,7 @@ const caseStudies = [
     title: "WeCollect",
     tagline: "Democracy, Designed in a Day",
     tags: ["Civic Tech", "UX / UI Design", "Strategic Workshop", "Rapid Prototyping"],
-    context: "with Liip AG",
+    context: "Liip AG",
     period: "2015",
     gap:
       "In Switzerland, a popular initiative needs 100,000 handwritten signatures (a referendum 50,000), collected within strict deadlines, mostly on the street. Civic groups without big campaign budgets struggled to reach enough people. Daniel Graf wanted to bring signature collection online, while respecting the legal requirement of a physical signature.",
@@ -198,7 +198,7 @@ const caseStudies = [
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
     tags: ["Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Award-winning"],
-    context: "with Liip AG",
+    context: "Liip AG",
     period: "2014–19",
     gap:
       "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
