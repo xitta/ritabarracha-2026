@@ -48,7 +48,7 @@ const caseStudies = [
   {
     title: "MIND:HACK",
     tagline: "Making Radicalization Visible, Safely",
-    tags: ["Serious Game Design", "Public Prevention", "UX Strategy", "Project Lead"],
+    tags: ["Interaction Design", "Serious Game Design", "UX Strategy", "Project Lead", "Public Prevention"],
     context: "-naut",
     period: "2026",
     gap:
@@ -89,7 +89,7 @@ const caseStudies = [
   {
     title: "Migros.ch",
     tagline: "Rebranding & omnichannel integration",
-    tags: ["Omnichannel Experience", "Digital Transformation", "Rebranding", "Journey Mapping", "User Research", "UX / UI Design"],
+    tags: ["Service Design", "Omnichannel Experience", "Digital Transformation", "Rebranding", "Journey Mapping", "User Research", "UX / UI Design"],
     context: "Einzelfirma",
     period: "2020–25",
     gap:
@@ -104,7 +104,7 @@ const caseStudies = [
   {
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
-    tags: ["Product Innovation", "Creative Direction", "Branding", "Campaign Design", "Crowdfunding"],
+    tags: ["Creative Direction", "Product Innovation", "Branding", "Campaign Design", "Crowdfunding"],
     context: "Einzelfirma",
     period: "2021",
     gap:
@@ -132,7 +132,7 @@ const caseStudies = [
   {
     title: "TEX by Tamedia",
     tagline: "Finding the Signal in Five Million Documents",
-    tags: ["AI Product Design", "Newsroom Tools", "User Flows", "UI Design"],
+    tags: ["UX / UI Design", "AI Product", "Newsroom Tools", "User Flows"],
     context: "Mandate for Tamedia",
     period: "2019",
     gap:
@@ -171,7 +171,7 @@ const caseStudies = [
   {
     title: "opendata.swiss",
     tagline: "Data, Open to Everyone",
-    tags: ["Open Government Data", "Public Sector", "Branding", "UX / UI Design", "Award-winning"],
+    tags: ["UX / UI Design", "Branding", "Open Government Data", "Public Sector", "Award-winning"],
     context: "Liip AG",
     period: "2015–18",
     gap:
@@ -184,7 +184,7 @@ const caseStudies = [
   {
     title: "WeCollect",
     tagline: "Democracy, Designed in a Day",
-    tags: ["Civic Tech", "Rapid Prototyping", "Strategic Workshop", "UX / UI Design"],
+    tags: ["UX / UI Design", "Rapid Prototyping", "Strategic Workshop", "Civic Tech"],
     context: "Liip AG",
     period: "2015",
     gap:
@@ -197,7 +197,7 @@ const caseStudies = [
   {
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
-    tags: ["Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
+    tags: ["Experience Direction", "Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
     context: "Liip AG",
     period: "2014–19",
     gap:
