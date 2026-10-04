@@ -43,6 +43,17 @@ import case4Img1 from "@/assets/case4-img1.jpg";
 import case4Img2 from "@/assets/case4-img2.jpg";
 import case4Img3 from "@/assets/case4-img3.jpg";
 
+import case5Cover from "@/assets/case5-cover.png";
+import case5Img1 from "@/assets/case5-img1.png";
+import case5Img2 from "@/assets/case5-img2.png";
+import case5Img3 from "@/assets/case5-img3.png";
+import case5Img3 from "@/assets/case5-img4.png";
+import case5Img3 from "@/assets/case5-img5.png";
+
+import case5Cover from "@/assets/case6-cover.png";
+import case5Img1 from "@/assets/case6-img1.jpg";
+import case5Img2 from "@/assets/case6-img2.jpg";
+import case5Img3 from "@/assets/case6-img3.jpg";
 
 const caseStudies = [
   {
@@ -72,6 +83,8 @@ const caseStudies = [
       "We turned single activations into a 360° journey across pre-event, during and post-event. Physical activities, digital interactions, storytelling and rewards all feed one personal journey, mapped to business goals from awareness to advocacy. Visitors collect their own memories (photos, badges, achievements) to share and come back to, while an open API connects ticketing, hospitality and branding partners. At the WOW Museums in Zurich and Munich, the system handles around 2.5 million visitor photos a year. I helped shape the concept strategically and designed the whole UX/UI and visual language, from the journey illustrations to the website.",
     favorite:
       "Drawing the journey as a circle, not a line. When the post-event moment feeds the next invitation, visitors become regulars and clients become partners.",
+    coverImage: case5Cover,
+    images: [case5Img1, case5Img2, case5Img3, case5Img4, case5Img5],
   },
   {
     title: "MIND:HACK",
@@ -85,6 +98,8 @@ const caseStudies = [
       "Together with concept partner SPACECURATION.CH, we designed a timer-driven, role-based group chat game. Each student scans a QR code for a secret role (Polarizer, Pusher, Neutral) and receives tasks that drive behaviour rather than arguments: write in caps, demand a yes or no, exploit a muted player. The game follows a scientific escalation model and stops before it turns dangerous. A Red Button lets the group mute a player for No-Go messages, a teacher dashboard allows intervention at any time, and anonymous polls track how opinions shift, feeding a guided class debrief. After moderated classroom tests, we iterated on role-specific questionnaires, flexible survey placement and a visual report of how the discussion evolved. Built on BRDGE, the topic is a variable: the system stays the same. I led the project on the naut side, from UX strategy to interaction design, working hand in hand with the developers. Launch is planned for the end of 2026.",
     favorite:
       "Designing rules that make a group self-regulate. The most important mechanic isn't the escalation, it's the Red Button: young people deciding together where the line is.",
+    coverImage: case6Cover,
+    images: [case6Img1, case6Img2, case6Img3],
   },
   {
     title: "Migros.ch",
