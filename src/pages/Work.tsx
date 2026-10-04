@@ -106,7 +106,7 @@ const caseStudies = [
   {
     title: "-naut & BRDGE",
     tagline: "Making Custom Work Scalable",
-    tags: ["Business Development", "Platform Strategy", "Partner Ecosystem", "Growth Systems", "Marketing & Sales Strategy", "AI Workflows"],
+    tags: ["Business Development", "Operations", "Partner Ecosystem", "Growth Systems", "Marketing & Sales Strategy", "AI Workflows", "UX / UI Design"],
     context: "-naut",
     period: "2023–26",
     gap:
@@ -150,7 +150,7 @@ const caseStudies = [
   {
     title: "Migros.ch",
     tagline: "Rebranding & Omnichannel Integration",
-    tags: ["Service Design", "Omnichannel Experience", "Rebranding", "Journey Mapping", "User Research", "UX / UI Design"],
+    tags: ["Service Design", "Omnichannel Transformation", "Rebranding", "Journey Mapping", "User Research", "UX / UI Design"],
     context: "Einzelfirma",
     period: "2020–25",
     gap:
@@ -186,7 +186,7 @@ const caseStudies = [
     gap:
       "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
     fix:
-      "I led the UX conception through a series of workshops with Ricola's business, brand, IT, and sales teams: stakeholder map, pre-mortem, personas, and service blueprints of the current and future process, from customer journey to backstage. We prioritised an MVP, restructured content and information architecture, and designed a B2B landing page for lead generation, gift box designs, and wish messages, alongside research on gifting in worldwide markets. We also built a pattern generator that turns any image into kaleidoscope-like designs: fed with 100 brand logos, it created branded covers for the mini packs, used for sponsoring and corporate gifts. When the pandemic hit in 2020, we turned the same thinking into We Care, a care package for families, friends, employees, and customers, with its own ordering site, to share care while staying home.",
+      "I led the UX conception through workshops with Ricola's business, brand, IT and sales teams: stakeholder map, pre-mortem, personas and service blueprints from customer journey to backstage. We prioritised an MVP, restructured the information architecture and designed a B2B landing page, gift boxes and wish messages, backed by research on four export markets. A pattern generator turned 100 brand logos into kaleidoscope-like covers for corporate mini packs. When the pandemic hit in 2020, the same thinking became We Care: a care package with its own ordering site, to share care while staying home.",
     favorite:
       "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops; we were selling a moment of care.",
     coverImage: case10Cover,
@@ -225,7 +225,7 @@ const caseStudies = [
   {
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
-    tags: ["Experience Direction", "Brand Experience", "E-Commerce", "User Research", "UX / UI Design", "Award-winning"],
+    tags: ["Experience Direction", "Brand Storytelling", "E-Commerce", "User Research", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
     context: "Liip AG",
     period: "2014–19",
     gap:
