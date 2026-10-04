@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { X } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import {
   Carousel,
@@ -73,6 +73,22 @@ const CaseStudy = ({
   }, []);
 
   const isMobile = box.vw > 0 && box.vw < 768;
+
+  // Mobile: Gap / Fix / Fav start collapsed so the page stays short;
+  // readers open the cases they care about. Always open on desktop.
+  const [textOpen, setTextOpen] = useState(false);
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  const textId = `case-text-${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+  const collapsed = isMobile && !textOpen;
+  const closeText = () => {
+    setTextOpen(false);
+    // Keep the reader at this case after closing a long text.
+    requestAnimationFrame(() => {
+      const b = toggleRef.current;
+      if (b && b.getBoundingClientRect().top < 0)
+        b.scrollIntoView({ block: "center", behavior: "smooth" });
+    });
+  };
   const slideGap = isMobile ? GAP_MOBILE : GAP_DESKTOP;
 
   // Mobile: tap an image to open it larger in a swipeable overlay.
@@ -200,7 +216,7 @@ const CaseStudy = ({
 
   return (
     <article
-      className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border first:border-t-0 first:pt-0"
+      className="mb-20 md:mb-44 pt-12 md:pt-24 border-t border-border first:border-t-0 first:pt-0"
       ref={ref}
     >
       <div ref={bodyRef} className="w-full h-0" aria-hidden="true" />
@@ -262,7 +278,7 @@ const CaseStudy = ({
       )}
 
       {/* Header */}
-      <div className="mb-12 scroll-reveal">
+      <div className="mb-8 md:mb-12 scroll-reveal">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
           {[context, period].filter(Boolean).join(" · ")}
         </p>
@@ -290,8 +306,32 @@ const CaseStudy = ({
         )}
       </div>
 
-      {/* The Gap, The Fix, My Fav */}
-      <div className="grid md:grid-cols-3 gap-16">
+      {/* Mobile toggle for The Gap, The Fix, My Fav */}
+      <button
+        ref={toggleRef}
+        type="button"
+        onClick={() => (textOpen ? closeText() : setTextOpen(true))}
+        aria-expanded={textOpen}
+        aria-controls={textId}
+        className="md:hidden w-full flex items-center justify-between border-y border-foreground py-4 text-xs uppercase tracking-widest"
+      >
+        <span>{textOpen ? "Close" : "Read the case"}</span>
+        <ChevronDown
+          className={`h-4 w-4 transition-transform duration-300 ${textOpen ? "rotate-180" : ""}`}
+          aria-hidden="true"
+        />
+      </button>
+
+      {/* The Gap, The Fix, My Fav (collapsible on mobile) */}
+      <div
+        id={textId}
+        aria-hidden={collapsed || undefined}
+        className={`grid transition-[grid-template-rows] duration-500 ease-out motion-reduce:transition-none md:grid-rows-[1fr] ${
+          textOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+      <div className="overflow-hidden md:overflow-visible">
+      <div className="grid md:grid-cols-3 gap-12 md:gap-16 pt-8 md:pt-0">
         <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             The Gap
@@ -314,6 +354,17 @@ const CaseStudy = ({
             ))}
           </div>
         </div>
+      </div>
+      <button
+        type="button"
+        onClick={closeText}
+        tabIndex={collapsed ? -1 : undefined}
+        className="md:hidden mt-10 w-full flex items-center justify-between border-y border-foreground py-4 text-xs uppercase tracking-widest"
+      >
+        <span>Close</span>
+        <ChevronDown className="h-4 w-4 rotate-180" aria-hidden="true" />
+      </button>
+      </div>
       </div>
       {/* Mobile overlay: tapped image shown larger, swipe for the others */}
       {lightbox !== null &&
