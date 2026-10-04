@@ -90,6 +90,15 @@ import case10Img8 from "@/assets/case10-img8.webp";
 import case10Img9 from "@/assets/case10-img9.webp";
 import case10Img10 from "@/assets/case10-img10.webp";
 import case10Img11 from "@/assets/case10-img11.webp";
+import case11Img1 from "@/assets/case11-img1.webp";
+import case11Img2 from "@/assets/case11-img2.webp";
+import case11Img3 from "@/assets/case11-img3.webp";
+import case11Img4 from "@/assets/case11-img4.webp";
+import case11Img5 from "@/assets/case11-img5.webp";
+import case11Img6 from "@/assets/case11-img6.webp";
+import case11Img9 from "@/assets/case11-img9.webp";
+import case11Img10 from "@/assets/case11-img10.webp";
+import case11Img11 from "@/assets/case11-img11.webp";
 
 
 const caseStudies = [
@@ -236,9 +245,11 @@ const caseStudies = [
     gap:
       "Switzerland's public data was scattered across federal offices, cantons and communes, often in formats only specialists could find or use. The Confederation wanted one central, multilingual place where anyone, from developers and journalists to researchers and curious citizens, could discover and reuse official data for free.",
     fix:
-      "opendata.swiss replaced the 2013 pilot portal and launched as the national open government data portal in 2016. I created its minimal brand identity, the experience concept, UX and UI. The challenge was to make a data catalogue built on strict metadata standards feel approachable: clear search and filtering across datasets from many different publishers, a visual identity neutral enough for a federal platform but with a character of its own, and an interface in German, French, Italian and English. Behind it, CKAN ran the data catalogue and WordPress the content. At Best of Swiss Web 2016, the portal won Innovation Silver and Public Affairs Bronze.",
+      "opendata.swiss replaced the 2013 pilot portal and launched as the national open government data portal in 2016. We started by mapping the whole ecosystem: data owners at federal, cantonal and communal level, the portal team, and the people using the data. From there I created its minimal brand identity and styleguide, the experience concept, UX and UI. The challenge was to make a data catalogue built on strict metadata standards feel approachable: page tests with big, clear sections, numbers and icons, clear search and filtering across datasets from many different publishers, and an interface in German, French, Italian and English. Behind it, CKAN ran the data catalogue and WordPress the content. At Best of Swiss Web 2016, the portal won Innovation Silver and Public Affairs Bronze. For version 3.0, I worked on the conception: prioritised personas (data users first, then promoters and publishers), a strategy built on a loop where more data use convinces publishers to open more data, and a scope focused on search, SEO, analytics dashboards and data previews with maps and charts, delivered in three-week sprints with the federal team.",
     favorite:
       "Designing for the federal administration without making it feel like one. Open data only works if people actually open it.",
+    coverImage: case11Img1,
+    images: [case11Img2, case11Img3, case11Img4, case11Img5, case11Img6, case11Img9, case11Img10, case11Img11],
   },
   {
     title: "FREITAG",
