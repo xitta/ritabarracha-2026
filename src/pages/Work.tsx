@@ -48,7 +48,7 @@ const caseStudies = [
   {
     title: "MIND:HACK",
     tagline: "Making Radicalization Visible, Safely",
-    tags: ["Interaction Design", "Public Prevention", "Game Design", "UX Strategy", "Project Lead"],
+    tags: ["Public Prevention", "Project Lead", "UX Strategy", "Game UX/UI Design"],
     context: "-naut",
     period: "2026",
     gap:
@@ -74,7 +74,7 @@ const caseStudies = [
   {
     title: "-naut & BRDGE",
     tagline: "Making Custom Work Scalable",
-    tags: ["Operations", "Growth Systems", "Platform Strategy", "Partner Ecosystem", "AI Workflows"],
+    tags: ["Operations", "Growth Systems", "Platform Strategy", "Partner Ecosystem", "AI Workflows", "Marketing & Sales Strategy", "UX / UI Design"],
     context: "-naut",
     period: "2023–26",
     gap:
@@ -89,7 +89,7 @@ const caseStudies = [
   {
     title: "Migros.ch",
     tagline: "Rebranding & omnichannel integration",
-    tags: ["Digital Transformation", "Omnichannel", "Rebranding", "Journey Mapping", "User Research"],
+    tags: ["Digital Transformation", "Omnichannel", "Rebranding", "Journey Mapping", "User Research", "UX / UI"],
     context: "Einzelfirma",
     period: "2020–25",
     gap:
@@ -104,7 +104,7 @@ const caseStudies = [
   {
     title: "herbling by Ricola",
     tagline: "From Alpine Herbs to Premium Drink",
-    tags: ["Product Design", "Creative Strategy", "Branding", "Crowdfunding"],
+    tags: ["Product Design", "Creative Direction", "Branding", "Campaign Design", "Crowdfunding"],
     context: "Einzelfirma",
     period: "2021",
     gap:
@@ -119,7 +119,7 @@ const caseStudies = [
   {
     title: "Ricola B2B & We Care",
     tagline: "Selling the Moment, Not Just the Drops",
-    tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshops", "Generative Design"],
+    tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshop facilitation", "Generative Design"],
     context: "-naut & Einzelfirma",
     period: "2019–21",
     gap:
@@ -145,7 +145,7 @@ const caseStudies = [
   {
     title: "Victorinox GLM",
     tagline: "Auditing an Experience from the Inside",
-    tags: ["UX Research", "Experience Audit", "Evaluation", "Events"],
+    tags: ["UX Research", "Experience Audit", "Evaluation", "Corporate Event"],
     context: "-naut",
     period: "2019",
     gap:
@@ -158,7 +158,7 @@ const caseStudies = [
   {
     title: "Zentrum für Reisemedizin",
     tagline: "More Than Vaccinations",
-    tags: ["Service Design", "Public Health", "Service Blueprint", "Workshops", "Spatial Experience"],
+    tags: ["Service Design", "Public Health", "Customer Research", "Service Blueprint", "Workshop Facilitation", "Spatial Experience"],
     context: "melt.",
     period: "2017–18",
     gap:
@@ -170,8 +170,8 @@ const caseStudies = [
   },
   {
     title: "opendata.swiss",
-    tagline: "Open Data, Open to Everyone",
-    tags: ["Public Sector", "Open Data", "Branding", "UX / UI Design", "Multilingual"],
+    tagline: "Data, Open to Everyone",
+    tags: ["Public Sector", "Open Data", "Branding", "UX / UI Design", "Award-winning"],
     context: "Liip AG",
     period: "2015–18",
     gap:
@@ -197,7 +197,7 @@ const caseStudies = [
   {
     title: "FREITAG",
     tagline: "Where Commerce Meets Character",
-    tags: ["Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Award-winning"],
+    tags: ["Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
     context: "Liip AG",
     period: "2014–19",
     gap:
