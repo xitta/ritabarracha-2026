@@ -89,7 +89,7 @@ const caseStudies = [
     favorite:
       "Drawing the journey as a circle, not a line. When the post-event moment feeds the next invitation, visitors become regulars and clients become partners.",
     coverImage: case5Cover,
-    images: [case5Img1, case5Img2, case5Img3, case5Img4, case5Img5],
+    images: [case5Img1, case5Img3, case5Img2, case5Img4, case5Img5],
   },
   {
     title: "MIND:HACK",
