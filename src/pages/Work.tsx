@@ -121,13 +121,13 @@ const caseStudies = [
   {
     title: "BRDGE Journey",
     tagline: "The Value Is in How They Connect",
-    tags: ["Experience Strategy", "UX / UI Design", "Visual Identity", "Phygital"],
+    tags: ["Service Design", "Experience Strategy", "Journey Mapping", "UX / UI Design", "Visual Identity", "Phygital"],
     context: "-naut",
     period: "2023–26",
     gap:
       "Getting people to attend an event is just the start. Activations at fairs, museums and brand events were often isolated moments: a photo station here, a game there, nothing connecting them, and nothing left once the doors closed. Clients struggled to show what the experience was actually worth.",
     fix:
-      "We turned single activations into a 360° journey across pre-event, during and post-event. Physical activities, digital interactions, storytelling and rewards all feed one personal journey, mapped to business goals from awareness to advocacy. Visitors collect their own memories (photos, badges, achievements) to share and come back to, while an open API connects ticketing, hospitality and branding partners. At the WOW Museums in Zurich and Munich, the system handles around 2.5 million visitor photos a year. I helped shape the concept strategically and designed the whole UX/UI and visual language, from the journey illustrations to the website.",
+      "We turned single activations into a 360° journey across pre-event, during and post-event. Physical activities, digital interactions, storytelling and rewards all feed one personal journey, mapped to business goals from awareness to advocacy. Visitors collect their own memories (photos, badges, achievements) to share and come back to, while an open API connects ticketing, hospitality and branding partners. At the WOW Museums in Zurich and Munich, the system handles around 2.5 million visitor photos a year. I helped shape the concept strategically and designed the whole UX/UI and visual language, all the way to the website.",
     favorite:
       "Drawing the journey as a circle, not a line. When the post-event moment feeds the next invitation, visitors become regulars and clients become partners.",
     coverImage: case5Cover,
