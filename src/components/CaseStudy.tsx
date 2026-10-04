@@ -214,10 +214,12 @@ const CaseStudy = ({
         )}
         {tagList.length > 0 && (
           <ul className="mt-6 flex flex-wrap gap-2" aria-label="Tags">
-            {tagList.map((tag) => (
+            {tagList.map((tag, i) => (
               <li
                 key={tag}
-                className="text-xs tracking-wide text-foreground border border-foreground rounded-full px-3 py-1"
+                className={`text-xs tracking-wide border border-foreground rounded-full px-3 py-1 ${
+                  i === 0 ? "bg-foreground text-background" : "text-foreground"
+                }`}
               >
                 {tag}
               </li>
