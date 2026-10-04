@@ -49,6 +49,27 @@ const CaseNav = ({ sectionId, titles }: CaseNavProps) => {
   };
 
   return (
+    <>
+    {/* Mobile: small horizontal version, sticky just below the navbar */}
+    <nav
+      aria-label="Case studies"
+      className={`md:hidden fixed top-16 left-0 right-0 z-40 bg-background/90 backdrop-blur-sm flex justify-center items-center gap-1.5 py-2 transition-opacity duration-500 ${
+        visible ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+    >
+      {titles.map((title, i) => (
+        <button
+          key={title}
+          type="button"
+          onClick={() => goTo(i)}
+          aria-label={title}
+          aria-current={i === active ? "true" : undefined}
+          className={`block h-2 rounded-full border border-foreground transition-all duration-500 ease-out motion-reduce:transition-none ${
+            i === active ? "w-5 bg-foreground" : "w-2 bg-transparent"
+          }`}
+        />
+      ))}
+    </nav>
     <nav
       aria-label="Case studies"
       className={`hidden md:flex fixed left-6 lg:left-10 top-1/2 -translate-y-1/2 z-40 mix-blend-difference flex-col items-center gap-3 transition-opacity duration-500 ${
@@ -69,6 +90,7 @@ const CaseNav = ({ sectionId, titles }: CaseNavProps) => {
         />
       ))}
     </nav>
+    </>
   );
 };
 
