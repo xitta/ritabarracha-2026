@@ -74,7 +74,7 @@ const caseStudies = [
   {
     title: "-naut & BRDGE",
     tagline: "Making Custom Work Scalable",
-    tags: ["Platform Strategy", "Operations", "Growth Systems", "Partner Ecosystem", "Marketing & Sales Strategy", "AI Workflows", "UX / UI Design"],
+    tags: ["Business Development", "Platform Strategy", "Operations", "Growth Systems", "Partner Ecosystem", "Marketing & Sales Strategy", "AI Workflows", "UX / UI Design"],
     context: "-naut",
     period: "2023–26",
     gap:
