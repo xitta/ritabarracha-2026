@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
+import { X } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import {
   Carousel,
@@ -23,7 +25,8 @@ interface CaseStudyProps {
   images?: string[];
 }
 
-const GAP = 70;
+const GAP_DESKTOP = 40;
+const GAP_MOBILE = 24;
 const MAX_H = 400; // gallery banner height cap
 
 const CaseStudy = ({
@@ -54,25 +57,60 @@ const CaseStudy = ({
       const el = bodyRef.current;
       if (!el) return;
       const r = el.getBoundingClientRect();
-      setBox({ left: r.left, width: r.width, vw: document.documentElement.clientWidth });
+      setBox({
+        left: r.left,
+        width: r.width,
+        vw: document.documentElement.clientWidth,
+      });
     };
     measure();
     window.addEventListener("resize", measure);
     return () => window.removeEventListener("resize", measure);
   }, []);
 
+  const isMobile = box.vw > 0 && box.vw < 768;
+  const slideGap = isMobile ? GAP_MOBILE : GAP_DESKTOP;
+
+  // Mobile: tap an image to open it larger in a swipeable overlay.
+  const [lightbox, setLightbox] = useState<number | null>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (lightbox === null) return;
+    const el = overlayRef.current;
+    if (el) el.scrollLeft = lightbox * el.clientWidth;
+    setCurrent(lightbox);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [lightbox]);
+
   const ready = box.vw > 0;
   const coverW = Math.round(box.width * 0.8);
   const slideH =
-    coverRatio && coverW ? Math.round(Math.min(MAX_H, coverW * coverRatio)) : undefined;
-  const coverDisplayW = slideH && coverRatio ? Math.round(slideH / coverRatio) : coverW;
+    coverRatio && coverW
+      ? Math.round(Math.min(MAX_H, coverW * coverRatio))
+      : undefined;
+  const coverDisplayW =
+    slideH && coverRatio ? Math.round(slideH / coverRatio) : coverW;
 
   // Embla compares options by value, so the snap offset is read from a ref
   // and the carousel is re-initialised whenever the measurements change.
   const leftRef = useRef(0);
   leftRef.current = box.left;
   const [api, setApi] = useState<CarouselApi>();
-  const opts = useMemo(() => ({ loop: true, align: () => leftRef.current }), []);
+  const opts = useMemo(
+    () => ({ loop: true, align: () => leftRef.current }),
+    [],
+  );
 
   useEffect(() => {
     api?.reInit();
@@ -157,7 +195,10 @@ const CaseStudy = ({
   }, [api, slides.length]);
 
   return (
-    <article className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border first:border-t-0 first:pt-0" ref={ref}>
+    <article
+      className="mb-32 md:mb-44 pt-16 md:pt-24 border-t border-border first:border-t-0 first:pt-0"
+      ref={ref}
+    >
       <div ref={bodyRef} className="w-full h-0" aria-hidden="true" />
 
       {/* Images: full-bleed looping slider, cover aligned with the body */}
@@ -169,7 +210,15 @@ const CaseStudy = ({
           <Carousel opts={opts} setApi={setApi}>
             <CarouselContent className="ml-0">
               {slides.map((image, index) => (
-                <CarouselItem key={index} className="basis-auto pl-0" style={{ paddingRight: GAP }}>
+                <CarouselItem
+                  key={index}
+                  className="basis-auto pl-0"
+                  style={{ paddingRight: slideGap }}
+                  onClick={() => {
+                    if (!isMobile) return; // Embla already swallows the click after a drag
+                    setLightbox(index);
+                  }}
+                >
                   {index === 0 ? (
                     <img
                       src={image}
@@ -178,7 +227,8 @@ const CaseStudy = ({
                       className="h-auto max-w-none block"
                       onLoad={(e) => {
                         const i = e.currentTarget;
-                        if (i.naturalWidth) setCoverRatio(i.naturalHeight / i.naturalWidth);
+                        if (i.naturalWidth)
+                          setCoverRatio(i.naturalHeight / i.naturalWidth);
                       }}
                     />
                   ) : (
@@ -256,6 +306,60 @@ const CaseStudy = ({
           </div>
         </div>
       </div>
+      {/* Mobile overlay: tapped image shown larger, swipe for the others */}
+      {lightbox !== null &&
+        createPortal(
+          <div
+            className="fixed inset-0 z-[60] bg-black flex flex-col"
+            role="dialog"
+            aria-modal="true"
+            aria-label={`${title} gallery`}
+          >
+            <div className="flex items-center justify-between px-4 py-3 text-white text-xs tracking-widest">
+              <span>
+                {current + 1} / {slides.length}
+              </span>
+              <button
+                type="button"
+                onClick={() => setLightbox(null)}
+                aria-label="Close gallery"
+                className="h-11 w-11 -mr-2 flex items-center justify-center"
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+            <div
+              ref={overlayRef}
+              className="flex-1 flex overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              onScroll={(e) => {
+                const el = e.currentTarget;
+                setCurrent(Math.round(el.scrollLeft / el.clientWidth));
+              }}
+              onClick={(e) => {
+                if (
+                  e.target === e.currentTarget ||
+                  (e.target as HTMLElement).dataset.backdrop
+                )
+                  setLightbox(null);
+              }}
+            >
+              {slides.map((image, index) => (
+                <div
+                  key={index}
+                  data-backdrop="true"
+                  className="w-screen shrink-0 h-full snap-center flex items-center justify-center px-4"
+                >
+                  <img
+                    src={image}
+                    alt={`${title} ${index === 0 ? "cover" : `detail ${index}`}`}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>,
+          document.body,
+        )}
     </article>
   );
 };
