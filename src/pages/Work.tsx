@@ -43,21 +43,21 @@ import case4Img1 from "@/assets/case4-img1.jpg";
 import case4Img2 from "@/assets/case4-img2.jpg";
 import case4Img3 from "@/assets/case4-img3.jpg";
 
-import case5Cover from "@/assets/case5-cover.png";
-import case5Img1 from "@/assets/case5-img1.png";
-import case5Img2 from "@/assets/case5-img2.png";
-import case5Img3 from "@/assets/case5-img3.png";
-import case5Img4 from "@/assets/case5-img4.png";
-import case5Img5 from "@/assets/case5-img5.png";
+import case5Cover from "@/assets/case5-cover.webp";
+import case5Img1 from "@/assets/case5-img1.webp";
+import case5Img2 from "@/assets/case5-img2.webp";
+import case5Img3 from "@/assets/case5-img3.webp";
+import case5Img4 from "@/assets/case5-img4.webp";
+import case5Img5 from "@/assets/case5-img5.webp";
 
 import case6Img1 from "@/assets/case6-img1.png";
 import case6Img2 from "@/assets/case6-img2.png";
 import case6Img3 from "@/assets/case6-img3.png";
 import case6Img4 from "@/assets/case6-img4.png";
 import case6Img5 from "@/assets/case6-img5.png";
-import case6Img5 from "@/assets/case6-img6.png";
-import case6Img5 from "@/assets/case6-img7.png";
-import case6Img5 from "@/assets/case6-img8.png";
+import case6Img6 from "@/assets/case6-img6.png";
+import case6Img7 from "@/assets/case6-img7.png";
+import case6Img8 from "@/assets/case6-img8.png";
 
 
 const caseStudies = [
