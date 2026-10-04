@@ -193,21 +193,6 @@ const caseStudies = [
     images: [case10Img1, case10Img2, case10Img3, case10Img4, case10Img5, case10Img6, case10Img7, case10Img8, case10Img9, case10Img10, case10Img11],
   },
   {
-    title: "TEX by Tamedia",
-    tagline: "Finding the Signal in Five Million Documents",
-    tags: ["UX / UI Design", "AI Product", "Newsroom Tools", "User Flows"],
-    context: "Mandate for Tamedia",
-    period: "2019",
-    gap:
-      "Tamedia's journalists relied on Tadam, an externally managed 'black box' that sourced news from around 3,100 websites, RSS feeds, Twitter accounts and mail sources. Its successor, TEX, would add AI-powered topic suggestions, trends, weak signals and credibility rankings, and source an average of 5 million documents a month. The real question: how can a journalist on deadline actually work with that much data?",
-    fix:
-      "On a mandate as UX designer, embedded in Tamedia's product and UX team, I worked through the business requirements, wishlists from editorial desks like sports, and the old system to understand how journalists really search. We identified two modes: Live, for breaking news under time pressure, and Explore, for investigative work without the clock. For the proof of concept we focused on three screens: a dashboard overview, a live news feed, and an explore view with smart search operators, taxonomy filters (topics, people, organisations, locations), related trends and suggestions. I designed the user flows and the UI across several iterations. For Tamedia, I also worked on Ricardo, tutti.ch and 20 Minuten.",
-    favorite:
-      "Designing for two very different clocks: the sports journalist who needs to know now, and the investigative one who needs to know everything. Same data, two completely different journeys.",
-    coverImage: case9Img1,
-    images: [case9Img2, case9Img3, case9Img4, case9Img5, case9Img6, case9Img7],
-  },
-  {
     title: "Victorinox GLM",
     tagline: "Auditing an Experience from the Inside",
     tags: ["UX Research", "Experience Audit", "Evaluation", "Corporate Event"],
@@ -238,6 +223,21 @@ const caseStudies = [
     images: [case8Img2, case8Img3, case8Img4, case8Img5, case8Img6],
   },
   {
+    title: "FREITAG",
+    tagline: "Where Commerce Meets Character",
+    tags: ["Experience Direction", "Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
+    context: "Liip AG",
+    period: "2014–19",
+    gap:
+      "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
+    fix:
+      "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools gave freedom to authors who tell stories without ever losing the sale opportunity. Maintenance costs dropped by 50%, and mobile conversion rose by 25%. Neo won six Best of Swiss Web awards in 2017 (including Creation Gold and the Master Award), the Swiss E-Commerce Award and the German Design Award 2018.",
+    favorite:
+      "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex storyselling projects of my career, while part of Liip AG.",
+    coverImage: case3Cover,
+    images: [case3Img1, case3Img2, case3Img3],
+  },
+  {
     title: "opendata.swiss",
     tagline: "Data, Open to Everyone",
     tags: ["UX / UI Design", "Branding", "Open Government Data", "Public Sector", "Award-winning"],
@@ -253,19 +253,19 @@ const caseStudies = [
     images: [case11Img2, case11Img3, case11Img4, case11Img5, case11Img6, case11Img9, case11Img10, case11Img11],
   },
   {
-    title: "FREITAG",
-    tagline: "Where Commerce Meets Character",
-    tags: ["Experience Direction", "Brand Experience", "E-Commerce", "User Research", "Information Architecture", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
-    context: "Liip AG",
-    period: "2014–19",
+    title: "TEX by Tamedia",
+    tagline: "Finding the Signal in Five Million Documents",
+    tags: ["UX / UI Design", "AI Product", "Newsroom Tools", "User Flows"],
+    context: "Mandate for Tamedia",
+    period: "2019",
     gap:
-      "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue, they want to find their bag and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
+      "Tamedia's journalists relied on Tadam, an externally managed 'black box' that sourced news from around 3,100 websites, RSS feeds, Twitter accounts and mail sources. Its successor, TEX, would add AI-powered topic suggestions, trends, weak signals and credibility rankings, and source an average of 5 million documents a month. The real question: how can a journalist on deadline actually work with that much data?",
     fix:
-      "We started with user research, personas, and information architecture, then built the shop on Drupal Commerce. Custom APIs imported each unique product, matched it with imagery, published it live and pulled it the moment it sold. Flexible page tools gave freedom to authors who tell stories without ever losing the sale opportunity. Maintenance costs dropped by 50%, and mobile conversion rose by 25%. Neo won six Best of Swiss Web awards in 2017 (including Creation Gold and the Master Award), the Swiss E-Commerce Award and the German Design Award 2018.",
+      "On a mandate as UX designer, embedded in Tamedia's product and UX team, I worked through the business requirements, wishlists from editorial desks like sports, and the old system to understand how journalists really search. We identified two modes: Live, for breaking news under time pressure, and Explore, for investigative work without the clock. For the proof of concept we focused on three screens: a dashboard overview, a live news feed, and an explore view with smart search operators, taxonomy filters (topics, people, organisations, locations), related trends and suggestions. I designed the user flows and the UI across several iterations. For Tamedia, I also worked on Ricardo, tutti.ch and 20 Minuten.",
     favorite:
-      "How to sell something that can only be sold once, and tell a story of indestructibility and biodegradability in the same breath? It started with a pitch to the FREITAG brothers and became one of the most complex storyselling projects of my career, while part of Liip AG.",
-    coverImage: case3Cover,
-    images: [case3Img1, case3Img2, case3Img3],
+      "Designing for two very different clocks: the sports journalist who needs to know now, and the investigative one who needs to know everything. Same data, two completely different journeys.",
+    coverImage: case9Img1,
+    images: [case9Img2, case9Img3, case9Img4, case9Img5, case9Img6, case9Img7],
   },
 ];
 
