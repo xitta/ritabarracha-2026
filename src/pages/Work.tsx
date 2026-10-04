@@ -248,7 +248,7 @@ const caseStudies = [
     fix:
       "opendata.swiss replaced the 2013 pilot portal and launched as the national open government data portal in 2016. We started by mapping the whole ecosystem: data owners at federal, cantonal and communal level, the portal team, and the people using the data. From there I created its minimal brand identity and styleguide, the experience concept, UX and UI. The challenge was to make a data catalogue built on strict metadata standards feel approachable: page tests with big, clear sections, numbers and icons, clear search and filtering across datasets from many different publishers, and an interface in German, French, Italian and English. Behind it, CKAN ran the data catalogue and WordPress the content. At Best of Swiss Web 2016, the portal won Innovation Silver and Public Affairs Bronze. For version 3.0, I worked on the conception: prioritised personas (data users first, then promoters and publishers), a strategy built on a loop where more data use convinces publishers to open more data, and a scope focused on search, SEO, analytics dashboards and data previews with maps and charts, delivered in three-week sprints with the federal team.",
     favorite:
-      "Designing for the federal administration without making it feel like one. Open data only works if people actually open it.",
+      "Designing for the federal administration without making it feel like one. Open data only works if people actually open it.\n\nAnd it makes me happy that the identity I designed stayed live for ten years, knowing the portal will soon be redesigned.",
     coverImage: case11Img1,
     images: [case11Img2, case11Img3, case11Img4, case11Img5, case11Img6, case11Img9, case11Img10, case11Img11],
   },
