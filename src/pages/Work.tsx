@@ -65,6 +65,12 @@ import case7Img3 from "@/assets/case7-img3.webp";
 import case7Img4 from "@/assets/case7-img4.webp";
 import case7Img5 from "@/assets/case7-img5.webp";
 import case7Img6 from "@/assets/case7-img6.webp";
+import case8Img1 from "@/assets/case8-img1.webp";
+import case8Img2 from "@/assets/case8-img2.webp";
+import case8Img3 from "@/assets/case8-img3.webp";
+import case8Img4 from "@/assets/case8-img4.webp";
+import case8Img5 from "@/assets/case8-img5.webp";
+import case8Img6 from "@/assets/case8-img6.webp";
 
 
 const caseStudies = [
@@ -195,6 +201,8 @@ const caseStudies = [
       "Working in an interdisciplinary team with architects and IT partners, we started with research: an earlier customer survey and on-site interviews with staff. We built a service blueprint with the customer and staff journeys side by side, mapping steps, touchpoints, emotions and processes. In workshops with doctors, nurses and management, we collected requirements and prioritised them against the vision into Must, Should and Minor. Three focus areas came out of it: shorter waiting times through booking and e-registration, better working conditions through planning and staff development, and a clearer visitor flow, space and story for the centre.",
     favorite:
       "Seeing the customer and staff journeys hanging side by side on one wall. Suddenly everyone in the room could point at the same moment, the same pain point, and start talking about the same future.",
+    coverImage: case8Img1,
+    images: [case8Img2, case8Img3, case8Img4, case8Img5, case8Img6],
   },
   {
     title: "opendata.swiss",
