@@ -110,9 +110,9 @@ const caseStudies = [
     context: "-naut",
     period: "2023–26",
     gap:
-      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events, clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
+      "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events; clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
-      "We built BRDGE, a catalogue of 50+ tested interactive modules (games, mediaguides, photo and video stations) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
+      "We built BRDGE (aka bridge), a catalogue of 50+ tested interactive modules (games, mediaguides, booths, touchsurfaces and matrix stuff) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
     favorite:
       "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
     coverImage: case4Cover,
@@ -127,9 +127,9 @@ const caseStudies = [
     gap:
       "Getting people to attend an event is just the start. Activations at fairs, museums and brand events were often isolated moments: a photo station here, a game there, nothing connecting them, and nothing left once the doors closed. Clients struggled to show what the experience was actually worth.",
     fix:
-      "We turned single activations into a 360° journey across pre-event, during and post-event. Physical activities, digital interactions, storytelling and rewards all feed one personal journey, mapped to business goals from awareness to advocacy. Visitors collect their own memories (photos, badges, achievements) to share and come back to, while an open API connects ticketing, hospitality and branding partners. At the WOW Museums in Zurich and Munich, the system handles around 2.5 million visitor photos a year. I helped shape the concept strategically and designed the whole UX/UI and visual language, all the way to the website.",
+      "We turned single activations into a 360° journey across pre-event, during, and post-event. Physical activities, digital interactions, storytelling and rewards all feed one personal journey, mapped to business goals from awareness to advocacy. Visitors collect their own memories (photos, badges, achievements) to share and come back to, while an open API connects ticketing, hospitality, branding, and any partners.",
     favorite:
-      "Drawing the journey as a circle, not a line. When the post-event moment feeds the next invitation, visitors become regulars and clients become partners.",
+      "Drawing the journey as a circle, not a line. When the post-event moment feeds the next invitation, visitors become regulars and clients become partners. Multiple activities, one seamless and personal experience.",
     coverImage: case5Cover,
     images: [case5Img1, case5Img3, case5Img2, case5Img4, case5Img5],
   },
@@ -142,9 +142,9 @@ const caseStudies = [
     gap:
       "Radicalization rarely starts with violence. It starts with group pressure, camps forming and opinions tipping. The Kantonspolizei Thurgau and its violence prevention commission wanted young people (12–18) to recognise these dynamics from the inside, in the classroom, without reproducing them in a harmful way.",
     fix:
-      "Together with concept partner SPACECURATION.CH, we designed a timer-driven, role-based group chat game. Each student scans a QR code for a secret role (Polarizer, Pusher, Neutral) and receives tasks that drive behaviour rather than arguments: write in caps, demand a yes or no, exploit a muted player. The game follows a scientific escalation model and stops before it turns dangerous. A Red Button lets the group mute a player for No-Go messages, a teacher dashboard allows intervention at any time, and anonymous polls track how opinions shift, feeding a guided class debrief. After moderated classroom tests, we iterated on role-specific questionnaires, flexible survey placement and a visual report of how the discussion evolved. Built on BRDGE, the topic is a variable: the system stays the same. I led the project on the naut side, from UX strategy to interaction design, working hand in hand with the developers. Launch is planned for the end of 2026.",
+      "Together with concept partner SPACECURATION.CH, we designed a timer-driven, role-based group chat game. Each student gets a secret role and receives tasks that drive behaviour rather than arguments: write in caps, demand a yes or no, exploit a muted player. The game follows a scientific escalation model and stops before it turns dangerous. A Red Button lets the group mute a player for No-Go messages, a teacher dashboard allows intervention at any time, and anonymous polls track how opinions shift, feeding a guided class debrief with a visual report of how the discussion evolved. Built on BRDGE, the topic is a variable: the system stays the same.",
     favorite:
-      "Designing rules that make a group self-regulate. The most important mechanic isn't the escalation, it's the Red Button: young people deciding together where the line is.",
+      "Designing rules that make a group self-regulate. The most important mechanic isn't the escalation; it's the Red Button: young people deciding together where the line is.",
     images: [case6Img1, case6Img2, case6Img3, case6Img4, case6Img5, case6Img6, case6Img7, case6Img8],
   },
   {
@@ -156,9 +156,9 @@ const caseStudies = [
     gap:
       "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a physical store.",
     fix:
-      "First the brand transition from LeShop.ch to Migros Online, then the full merger into migros.ch. We mapped the journey how people moved between both shopping modes, and designed the service so migros.ch felt like one coherent brand. Over several years and multiple iterations, it became the unified digital home of Switzerland's most trusted retailer, serving millions of customers online and offline.",
+      "First, the brand transitioned from LeShop.ch to Migros Online, then the full merger into migros.ch. We mapped the journey of how people moved between both shopping modes, and designed the service so migros.ch felt like one coherent brand. Over several years and multiple iterations, it became the unified digital home of Switzerland's most trusted retailer, serving millions of customers online and offline.",
     favorite:
-      "Sitting between Migros Online's squads and Corporate's research team, and making ONE out of three. The best part was collaborating on a journey blueprint that clicked for all.",
+      "Sitting between Migros Online's squads and Corporate's research team, and making ONE out of three. The best part was collaborating on a journey blueprint that worked for all.",
     coverImage: case2Cover,
     images: [case2Img1, case2Img2, case2Img3],
   },
@@ -171,9 +171,9 @@ const caseStudies = [
     gap:
       "People want to drink something special without the alcohol. The options let them down: alcohol-free wines lose their flavour, juices feel cheap, water kills the moment. Health-conscious consumers, pregnant women, drivers and the sober-curious had nothing worth pouring at a dinner table.",
     fix:
-      "herbling is a naturally sparkling herbal tea: low in sugar, alcohol-free, made from Ricola's Swiss alpine herbs with a unique ripening refinement. We tested everything in weekly iterations: bottle, branding, recipes, and content, to see what people actually liked. My end was creative strategy, marketing campaign, design, content and the pitch decks that got us internal seeding.Over 1'000 bottles were crowdfunded through our own pre-sale page. The trial experiment ended, but herbling was closer to reach you than before.",
+      "herbling is a naturally sparkling herbal tea: low in sugar, alcohol-free, made from Ricola's Swiss alpine herbs with a unique ripening refinement. We tested everything in weekly iterations: bottle, branding, recipes, and content, to see what people actually liked. My end was creative strategy, marketing campaign, design, content, and the pitch decks that got us internal seeding. Over 1'000 bottles were crowdfunded through our own pre-sale page. The trial experiment ended, but herbling was closer to reach you than before.",
     favorite:
-      "Turning an idea inside a 130-year-old brand into something people would actually buy, with a 5 people team, a tight budget and mentors to convince. Watching a stranger taste our idea and wanting to buy on the spot: that's the moment you know if a product can become real.",
+      "Turning an idea inside a 130-year-old brand into something people would actually buy, with a 5-person team, a tight budget, and mentors to convince. Watching a stranger taste our idea and wanting to buy on the spot: that's the moment you know if a product can become real.",
     coverImage: case1Cover,
     images: [case1Img1, case1Img2, case1Img3, case1Img4],
   },
@@ -186,9 +186,9 @@ const caseStudies = [
     gap:
       "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
     fix:
-      "I led the UX conception through a series of workshops with Ricola's business, brand, IT and sales teams: stakeholder map, pre-mortem, personas, and service blueprints of the current and future process, from customer journey to backstage. We prioritised an MVP (Must, Should, Nice to have), restructured content and information architecture, and designed a B2B landing page for lead generation, gift box designs and wish messages, alongside research on gifting markets in Canada, France, China and Singapore. We also built a pattern generator that turns any image into kaleidoscope-like designs: fed with 100 brand logos, it created branded covers for the mini packs, used for sponsoring and corporate gifts. When the pandemic hit in 2020, we turned the same thinking into We Care, a care package for families, friends, employees and customers, with its own ordering site, to share care while staying home.",
+      "I led the UX conception through a series of workshops with Ricola's business, brand, IT, and sales teams: stakeholder map, pre-mortem, personas, and service blueprints of the current and future process, from customer journey to backstage. We prioritised an MVP, restructured content and information architecture, and designed a B2B landing page for lead generation, gift box designs, and wish messages, alongside research on gifting in worldwide markets. We also built a pattern generator that turns any image into kaleidoscope-like designs: fed with 100 brand logos, it created branded covers for the mini packs, used for sponsoring and corporate gifts. When the pandemic hit in 2020, we turned the same thinking into We Care, a care package for families, friends, employees, and customers, with its own ordering site, to share care while staying home.",
     favorite:
-      "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops, we were selling a moment of care.",
+      "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops; we were selling a moment of care.",
     coverImage: case10Cover,
     images: [case10Img1, case10Img2, case10Img3, case10Img4, case10Img5, case10Img6, case10Img7, case10Img8, case10Img9, case10Img10, case10Img11],
   },
