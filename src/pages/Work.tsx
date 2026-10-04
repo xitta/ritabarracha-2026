@@ -59,6 +59,12 @@ import case6Img5 from "@/assets/case6-img5.png";
 import case6Img6 from "@/assets/case6-img6.png";
 import case6Img7 from "@/assets/case6-img7.png";
 import case6Img8 from "@/assets/case6-img8.png";
+import case7Img1 from "@/assets/case7-img1.webp";
+import case7Img2 from "@/assets/case7-img2.webp";
+import case7Img3 from "@/assets/case7-img3.webp";
+import case7Img4 from "@/assets/case7-img4.webp";
+import case7Img5 from "@/assets/case7-img5.webp";
+import case7Img6 from "@/assets/case7-img6.webp";
 
 
 const caseStudies = [
@@ -174,6 +180,8 @@ const caseStudies = [
       "I offered a free one-day Experience Audit instead. I observed 9 stations, ran quick feedback interviews during breaks, and mapped what engaged people and what made them drift off: sound bleeding between groups, screens too large to stand near, light that made everyone look tired. The report turned findings into recommendations: hands-on, expert-led storytelling over sales pitches, experience blueprints for staff and visitors, success metrics defined upfront, and ways to bring the brand's heritage into shops and future events.",
     favorite:
       "A cancelled project turned into the most honest research I've done. And the clearest finding: a passionate expert showing a fondue fork beats any slide deck.",
+    coverImage: case7Img1,
+    images: [case7Img2, case7Img3, case7Img4, case7Img5, case7Img6],
   },
   {
     title: "Zentrum für Reisemedizin",
