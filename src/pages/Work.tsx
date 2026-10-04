@@ -50,6 +50,16 @@ import case5Img3 from "@/assets/case5-img3.png";
 import case5Img4 from "@/assets/case5-img4.png";
 import case5Img5 from "@/assets/case5-img5.png";
 
+import case6Img1 from "@/assets/case6-img1.png";
+import case6Img2 from "@/assets/case6-img2.png";
+import case6Img3 from "@/assets/case6-img3.png";
+import case6Img4 from "@/assets/case6-img4.png";
+import case6Img5 from "@/assets/case6-img5.png";
+import case6Img5 from "@/assets/case6-img6.png";
+import case6Img5 from "@/assets/case6-img7.png";
+import case6Img5 from "@/assets/case6-img8.png";
+
+
 const caseStudies = [
   {
     title: "-naut & BRDGE",
@@ -93,6 +103,7 @@ const caseStudies = [
       "Together with concept partner SPACECURATION.CH, we designed a timer-driven, role-based group chat game. Each student scans a QR code for a secret role (Polarizer, Pusher, Neutral) and receives tasks that drive behaviour rather than arguments: write in caps, demand a yes or no, exploit a muted player. The game follows a scientific escalation model and stops before it turns dangerous. A Red Button lets the group mute a player for No-Go messages, a teacher dashboard allows intervention at any time, and anonymous polls track how opinions shift, feeding a guided class debrief. After moderated classroom tests, we iterated on role-specific questionnaires, flexible survey placement and a visual report of how the discussion evolved. Built on BRDGE, the topic is a variable: the system stays the same. I led the project on the naut side, from UX strategy to interaction design, working hand in hand with the developers. Launch is planned for the end of 2026.",
     favorite:
       "Designing rules that make a group self-regulate. The most important mechanic isn't the escalation, it's the Red Button: young people deciding together where the line is.",
+    images: [case6Img1, case6Img2, case6Img3, case6Img4, case6Img5, case6Img6, case6Img7, case6Img8],
   },
   {
     title: "Migros.ch",
