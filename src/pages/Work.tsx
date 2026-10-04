@@ -1,4 +1,5 @@
 import CaseStudy from "@/components/CaseStudy";
+import CaseNav from "@/components/CaseNav";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 import logoNaut from "@/assets/logos/naut.svg";
@@ -278,6 +279,8 @@ const Work = () => {
       </section>
 
       <div className="border-t border-border" />
+
+      <CaseNav sectionId="case-studies" titles={caseStudies.map((s) => s.title)} />
 
       <section id="case-studies" className="container mx-auto px-4 py-24 md:py-32">
         {caseStudies.map((study, index) => (
