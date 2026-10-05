@@ -112,7 +112,7 @@ const caseStudies = [
     gap:
       "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events; clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
-      "We built BRDGE (aka bridge), a catalogue of 50+ tested interactive modules (games, mediaguides, booths, touchsurfaces and matrix stuff) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
+      "We built BRDGE (aka bridge), a catalogue of 50+ tested interactive modules (games, mediaguides, booths, touch surfaces and magic à la Matrix) that turns an idea into a working prototype in days: fully custom, a module with new mechanics, or one simply reskinned for the brand. Nothing starts from zero. Around it, we built the partner platform and the operations to grow it: an ecosystem of agencies, resellers, venues, hardware and software partners; design onboarding with Figma templates and brainstorm boards; tech onboarding with documentation and service tools; go-to-market segments, workflows and templates, including where AI clearly helps, so promises come with confidence.",
     favorite:
       "The catalog was never the point. What I'm proud of is the system underneath: efficient enough to carry us, partners, and their clients, all the way to outcomes that are profitable and still unique.",
     coverImage: case4Cover,
@@ -125,7 +125,7 @@ const caseStudies = [
     context: "-naut",
     period: "2023–26",
     gap:
-      "Getting people to attend an event is just the start. Activations at fairs, museums and brand events were often isolated moments: a photo station here, a game there, nothing connecting them, and nothing left once the doors closed. Clients struggled to show what the experience was actually worth.",
+      "Getting people to attend an event is just the start. Activations at fairs, museums, and brand events were often isolated moments: a photo station here, a game there, nothing connecting them, and nothing left once the doors closed. Clients struggled to show what the experience was actually worth.",
     fix:
       "We turned single activations into a 360° journey across pre-event, during, and post-event. Physical activities, digital interactions, storytelling and rewards all feed one personal journey, mapped to business goals from awareness to advocacy. Visitors collect their own memories (photos, badges, achievements) to share and come back to, while an open API connects ticketing, hospitality, branding, and any partners.",
     favorite:
