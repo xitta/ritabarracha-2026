@@ -74,12 +74,12 @@ const CaseStudy = ({
 
   const isMobile = box.vw > 0 && box.vw < 768;
 
-  // Mobile: Gap / Fix / Fav start collapsed so the page stays short;
-  // readers open the cases they care about. Always open on desktop.
+  // Gap / Fix / Fav start collapsed (mobile and desktop) so the page stays
+  // short; readers open the cases they care about.
   const [textOpen, setTextOpen] = useState(false);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const textId = `case-text-${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
-  const collapsed = isMobile && !textOpen;
+  const collapsed = !textOpen;
   const closeText = () => {
     setTextOpen(false);
     // Keep the reader at this case after closing a long text.
@@ -216,7 +216,7 @@ const CaseStudy = ({
 
   return (
     <article
-      className="mb-20 md:mb-44 pt-12 md:pt-24 border-t border-border first:border-t-0 first:pt-0"
+      className="mb-20 md:mb-28 pt-12 md:pt-20 border-t border-border first:border-t-0 first:pt-0"
       ref={ref}
     >
       <div ref={bodyRef} className="w-full h-0" aria-hidden="true" />
@@ -306,14 +306,14 @@ const CaseStudy = ({
         )}
       </div>
 
-      {/* Mobile toggle for The Gap, The Fix, My Fav */}
+      {/* Toggle for The Gap, The Fix, My Fav */}
       <button
         ref={toggleRef}
         type="button"
         onClick={() => (textOpen ? closeText() : setTextOpen(true))}
         aria-expanded={textOpen}
         aria-controls={textId}
-        className="md:hidden w-full flex items-center justify-between border-y border-foreground py-4 text-xs uppercase tracking-widest"
+        className="w-full flex items-center justify-between border-y border-foreground py-4 text-xs uppercase tracking-widest"
       >
         <span>{textOpen ? "Close" : "Read the case"}</span>
         <ChevronDown
@@ -322,16 +322,16 @@ const CaseStudy = ({
         />
       </button>
 
-      {/* The Gap, The Fix, My Fav (collapsible on mobile) */}
+      {/* The Gap, The Fix, My Fav (collapsible) */}
       <div
         id={textId}
         aria-hidden={collapsed || undefined}
-        className={`grid transition-[grid-template-rows] duration-500 ease-out motion-reduce:transition-none md:grid-rows-[1fr] ${
+        className={`grid transition-[grid-template-rows] duration-500 ease-out motion-reduce:transition-none ${
           textOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
-      <div className="overflow-hidden md:overflow-visible">
-      <div className="grid md:grid-cols-3 gap-12 md:gap-16 pt-8 md:pt-0">
+      <div className="overflow-hidden">
+      <div className="grid md:grid-cols-3 gap-12 md:gap-16 pt-8 md:pt-10">
         <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             The Gap
@@ -359,7 +359,7 @@ const CaseStudy = ({
         type="button"
         onClick={closeText}
         tabIndex={collapsed ? -1 : undefined}
-        className="md:hidden mt-10 w-full flex items-center justify-between border-y border-foreground py-4 text-xs uppercase tracking-widest"
+        className="mt-10 w-full flex items-center justify-between border-y border-foreground py-4 text-xs uppercase tracking-widest"
       >
         <span>Close</span>
         <ChevronDown className="h-4 w-4 rotate-180" aria-hidden="true" />
