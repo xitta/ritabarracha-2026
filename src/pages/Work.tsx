@@ -141,6 +141,7 @@ const caseStudies = [
     tags: ["Interaction Design", "Serious Game Design", "UX Strategy", "Project Lead", "User Testing", "Public Prevention"],
     context: "-naut",
     period: "2026",
+    link: "https://kapo.tg.ch/",
     gap:
       "Radicalization rarely starts with violence. It starts with group pressure, camps forming and opinions tipping. The Kantonspolizei Thurgau and its violence prevention commission wanted young people (12–18) to recognise these dynamics from the inside, in the classroom, without reproducing them in a harmful way.",
     fix:
@@ -219,6 +220,7 @@ const caseStudies = [
     tags: ["Service Design", "Public Health", "Customer Research", "Service Blueprint", "Workshop Facilitation", "Spatial Experience"],
     context: "melt.",
     period: "2017–18",
+    link: "https://www.uzh.ch/de/explore/hospitals/reise.html",
     gap:
       "Opened in 1988, the University of Zurich's travel medicine centre no longer matched what travellers or staff needed: walk-in queues and long waits, paper-heavy processes, and a clinic look that hid how much expertise was inside. With its 30th anniversary ahead, the centre asked for a fresh approach across pre-travel, travel and post-travel care.",
     fix:
