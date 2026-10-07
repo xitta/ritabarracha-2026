@@ -224,7 +224,7 @@ const CaseStudy = ({
       {/* Full-bleed separator between case studies (hidden on the first one) */}
       <div
         aria-hidden="true"
-        className="absolute top-0 left-0 right-0 h-px bg-border group-first:hidden"
+        className="absolute top-0 left-0 right-0 h-px bg-foreground group-first:hidden"
         style={ready ? { left: -box.left, right: "auto", width: box.vw } : undefined}
       />
       <div ref={bodyRef} className="w-full h-0" aria-hidden="true" />
@@ -332,7 +332,7 @@ const CaseStudy = ({
         onClick={() => (textOpen ? closeText() : setTextOpen(true))}
         aria-expanded={textOpen}
         aria-controls={textId}
-        className="w-full flex items-center justify-between border-y border-foreground py-4 text-xs uppercase tracking-widest"
+        className="w-full flex items-center justify-between border-y border-border py-4 text-xs uppercase tracking-widest"
       >
         <span>{textOpen ? "Close" : "Read the case"}</span>
         <ChevronDown
@@ -378,7 +378,7 @@ const CaseStudy = ({
         type="button"
         onClick={closeText}
         tabIndex={collapsed ? -1 : undefined}
-        className="mt-10 w-full flex items-center justify-between border-y border-foreground py-4 text-xs uppercase tracking-widest"
+        className="mt-10 w-full flex items-center justify-between border-y border-border py-4 text-xs uppercase tracking-widest"
       >
         <span>Close</span>
         <ChevronDown className="h-4 w-4 rotate-180" aria-hidden="true" />
