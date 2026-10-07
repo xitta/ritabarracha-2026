@@ -83,7 +83,7 @@ const About = () => {
         <div className="space-y-0">
           {[
             { role: "Creative Strategist & Experience Designer", company: "Rita Barracha da Silva", desc: "Omnichannel Experiences", location: "Zürich, CH", period: "2020 — Now" },
-            { role: "Co-Founder · Operations & Experience Strategy", company: "naut GmbH", link: "http://www.naut.ch/", desc: "Creative & Tech Studio", location: "Zürich, CH", period: "2018 — 2020\n2023 — Now" },
+            { role: "Co-Founder · Experience & Operations", company: "naut GmbH", link: "http://www.naut.ch/", desc: "Creative & Tech Studio", location: "Zürich, CH", period: "2018 — 2020\n2023 — Now" },
             { role: "Experience Director", company: "melt GmbH", link: "http://www.melt.ch/", desc: "Narrative Experience Design", location: "Zürich, CH", period: "2017 — 2018" },
             { role: "User Experience Lead & People Developer", company: "Liip AG", link: "http://www.liip.ch/", desc: "Digital Agency", location: "Zürich, CH", period: "2013 — 2018" },
             { role: "Multimedia Designer", company: "Process Brand Evolution AG", link: "http://process-group.com/", desc: "Branding Consultancy", location: "Zürich, CH", period: "2012 — 2013" },
