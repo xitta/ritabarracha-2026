@@ -84,12 +84,15 @@ const CaseStudy = ({
   const collapsed = !textOpen;
   const closeText = () => {
     setTextOpen(false);
-    // Keep the reader at this case after closing a long text.
-    requestAnimationFrame(() => {
-      const b = toggleRef.current;
-      if (b && b.getBoundingClientRect().top < 0)
-        b.scrollIntoView({ block: "center", behavior: "smooth" });
-    });
+    // Keep the reader at this case after closing a long text (wait for the
+    // top toggle to reappear before measuring it).
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        const b = toggleRef.current;
+        if (b && b.getBoundingClientRect().top < 0)
+          b.scrollIntoView({ block: "center", behavior: "smooth" });
+      }),
+    );
   };
   const slideGap = isMobile ? GAP_MOBILE : GAP_DESKTOP;
 
@@ -325,20 +328,20 @@ const CaseStudy = ({
         )}
       </div>
 
-      {/* Toggle for The Gap, The Fix, My Fav */}
+      {/* Toggle for The Gap, The Fix, My Fav (hidden while open; the
+          Close button sits at the end of the text) */}
       <button
         ref={toggleRef}
         type="button"
-        onClick={() => (textOpen ? closeText() : setTextOpen(true))}
+        onClick={() => setTextOpen(true)}
         aria-expanded={textOpen}
         aria-controls={textId}
-        className="w-full flex items-center justify-between border-y border-border py-4 text-xs uppercase tracking-widest"
+        className={`w-full items-center justify-between border-y border-border py-4 text-xs uppercase tracking-widest ${
+          textOpen ? "hidden" : "flex"
+        }`}
       >
-        <span>{textOpen ? "Close" : "Read the case"}</span>
-        <ChevronDown
-          className={`h-4 w-4 transition-transform duration-300 ${textOpen ? "rotate-180" : ""}`}
-          aria-hidden="true"
-        />
+        <span>Read the case</span>
+        <ChevronDown className="h-4 w-4" aria-hidden="true" />
       </button>
 
       {/* The Gap, The Fix, My Fav (collapsible) */}
@@ -350,7 +353,7 @@ const CaseStudy = ({
         }`}
       >
       <div className="overflow-hidden">
-      <div className="grid md:grid-cols-3 gap-12 md:gap-16 pt-8 md:pt-10">
+      <div className="grid md:grid-cols-3 gap-12 md:gap-16 pt-2">
         <div className="scroll-reveal">
           <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
             The Gap
