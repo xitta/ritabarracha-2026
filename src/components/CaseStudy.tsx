@@ -290,9 +290,23 @@ const CaseStudy = ({
 
       {/* Header */}
       <div className="mb-8 md:mb-12 scroll-reveal">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-          {[context, period].filter(Boolean).join(" · ")}
-        </p>
+        {/* Place · period on the left, project link on the right, same line */}
+        <div className="flex items-baseline justify-between gap-4 mb-4">
+          <p className="text-xs uppercase tracking-widest text-muted-foreground">
+            {[context, period].filter(Boolean).join(" · ")}
+          </p>
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline shrink-0 inline-flex items-center gap-1 text-xs uppercase tracking-widest pb-0.5"
+            >
+              {new URL(link).hostname.replace(/^www\./, "")}
+              <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+            </a>
+          )}
+        </div>
         <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight">
           {title}
         </h2>
@@ -314,17 +328,6 @@ const CaseStudy = ({
               </li>
             ))}
           </ul>
-        )}
-        {link && (
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-underline mt-6 inline-flex items-center gap-1 text-xs uppercase tracking-widest pb-1"
-          >
-            {new URL(link).hostname.replace(/^www\./, "")}
-            <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-          </a>
         )}
       </div>
 
