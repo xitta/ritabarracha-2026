@@ -26,8 +26,8 @@ interface CaseStudyProps {
   link?: string;
 }
 
-const GAP_DESKTOP = 40;
-const GAP_MOBILE = 24;
+const GAP_DESKTOP = 24;
+const GAP_MOBILE = 16;
 const MAX_H = 400; // gallery banner height cap
 
 const CaseStudy = ({
@@ -235,7 +235,7 @@ const CaseStudy = ({
       {/* Images: full-bleed looping slider, cover aligned with the body */}
       {slides.length > 0 && (
         <div
-          className="mb-12 md:mb-16 scroll-reveal relative"
+          className="mb-6 md:mb-8 scroll-reveal relative"
           style={ready ? { width: box.vw, marginLeft: -box.left } : undefined}
         >
           <Carousel opts={opts} setApi={setApi}>
