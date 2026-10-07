@@ -122,6 +122,7 @@ const About = () => {
         </h2>
         <div className="space-y-0">
           {[
+            { period: "2026", role: "Service Design", company: "Service Design Disrupted", link: "https://sddisrupted.org/", desc: "Barcelona Design Week", location: "Barcelona, ES" },
             { period: "2025", role: "Service Design", company: "Service Design Global Network Conference", link: "https://www.service-design-network.org/events/service-design-global-conference-2025-dallas", location: "Virtual" },
             { period: "2022", role: "Service Design", company: "Service Design Global Network Conference", link: "https://www.service-design-network.org/", location: "Virtual" },
             { period: "2020", role: "Omnichannel Journeys & Customer Experience", company: "Nielsen Norman Group", link: "https://www.nngroup.com/", location: "Virtual" },
