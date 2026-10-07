@@ -60,13 +60,13 @@ const About = () => {
             <div className="space-y-6 text-base leading-relaxed text-foreground/70">
               <p>
                 New tools solve old problems but create new ones.
-                I find that genuinely interesting rather than frustrating.
+                I find that loop genuinely inspiring rather than frustrating.
                 There's always another question worth asking, another thing worth building.
               </p>
               <p>
                 Will there ever be a limit to this cycle?
                 Maybe not. But that's the thrill of it.
-                I try to stay curious and design for such unknown future.
+                I try to stay curious and design for such an unknown future.
               </p>
             </div>
           </div>
