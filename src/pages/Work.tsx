@@ -109,6 +109,7 @@ const caseStudies = [
     tags: ["Business Development", "Operations", "Partner Ecosystem", "Growth Systems", "Marketing & Sales Strategy", "AI Workflows", "UX / UI Design"],
     context: "-naut",
     period: "2023–26",
+    link: "https://www.naut.ch/",
     gap:
       "-naut is a Zürich studio building interactive installations for museums, brands, fairs and events; clients include Migros, SBB, Swisscom, UBS and Ricola. Success had created its own problem: every custom project started from zero. Custom work was high-impact but slow and hard to scale for a small team, and agencies without in-house creative tech hesitated to promise it in a pitch.",
     fix:
@@ -124,6 +125,7 @@ const caseStudies = [
     tags: ["Service Design", "Experience Strategy", "Journey Mapping", "UX / UI Design", "Visual Identity", "Phygital"],
     context: "-naut",
     period: "2023–26",
+    link: "https://brdge.ch/",
     gap:
       "Getting people to attend an event is just the start. Activations at fairs, museums, and brand events were often isolated moments: a photo station here, a game there, nothing connecting them, and nothing left once the doors closed. Clients struggled to show what the experience was actually worth.",
     fix:
@@ -153,6 +155,7 @@ const caseStudies = [
     tags: ["Service Design", "Omnichannel Transformation", "Rebranding", "Journey Mapping", "User Research", "UX / UI Design"],
     context: "Einzelfirma",
     period: "2020–25",
+    link: "https://www.migros.ch/",
     gap:
       "Customers of Switzerland's largest retailer met a different world depending on where they clicked: migros.ch, LeShop, separate sub-brands, separate sites. They needed one Migros, whether they were ordering online or walking into a physical store.",
     fix:
@@ -168,6 +171,7 @@ const caseStudies = [
     tags: ["Creative Direction", "Product Innovation", "Branding", "Marketing Strategy", "Campaign Design", "Crowdfunding"],
     context: "Einzelfirma",
     period: "2021",
+    link: "https://www.ricola.ch/",
     gap:
       "People want to drink something special without the alcohol. The options let them down: alcohol-free wines lose their flavour, juices feel cheap, water kills the moment. Health-conscious consumers, pregnant women, drivers and the sober-curious had nothing worth pouring at a dinner table.",
     fix:
@@ -183,6 +187,7 @@ const caseStudies = [
     tags: ["Service Design", "B2B Digitalisation", "Service Blueprint", "Workshop Facilitation", "Market Research", "Generative Design"],
     context: "-naut & Einzelfirma",
     period: "2019–21",
+    link: "https://www.ricola.ch/",
     gap:
       "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
     fix:
@@ -198,6 +203,7 @@ const caseStudies = [
     tags: ["UX Research", "Experience Audit", "Field Observation", "User Interviews", "Evaluation", "Corporate Event"],
     context: "-naut",
     period: "2019",
+    link: "https://www.victorinox.com/",
     gap:
       "Victorinox brought its global teams together in Zurich for a day of product stations, shows and workshops. Our interactive installations were cancelled last minute, which left an open question: how could experiences like these work better for the people inside them?",
     fix:
@@ -228,6 +234,7 @@ const caseStudies = [
     tags: ["Experience Direction", "Brand Storytelling", "E-Commerce", "User Research", "Creative Workshop Facilitation", "UX / UI Design", "Award-winning"],
     context: "Liip AG",
     period: "2014–19",
+    link: "https://www.freitag.ch/",
     gap:
       "Every FREITAG bag is a one-off, cut from used truck tarpaulin. People don't just want to browse a catalogue; they want to find their twin and understand where it comes from. The platform lacked holding two material philosophies at once: indestructible tarp bags and the fully biodegradable f-abric line.",
     fix:
@@ -243,6 +250,7 @@ const caseStudies = [
     tags: ["UX / UI Design", "Branding", "Ecosystem Mapping", "Open Government Data", "Public Sector", "Award-winning"],
     context: "Liip AG",
     period: "2015–18",
+    link: "https://opendata.swiss/",
     gap:
       "Switzerland's public data was scattered across federal offices, cantons and communes, often in formats only specialists could find or use. The Confederation wanted one central, multilingual place where anyone, from developers and journalists to researchers and curious citizens, could discover and reuse official data for free.",
     fix:
@@ -258,6 +266,7 @@ const caseStudies = [
     tags: ["UX / UI Design", "AI Product", "Newsroom Tools", "Requirements Analysis", "Search UX", "User Flows"],
     context: "Mandate for Tamedia",
     period: "2019",
+    link: "https://tx.group/",
     gap:
       "Tamedia's journalists relied on Tadam, an externally managed 'black box' that sourced news from around 3,100 websites, RSS feeds, Twitter accounts, and mail sources. Its successor, TEX, would add AI-powered topic suggestions, trends, weak signals, and credibility rankings, and source an average of 5 million documents a month. The real question: how can a journalist on deadline actually work with that much data?",
     fix:
