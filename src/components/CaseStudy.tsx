@@ -216,9 +216,15 @@ const CaseStudy = ({
 
   return (
     <article
-      className="mb-20 md:mb-28 pt-12 md:pt-20 border-t border-border first:border-t-0 first:pt-0"
+      className="group relative mb-20 md:mb-28 pt-12 md:pt-20 first:pt-0"
       ref={ref}
     >
+      {/* Full-bleed separator between case studies (hidden on the first one) */}
+      <div
+        aria-hidden="true"
+        className="absolute top-0 left-0 right-0 h-px bg-border group-first:hidden"
+        style={ready ? { left: -box.left, right: "auto", width: box.vw } : undefined}
+      />
       <div ref={bodyRef} className="w-full h-0" aria-hidden="true" />
 
       {/* Images: full-bleed looping slider, cover aligned with the body */}
