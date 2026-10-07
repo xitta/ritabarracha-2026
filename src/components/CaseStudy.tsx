@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { ChevronDown, X } from "lucide-react";
+import { ArrowUpRight, ChevronDown, X } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import {
   Carousel,
@@ -23,6 +23,7 @@ interface CaseStudyProps {
   favorite: string;
   coverImage?: string;
   images?: string[];
+  link?: string;
 }
 
 const GAP_DESKTOP = 40;
@@ -41,6 +42,7 @@ const CaseStudy = ({
   favorite,
   coverImage,
   images = [],
+  link,
 }: CaseStudyProps) => {
   const ref = useScrollReveal();
   const slides = [coverImage, ...images].filter(Boolean) as string[];
@@ -309,6 +311,17 @@ const CaseStudy = ({
               </li>
             ))}
           </ul>
+        )}
+        {link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-underline mt-6 inline-flex items-center gap-1 text-xs uppercase tracking-widest pb-1"
+          >
+            {new URL(link).hostname.replace(/^www\./, "")}
+            <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+          </a>
         )}
       </div>
 
