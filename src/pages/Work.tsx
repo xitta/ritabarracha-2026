@@ -262,8 +262,8 @@ const caseStudies = [
       "opendata.swiss replaced the 2013 pilot and launched in 2016 as the national open government data portal. We started by mapping the ecosystem: data owners at federal, cantonal and communal level, the portal team and the people using the data. I then created the minimal brand identity, styleguide, experience concept, UX and UI: clear search and filtering across many publishers, in four languages, on CKAN and WordPress. It won Best of Swiss Web 2016 (Innovation Silver, Public Affairs Bronze). For version 3.0, I worked on the conception: prioritised personas, a loop where more data use convinces publishers to open more data, and better search, SEO, analytics and data previews.",
     favorite:
       "Designing for the federal administration without making it feel like one. Open data only works if people actually open it.\n\nAnd it makes me happy that the identity I designed stayed live for ten years, knowing the portal will soon be redesigned.",
-    coverImage: case11Img1,
-    images: [case11Img2, case11Img3, case11Img4, case11Img5, case11Img6, case11Img9, case11Img10, case11Img11],
+    coverImage: case11Img3,
+    images: [case11Img1, case11Img2, case11Img4, case11Img5, case11Img6, case11Img9, case11Img10, case11Img11],
   },
   {
     title: "TEX by Tamedia",
