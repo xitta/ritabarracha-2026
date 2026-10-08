@@ -192,6 +192,7 @@ const caseStudies = [
     context: "-naut & Einzelfirma",
     period: "2019–21",
     link: "https://www.ricola.ch/",
+    credits: { [case10Img8]: "© Ricola" },
     gap:
       "Ricola's corporate gifting (personalised boxes for companies, hotels and trade fairs) ran almost entirely on email. From first enquiry to final order, a customer went through around 13 back-and-forth steps, including designs rejected by the printer. Demand was rising, but the process didn't scale, and the business wanted to grow beyond Switzerland.",
     fix:
