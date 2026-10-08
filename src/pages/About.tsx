@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import ritaProfile from "@/assets/rita-profile.webp";
+import CvButton from "@/components/CvButton";
 
 const About = () => {
   const ref = useScrollReveal();
@@ -74,7 +75,10 @@ const About = () => {
 
       {/* Experience */}
       <section className="container mx-auto px-4 py-24 md:py-32">
-        <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-12 scroll-reveal">
+        <h2
+          id="experience"
+          className="text-xs uppercase tracking-widest text-muted-foreground mb-12 scroll-reveal"
+        >
           Experience & Education
         </h2>
         <div className="space-y-0">
@@ -207,6 +211,8 @@ const About = () => {
           </p>
         </div>
       </section>
+
+      <CvButton triggerId="experience" href="/Rita-Barracha-CV.pdf" fileName="Rita-Barracha-CV.pdf" />
     </div>
   );
 };
