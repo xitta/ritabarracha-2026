@@ -152,7 +152,9 @@ const CaseCard = ({ item, index, onOpen }: { item: CaseGridItem; index: number; 
 };
 
 const CaseGrid = ({ items, onOpen }: CaseGridProps) => (
-  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-8 gap-y-14 md:gap-y-20">
+  // Wider than the text container on tablet and desktop, so the images get
+  // more room (up to 1600px, 2rem from each edge of the window).
+  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-8 gap-y-14 md:gap-y-20 md:relative md:left-1/2 md:-translate-x-1/2 md:w-[calc(100vw-4rem)] md:max-w-[1600px]">
     {items.map((item, i) => (
       <CaseCard key={item.title} item={item} index={i} onOpen={onOpen} />
     ))}
