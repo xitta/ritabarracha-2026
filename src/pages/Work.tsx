@@ -1,5 +1,8 @@
+import { useEffect, useState } from "react";
 import CaseStudy from "@/components/CaseStudy";
 import CaseNav from "@/components/CaseNav";
+import CaseGrid from "@/components/CaseGrid";
+import ViewToggle, { type CaseView } from "@/components/ViewToggle";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 import logoNaut from "@/assets/logos/naut.svg";
@@ -282,6 +285,35 @@ const caseStudies = [
 
 const Work = () => {
   const ref = useScrollReveal();
+  const [view, setView] = useState<CaseView>("list");
+  const [pendingCase, setPendingCase] = useState<number | null>(null);
+
+  // Keep the reader at the top of the case studies when switching views.
+  const changeView = (next: CaseView) => {
+    if (next === view) return;
+    setView(next);
+    requestAnimationFrame(() => {
+      const section = document.getElementById("case-studies");
+      if (section) window.scrollTo({ top: section.getBoundingClientRect().top + window.scrollY - 40 });
+    });
+  };
+
+  // From the grid, open a case: back to the list, scrolled to that case.
+  useEffect(() => {
+    if (view !== "list" || pendingCase === null) return;
+    // Galleries measure themselves after mounting, so re-align a few times
+    // while the layout settles.
+    const align = () =>
+      document
+        .querySelectorAll<HTMLElement>("#case-studies > article")
+        [pendingCase]?.scrollIntoView({ block: "start" });
+    const timers = [0, 150, 400, 800, 1300].map((ms) => window.setTimeout(align, ms));
+    const done = window.setTimeout(() => setPendingCase(null), 1400);
+    return () => {
+      timers.forEach(window.clearTimeout);
+      window.clearTimeout(done);
+    };
+  }, [view, pendingCase]);
 
   return (
     <div className="min-h-screen bg-background" ref={ref}>
@@ -329,12 +361,23 @@ const Work = () => {
 
       <div className="border-t border-border" />
 
-      <CaseNav sectionId="case-studies" titles={caseStudies.map((s) => s.title)} />
+      {view === "list" && (
+        <CaseNav sectionId="case-studies" titles={caseStudies.map((s) => s.title)} />
+      )}
+      <ViewToggle sectionId="case-studies" view={view} onChange={changeView} />
 
       <section id="case-studies" className="container mx-auto px-4 py-24 md:py-32">
-        {caseStudies.map((study, index) => (
-          <CaseStudy key={index} {...study} />
-        ))}
+        {view === "list" ? (
+          caseStudies.map((study, index) => <CaseStudy key={index} {...study} />)
+        ) : (
+          <CaseGrid
+            items={caseStudies}
+            onOpen={(i) => {
+              setPendingCase(i);
+              setView("list");
+            }}
+          />
+        )}
       </section>
 
       <div className="border-t border-border" />
