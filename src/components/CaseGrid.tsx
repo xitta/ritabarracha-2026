@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
 
 export interface CaseGridItem {
@@ -15,6 +15,53 @@ interface CaseGridProps {
   items: CaseGridItem[];
   onOpen: (index: number) => void;
 }
+
+// Tags limited to two lines: as many as fit, then a "…" pill when some are
+// left out. Re-measured on resize.
+const TagLines = ({ tags }: { tags: string[] }) => {
+  const ref = useRef<HTMLUListElement>(null);
+  const [count, setCount] = useState(tags.length);
+
+  useEffect(() => {
+    const reset = () => setCount(tags.length);
+    window.addEventListener("resize", reset);
+    return () => window.removeEventListener("resize", reset);
+  }, [tags.length]);
+
+  useLayoutEffect(() => {
+    const ul = ref.current;
+    if (!ul || count === 0) return;
+    const items = Array.from(ul.children) as HTMLElement[];
+    const tops = Array.from(new Set(items.map((li) => li.offsetTop)));
+    if (tops.length > 2) setCount((c) => c - 1);
+  });
+
+  const hidden = tags.length - count;
+
+  return (
+    <ul ref={ref} className="mt-4 flex flex-wrap gap-1.5" aria-label="Tags">
+      {tags.slice(0, count).map((tag, i) => (
+        <li
+          key={tag}
+          className={`text-[11px] tracking-wide border border-foreground rounded-full px-2.5 py-0.5 ${
+            i === 0 ? "bg-foreground text-background" : "text-foreground"
+          }`}
+        >
+          {tag}
+        </li>
+      ))}
+      {hidden > 0 && (
+        <li
+          className="text-[11px] tracking-wide border border-foreground rounded-full px-2.5 py-0.5 text-foreground"
+          title={tags.slice(count).join(", ")}
+          aria-label={`${hidden} more`}
+        >
+          …
+        </li>
+      )}
+    </ul>
+  );
+};
 
 // Condensed overview: one card per case. The image is a small slideshow:
 // it cycles through the case images on hover (desktop) or while the card is
@@ -95,20 +142,7 @@ const CaseCard = ({ item, index, onOpen }: { item: CaseGridItem; index: number; 
       </p>
       <h3 className="mt-2 text-xl md:text-2xl font-bold leading-tight tracking-tight">{item.title}</h3>
       {item.tagline && <p className="mt-1 text-base text-foreground/80">{item.tagline}</p>}
-      {tags.length > 0 && (
-        <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Tags">
-          {tags.slice(0, 3).map((tag, i) => (
-            <li
-              key={tag}
-              className={`text-[11px] tracking-wide border border-foreground rounded-full px-2.5 py-0.5 ${
-                i === 0 ? "bg-foreground text-background" : "text-foreground"
-              }`}
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
-      )}
+      {tags.length > 0 && <TagLines tags={tags} />}
       <span className="mt-4 inline-flex items-center gap-1 text-xs uppercase tracking-widest link-underline pb-0.5">
         Read the case
         <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
