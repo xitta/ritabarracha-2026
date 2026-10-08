@@ -198,8 +198,8 @@ const caseStudies = [
       "I led the UX conception through workshops with Ricola's business, brand, IT and sales teams: stakeholder map, pre-mortem, personas and service blueprints from customer journey to backstage. We prioritised an MVP, restructured the information architecture and designed a B2B landing page, gift boxes and wish messages, backed by research on four export markets. A pattern generator turned 100 brand logos into kaleidoscope-like covers for corporate mini packs. When the pandemic hit in 2020, the same thinking became We Care: a care package with its own ordering site, to share care while staying home.",
     favorite:
       "Writing the wishes for the boxes: «We wish you a strong voice for successful negotiations.» We weren't selling herbal drops; we were selling a moment of care.",
-    coverImage: case10Cover,
-    images: [case10Img1, case10Img2, case10Img3, case10Img4, case10Img5, case10Img6, case10Img7, case10Img8, case10Img9, case10Img10, case10Img11],
+    coverImage: case10Img8,
+    images: [case10Cover, case10Img1, case10Img2, case10Img3, case10Img4, case10Img5, case10Img6, case10Img7, case10Img9, case10Img10, case10Img11],
   },
   {
     title: "Victorinox GLM",
