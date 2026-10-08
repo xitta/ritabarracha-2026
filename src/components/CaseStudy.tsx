@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { ArrowUpRight, ChevronDown, X } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { cn } from "@/lib/utils";
 import {
   Carousel,
   CarouselContent,
@@ -26,7 +27,21 @@ interface CaseStudyProps {
   link?: string;
   /** Start with Gap / Fix / Fav open (e.g. when opened from the grid) */
   defaultOpen?: boolean;
+  /** Small credit shown on specific images, keyed by image src */
+  credits?: Record<string, string>;
 }
+
+// Tiny credit for images that are not Rita's own (e.g. "© Ricola").
+export const ImageCredit = ({ text, className = "" }: { text: string; className?: string }) => (
+  <span
+    className={cn(
+      "pointer-events-none absolute bottom-1.5 right-2 text-[9px] leading-none tracking-wide text-white/90 [text-shadow:0_0_3px_rgba(0,0,0,0.6)]",
+      className,
+    )}
+  >
+    {text}
+  </span>
+);
 
 const GAP_DESKTOP = 24;
 const GAP_MOBILE = 16;
@@ -46,6 +61,7 @@ const CaseStudy = ({
   images = [],
   link,
   defaultOpen = false,
+  credits,
 }: CaseStudyProps) => {
   const ref = useScrollReveal();
   const slides = [coverImage, ...images].filter(Boolean) as string[];
@@ -257,6 +273,7 @@ const CaseStudy = ({
                     setLightbox(index);
                   }}
                 >
+                  <div className="relative">
                   {index === 0 ? (
                     <img
                       src={image}
@@ -277,6 +294,8 @@ const CaseStudy = ({
                       className="w-auto max-w-none block h-[200px] md:h-[400px]"
                     />
                   )}
+                  {credits?.[image] && <ImageCredit text={credits[image]} />}
+                  </div>
                 </CarouselItem>
                 );
               })}
@@ -435,13 +454,18 @@ const CaseStudy = ({
                 <div
                   key={index}
                   data-backdrop="true"
-                  className="w-screen shrink-0 h-full snap-center flex items-center justify-center px-4"
+                  className="relative w-screen shrink-0 h-full snap-center flex items-center justify-center px-4"
                 >
                   <img
                     src={image}
                     alt={`${title} ${index === 0 ? "cover" : `detail ${index}`}`}
                     className="max-w-full max-h-full object-contain"
                   />
+                  {credits?.[image] && (
+                    <span className="pointer-events-none absolute bottom-4 right-4 text-[10px] tracking-wide text-white/70">
+                      {credits[image]}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
