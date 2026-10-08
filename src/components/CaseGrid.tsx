@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { ImageCredit } from "@/components/CaseStudy";
 
 export interface CaseGridItem {
   title: string;
@@ -9,6 +10,7 @@ export interface CaseGridItem {
   period?: string;
   coverImage?: string;
   images?: string[];
+  credits?: Record<string, string>;
 }
 
 interface CaseGridProps {
@@ -123,6 +125,9 @@ const CaseCard = ({ item, index, onOpen }: { item: CaseGridItem; index: number; 
             }`}
           />
         ))}
+        {item.credits?.[slides[current]] && (
+          <ImageCredit text={item.credits[slides[current]]} className="bottom-5 right-3" />
+        )}
         {slides.length > 1 && (
           <div className="absolute bottom-3 left-3 right-3 flex gap-1" aria-hidden="true">
             {slides.map((_, i) => (
