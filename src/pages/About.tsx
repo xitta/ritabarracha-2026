@@ -39,10 +39,7 @@ const About = () => {
             <div className="space-y-6 text-base leading-relaxed text-foreground/70">
               <p>
                 I'm a Creative Strategist and Experience Designer.
-                I work on products and services, and I enjoy starting from a human need
-                to figure out the rest from there.
-              </p>
-              <p>
+                I enjoy starting from a human need to figure out the rest.
                 My experience spans research, strategy, design, and development.
                 It helps me move between the "why" and the "how", with a holistic perspective.
               </p>
