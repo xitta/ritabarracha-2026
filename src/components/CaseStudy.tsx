@@ -221,7 +221,7 @@ const CaseStudy = ({
 
   return (
     <article
-      className="group relative mb-20 md:mb-28 pt-12 md:pt-20 first:pt-0"
+      className="group relative mb-20 md:mb-28 pt-12 md:pt-20 first:pt-0 scroll-mt-16 md:scroll-mt-0"
       ref={ref}
     >
       {/* Full-bleed separator between case studies (hidden on the first one) */}
