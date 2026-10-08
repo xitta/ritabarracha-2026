@@ -301,16 +301,33 @@ const Work = () => {
   // From the grid, open a case: back to the list, scrolled to that case.
   useEffect(() => {
     if (view !== "list" || pendingCase === null) return;
-    // Galleries measure themselves after mounting, so re-align a few times
-    // while the layout settles.
-    const align = () =>
+    // Galleries measure themselves after mounting, so keep the case pinned
+    // while the layout settles, but stop as soon as the reader scrolls, so
+    // their own scrolling is never pulled back.
+    let active = true;
+    const align = () => {
+      if (!active) return;
       document
         .querySelectorAll<HTMLElement>("#case-studies > article")
         [pendingCase]?.scrollIntoView({ block: "start" });
-    const timers = [0, 150, 400, 800, 1300].map((ms) => window.setTimeout(align, ms));
-    const done = window.setTimeout(() => setPendingCase(null), 1400);
+    };
+    const section = document.getElementById("case-studies");
+    const ro = new ResizeObserver(align);
+    if (section) ro.observe(section);
+    const inputs = ["wheel", "touchstart", "keydown", "pointerdown"] as const;
+    const stop = () => {
+      active = false;
+      ro.disconnect();
+      inputs.forEach((e) => window.removeEventListener(e, stop));
+    };
+    inputs.forEach((e) => window.addEventListener(e, stop, { passive: true }));
+    align();
+    const done = window.setTimeout(() => {
+      stop();
+      setPendingCase(null);
+    }, 2500);
     return () => {
-      timers.forEach(window.clearTimeout);
+      stop();
       window.clearTimeout(done);
     };
   }, [view, pendingCase]);
