@@ -24,6 +24,8 @@ interface CaseStudyProps {
   coverImage?: string;
   images?: string[];
   link?: string;
+  /** Start with Gap / Fix / Fav open (e.g. when opened from the grid) */
+  defaultOpen?: boolean;
 }
 
 const GAP_DESKTOP = 24;
@@ -43,6 +45,7 @@ const CaseStudy = ({
   coverImage,
   images = [],
   link,
+  defaultOpen = false,
 }: CaseStudyProps) => {
   const ref = useScrollReveal();
   const slides = [coverImage, ...images].filter(Boolean) as string[];
@@ -78,7 +81,7 @@ const CaseStudy = ({
 
   // Gap / Fix / Fav start collapsed (mobile and desktop) so the page stays
   // short; readers open the cases they care about.
-  const [textOpen, setTextOpen] = useState(false);
+  const [textOpen, setTextOpen] = useState(defaultOpen);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const textId = `case-text-${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
   const collapsed = !textOpen;
