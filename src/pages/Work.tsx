@@ -368,7 +368,9 @@ const Work = () => {
 
       <section id="case-studies" className="container mx-auto px-4 py-24 md:py-32">
         {view === "list" ? (
-          caseStudies.map((study, index) => <CaseStudy key={index} {...study} />)
+          caseStudies.map((study, index) => (
+            <CaseStudy key={index} {...study} defaultOpen={index === pendingCase} />
+          ))
         ) : (
           <CaseGrid
             items={caseStudies}
