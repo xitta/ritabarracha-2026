@@ -10,8 +10,7 @@ interface ViewToggleProps {
 }
 
 // Sticky List / Grid switch, top centre, shown while the case studies
-// section is on screen. On mobile it sits just below the case pagination
-// bar (list view) or right below the navbar (grid view, no pagination).
+// section is on screen. Tablet and desktop only: phones always get the list.
 const ViewToggle = ({ sectionId, view, onChange }: ViewToggleProps) => {
   const [visible, setVisible] = useState(false);
 
@@ -59,9 +58,7 @@ const ViewToggle = ({ sectionId, view, onChange }: ViewToggleProps) => {
     <div
       role="radiogroup"
       aria-label="View"
-      className={`fixed left-1/2 -translate-x-1/2 z-40 isolate flex items-center gap-1 rounded-full border border-foreground bg-background/90 backdrop-blur-sm p-1 shadow-sm transition-all duration-500 motion-reduce:transition-none ${
-        view === "list" ? "top-[100px]" : "top-[76px]"
-      } md:top-20 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}`}
+      className={`fixed left-1/2 -translate-x-1/2 z-40 isolate hidden md:flex items-center gap-1 rounded-full border border-foreground bg-background/90 backdrop-blur-sm p-1 shadow-sm transition-all duration-500 motion-reduce:transition-none top-20 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}`}
     >
       <span
         aria-hidden="true"
@@ -80,12 +77,12 @@ const ViewToggle = ({ sectionId, view, onChange }: ViewToggleProps) => {
             aria-label={label}
             tabIndex={visible ? undefined : -1}
             onClick={() => onChange(value)}
-            className={`relative inline-flex items-center gap-1.5 rounded-full px-3 md:px-4 py-1.5 text-xs uppercase tracking-widest transition-colors duration-500 ${
+            className={`relative inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-xs uppercase tracking-widest transition-colors duration-500 ${
               active ? "text-background" : "text-foreground hover:bg-foreground/10"
             }`}
           >
             <Icon className="h-3.5 w-3.5" aria-hidden="true" />
-            <span className="hidden md:inline">{label}</span>
+            <span>{label}</span>
           </button>
         );
       })}
