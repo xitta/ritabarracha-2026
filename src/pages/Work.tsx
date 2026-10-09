@@ -55,6 +55,7 @@ import case5Img3 from "@/assets/case5-img3.webp";
 import case5Img4 from "@/assets/case5-img4.webp";
 import case5Img5 from "@/assets/case5-img5.webp";
 
+import case6Img0 from "@/assets/case6-img0.jpg";
 import case6Img1 from "@/assets/case6-img1.png";
 import case6Img2 from "@/assets/case6-img2.png";
 import case6Img3 from "@/assets/case6-img3.png";
@@ -151,6 +152,7 @@ const caseStudies = [
       "Together with concept partner SPACECURATION.CH, we designed a timer-driven, role-based group chat game. Each student gets a secret role and receives tasks that drive behaviour rather than arguments: write in caps, demand a yes or no, exploit a muted player. The game follows a scientific escalation model and stops before it turns dangerous. A Red Button lets the group mute a player for No-Go messages, a teacher dashboard allows intervention at any time, and anonymous polls track how opinions shift, feeding a guided class debrief with a visual report of how the discussion evolved. Built on BRDGE, the topic is a variable: the system stays the same.",
     favorite:
       "Designing rules that make a group self-regulate. The most important mechanic isn't the escalation; it's the Red Button: young people deciding together where the line is.",
+    coverImage: case6Img0,
     images: [case6Img1, case6Img2, case6Img3, case6Img4, case6Img5, case6Img6, case6Img7, case6Img8],
   },
   {
