@@ -289,6 +289,15 @@ const Work = () => {
   const [view, setView] = useState<CaseView>("list");
   const [pendingCase, setPendingCase] = useState<number | null>(null);
 
+  // Grid view is desktop/tablet only: on phones the list is always shown.
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const toList = () => mq.matches && setView("list");
+    toList();
+    mq.addEventListener("change", toList);
+    return () => mq.removeEventListener("change", toList);
+  }, []);
+
   // Keep the reader at the top of the case studies when switching views.
   const changeView = (next: CaseView) => {
     if (next === view) return;
