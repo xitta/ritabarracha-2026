@@ -55,7 +55,7 @@ import case5Img3 from "@/assets/case5-img3.webp";
 import case5Img4 from "@/assets/case5-img4.webp";
 import case5Img5 from "@/assets/case5-img5.webp";
 
-import case6Img0 from "@/assets/case6-img0.jpg";
+import case6Img0 from "@/assets/case6-img0.webp";
 import case6Img1 from "@/assets/case6-img1.png";
 import case6Img2 from "@/assets/case6-img2.png";
 import case6Img3 from "@/assets/case6-img3.png";
@@ -105,6 +105,26 @@ import case11Img9 from "@/assets/case11-img9.webp";
 import case11Img10 from "@/assets/case11-img10.webp";
 import case11Img11 from "@/assets/case11-img11.webp";
 
+
+// Grid cards are cropped to 3:2. Where the centre of an image is not the
+// best part, this sets which part stays visible (CSS object-position).
+const gridFocus: Record<string, string> = {
+  [case1Cover]: "72% 50%",
+  [case1Img3]: "50% 30%",
+  [case3Img2]: "50% 0%",
+  [case6Img1]: "50% 15%",
+  [case6Img2]: "50% 15%",
+  [case6Img3]: "50% 35%",
+  [case6Img4]: "50% 15%",
+  [case6Img5]: "50% 15%",
+  [case6Img6]: "50% 15%",
+  [case10Img1]: "50% 70%",
+  [case10Img2]: "50% 25%",
+  [case10Img3]: "50% 80%",
+  [case10Img10]: "50% 15%",
+  [case11Img1]: "50% 0%",
+  [case11Img4]: "50% 30%",
+};
 
 const caseStudies = [
   {
@@ -403,6 +423,7 @@ const Work = () => {
         ) : (
           <CaseGrid
             items={caseStudies}
+            focus={gridFocus}
             onOpen={(i) => {
               setPendingCase(i);
               setView("list");
