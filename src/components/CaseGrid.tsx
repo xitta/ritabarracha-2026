@@ -16,6 +16,8 @@ export interface CaseGridItem {
 interface CaseGridProps {
   items: CaseGridItem[];
   onOpen: (index: number) => void;
+  /** Crop focus per image (CSS object-position), keyed by image src */
+  focus?: Record<string, string>;
 }
 
 // Tags limited to two lines: as many as fit, then a "…" pill when some are
@@ -68,7 +70,17 @@ const TagLines = ({ tags }: { tags: string[] }) => {
 // Condensed overview: one card per case. The image is a small slideshow:
 // it cycles through the case images on hover (desktop) or while the card is
 // in the middle of the screen (touch), and rests on the cover otherwise.
-const CaseCard = ({ item, index, onOpen }: { item: CaseGridItem; index: number; onOpen: (i: number) => void }) => {
+const CaseCard = ({
+  item,
+  index,
+  onOpen,
+  focus,
+}: {
+  item: CaseGridItem;
+  index: number;
+  onOpen: (i: number) => void;
+  focus?: Record<string, string>;
+}) => {
   const slides = [item.coverImage, ...(item.images ?? [])].filter(Boolean) as string[];
   const [current, setCurrent] = useState(0);
   const [playing, setPlaying] = useState(false);
@@ -113,13 +125,14 @@ const CaseCard = ({ item, index, onOpen }: { item: CaseGridItem; index: number; 
       className="group text-left animate-in fade-in slide-in-from-bottom-4 duration-700 fill-mode-both"
       style={{ animationDelay: `${Math.min(index, 8) * 60}ms` }}
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-muted">
+      <div className="relative aspect-[3/2] overflow-hidden bg-muted">
         {slides.map((src, i) => (
           <img
             key={src + i}
             src={src}
             alt={i === 0 ? `${item.title} cover` : ""}
             loading="lazy"
+            style={focus?.[src] ? { objectPosition: focus[src] } : undefined}
             className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
               i === current ? "opacity-100" : "opacity-0"
             }`}
@@ -156,13 +169,13 @@ const CaseCard = ({ item, index, onOpen }: { item: CaseGridItem; index: number; 
   );
 };
 
-const CaseGrid = ({ items, onOpen }: CaseGridProps) => (
+const CaseGrid = ({ items, onOpen, focus }: CaseGridProps) => (
   // Wider than the text container on tablet and desktop, so the images get
   // more room (up to 1600px; 3rem from each edge of the window on tablet,
   // 6rem on desktop).
   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-8 gap-y-14 md:gap-y-20 md:relative md:left-1/2 md:-translate-x-1/2 md:w-[calc(100vw-6rem)] lg:w-[calc(100vw-12rem)] md:max-w-[1600px]">
     {items.map((item, i) => (
-      <CaseCard key={item.title} item={item} index={i} onOpen={onOpen} />
+      <CaseCard key={item.title} item={item} index={i} onOpen={onOpen} focus={focus} />
     ))}
   </div>
 );
